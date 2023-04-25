@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>University Website</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="fontawesome-free-6.3.0-web/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css" integrity="sha384-QYIZto+st3yW+o8+5OHfT6S482Zsvz2WfOzpFSXMF9zqeLcFV0/wlZpMtyFcZALm" crossorigin="anonymous">
+</head>
+<body>
+    <!-- x ---------- Início do cabeçalho ---------- x -->
+    <section class="sub-header">
+        <!-- x ---------- Ínicio da barra de navegação ---------- x -->
+        <nav>
+            <a href="index.html"><img src="img/logo/logo_transparent.png" alt="Logo"></a>
+            <section class="nav-links" id="nav-links">
+                <i class="fa-solid fa-xmark" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">PÁGINA INICIAL</a></li>
+                    <li><a href="sobre-o-ipial.html">SOBRE O IPIAL</a></li>
+                    <li><a href="aluno.html">ALUNO</a></li>
+                    <li><a href="anuncios.html">ANÚNCIOS</a></li>
+                    <li><a href="contactos.html">CONTACTOS</a></li>
+                </ul>
+            </section>
+            <i class="fa-solid fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <!-- x ---------- Fim da barra de navegação ---------- x -->
+        <h1>Contacte-nos</h1>
+    </section>
+    <!-- x ---------- Fim do cabeçalho ---------- x -->
+    
+    <!-- x ---------- Início do conteúdo principal ---------- x -->
+    <main>
+        <!-- x ---------- Início da secção Location ---------- x -->
+        <section class="location">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d15761.932250448814!2d13.3933895!3d-9.019621299999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1spt-PT!2sao!4v1678570612366!5m2!1spt-PT!2sao" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </section>
+        <!-- x ---------- Fim da secção Location ---------- x -->
+
+        <!-- x ---------- Início da secção Contacte-nos ---------- x -->
+        <section class="contact-us">
+            <article class="row">
+                <div class="contact-col">
+                    <div>
+                        <i class="fa-solid fa-house"></i>
+                        <span>
+                            <h5>Zango 3, Viana.</h5>
+                            <p>SIAC</p>
+                        </span>
+                    </div>
+                    <div>
+                        <i class="fa-solid fa-phone"></i>
+                        <span>
+                            <h5>+244 934353423</h5>
+                            <p>De Segunda à Sábado, das 10 ás 18h</p>
+                        </span>
+                    </div>
+                    <div>
+                        <i class="fa-solid fa-envelope"></i>
+                        <span>
+                            <h5>info@eduniversity.com</h5>
+                            <p>Invie-nos as suas inquietações</p>
+                        </span>
+                    </div>
+                </div>
+                <div class="contact-col">
+                    <form>
+                        <input type="text" placeholder="Introduza o seu nome" required>
+                            <input type="email" placeholder="Introduza o seu e-mail" required>
+                            <input type="email" placeholder="Introduza o seu assunto" required>
+                            <textarea  id="" rows="8" placeholder="Mensagem"></textarea>
+                            <button type="submit" class="hero-btn orange-btn">ENVIAR</button>
+                    </form>
+                </div>
+            </article>
+        </section>
+        <!-- x ---------- Fim da secção Contacte-nos ---------- x -->
+    </main>
+    <!-- x ---------- Fim do conteúdo principal ---------- x -->
+    
+    <!-- x ---------- Início do Footer ---------- x -->
+    <footer>
+        <h4>Sobre nós</h4>
+        <p>
+            Fundada em 2020, a ED University é uma das maiores propostas para o 
+            futuro, que começa agora.
+        </p>
+
+        <section class="icons">
+            <i class="fa-brands fa-square-facebook"></i>
+            <i class="fa-brands fa-square-instagram"></i>
+            <i class="fa-brands fa-square-twitter"></i>
+            <i class="fa-brands fa-linkedin"></i>
+        </section>
+        <p>Desenvolvido por Eurico Dande.</p>
+    </footer>
+    <!-- x ---------- Fim do Footer ---------- x -->
+    <script src="app.js"></script>
+</body>
+</html>
