@@ -135,17 +135,29 @@ p{
 
 .course-col{
     flex-basis: 31%;
-    background: #f5b699;
+    background: #06338A;
     border-radius: 10px;
     margin-bottom: 5%;
     padding: 20px 12px;
     transition: 0.5s;
+    margin: 5px;
+}
+.curso{
+    color:#ffffff;
 }
 
 h3{
     text-align: center;
     font-weight: 600;
     margin: 10px 0;
+}
+.color-p{
+    color:#ffffffd3;
+    font-size: 0.9em;
+}
+.fa-curso{
+    color: white;
+    font-size: 0.9em;
 }
 
 .course-col:hover{
@@ -250,7 +262,7 @@ h3{
     border-radius: 10px;
     margin-bottom: 5%;
     text-align: left;
-    background:#f5b699;
+    background:#fa9c28;
     padding: 25px;
     cursor: pointer;
     display: flex;
