@@ -93,9 +93,9 @@ width: 100%;
 }
 
 .hero-btn:hover{
-    border: 1px solid #f47236;
-    background: #f47236;
-    transition: 1s;
+    border: 1px solid #06338A;
+    background: #06338A;;
+    transition: 1.5s;
 }
 
 nav .fa-solid{
@@ -309,7 +309,7 @@ footer h4{
 }
 
 .icons .fa-brands{
-    color:#f47236b7;
+    color:#364a72b2;
     margin: 0 13px;
     cursor: pointer;
     padding: 18px 0;
@@ -318,7 +318,7 @@ footer h4{
 }
 
 .icons .fa-brands:hover{
-    color:#f34d00;
+    color:#042a76;
 }
 
 /* x ----------- Página About us ----------- x */
@@ -362,10 +362,10 @@ footer h4{
     padding: 15px 0 25px;
 }
 
-.orange-btn{
-    border: 1px solid #f34d00;
+.blue-btn{
+    border: 1px solid #06338A;
     background: transparent;
-    color: #f34d00;
+    color: #06338A;
     cursor: pointer;
 }
 
