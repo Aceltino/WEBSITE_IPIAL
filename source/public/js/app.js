@@ -12,3 +12,7 @@ function hideMenu(){
     menuIcon.style.display = "block !important";
 }
 
+
+function showDropdown(){
+
+}
