@@ -11,8 +11,3 @@ function hideMenu(){
     menu.style.right = "-200px";
     menuIcon.style.display = "block !important";
 }
-
-
-function showDropdown(){
-
-}

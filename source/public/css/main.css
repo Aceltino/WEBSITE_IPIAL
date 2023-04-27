@@ -73,6 +73,25 @@ width: 100%;
     text-align: center;
 }
 
+/*-------Estilos do dropdown da navbar*/
+.dropdown-menu{
+    width: 135px;
+    position:absolute;
+    border-radius:5px;
+    display:none;
+}
+
+.dropdown-menu a{
+    display:block;
+    padding: 5px;
+}
+
+.dropdown:hover .dropdown-menu{
+    display: block;
+}
+
+/*---------Fi do estilo do dropdown da navbar*/
+
 .text-box h1{
     font-size: 62px;
 }
