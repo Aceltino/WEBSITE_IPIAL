@@ -18,6 +18,24 @@ header{
     position: relative;
 }
 
+/*Alteração do estilo do header*/
+header.alter-header{
+    background-image: none;
+    background-color: #FFF;
+    min-height: 100px;
+
+}
+/*Fim de alteração do bg do header*/
+
+/*Estilo do titulo de inscrição*/
+.title-inscricao{
+    width:70%;
+    margin:auto;
+    text-align: center; 
+    font-size:1.5em;
+}
+
+
 nav{
     display: flex;
     padding: 0.2% 6%;
@@ -47,6 +65,11 @@ nav img{
     color: white;
     text-decoration: none;
     font-size: 14px;
+}
+
+/*Alteração das cores dos links da navbar*/
+ul.alter-link li a{
+    color:black;
 }
 
 .nav-links ul li::after{
@@ -168,13 +191,37 @@ nav .fa-solid{
 }
 
 .course-col {
-    flex-basis: 20%;
+    flex-basis: 24%;
     background: #06338a;
+    height:330px;
     border-radius: 10px;
     margin-bottom: 5%;
     padding: 20px 12px;
     transition: 0.5s;
 }
+/*Estilo do título dos cursos lecionados*/
+.curso{
+    padding:3px;
+    font-size: 1.37em;
+    color:#FFF;
+}
+/*Estilo para os paragrafos dos cursos lecionandos*/
+.alter-p{
+    padding: 5px;
+    color:#e4e3e3;
+    font-size: 1.3em;
+}
+/*Fim do estilo dos paragrafos*/
+
+
+/*Estilos dos icones cursos lecionados*/
+.fa-curso{
+    padding: 5px;
+    color:#FFF;
+    font-size: 1.3em;
+}
+
+/*Fim do estilos dos icones dos cursos lecionados*/
 
 .orange-bar{
     background-color: orange;
@@ -330,9 +377,10 @@ nav .fa-solid{
 }
 
 .testimonal-col{
-    flex-basis: 44%;
+    flex-basis: 45%;
     border-radius: 10px;
-    margin-bottom: 5%;
+    margin-bottom: 10px;
+    margin:auto;
     text-align: left;
     background:#fa9c28;
     padding: 25px;
