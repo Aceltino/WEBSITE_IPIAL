@@ -553,7 +553,7 @@ html,
 body {
 	height: 100%;
 }
-body {
+body.alter-login {
 	font-family: 'Poppins', sans-serif;
 	font-size: 1.6rem;
 	color: #fff;
