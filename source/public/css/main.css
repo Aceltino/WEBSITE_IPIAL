@@ -169,7 +169,7 @@ nav .fa-solid{
 
 .course-col {
     flex-basis: 20%;
-    background: #f5b699;
+    background: #06338a;
     border-radius: 10px;
     margin-bottom: 5%;
     padding: 20px 12px;
@@ -456,7 +456,7 @@ footer h4{
     cursor: pointer;
 }
 
-.orange-btn:hover{
+.blue-btn:hover{
     color: white;
 }
 
