@@ -539,6 +539,151 @@ footer h4{
     border: 1px solid #ccc;
 }
 
+
+/*--------------------------Estilo da tela de Login------------------------*/
+*::after {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+html {
+	font-size: 62.5%;
+}
+html,
+body {
+	height: 100%;
+}
+body {
+	font-family: 'Poppins', sans-serif;
+	font-size: 1.6rem;
+	color: #fff;
+	background-image:linear-gradient(180deg, #06338a, #f34d00);
+	display: grid;
+	place-items: center;
+}
+/* ======================== */
+/* General styles */
+button,
+input {
+	font: inherit;
+	border: none;
+	outline: none;
+}
+/* General styles end */
+.container {
+	position: relative;
+	isolation: isolate;
+	width: 40rem;
+	padding: 10rem 0;
+	color: #fff;
+	background-color: #fff;
+	border-radius: 1rem;
+	box-shadow: 0 5px 2rem 
+		rgba(0, 0, 0, 0.1);
+}
+.container::before {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: -1;
+	width: 100%;
+	height: 10rem;
+	background-color: #06338A;
+	border-radius: 1rem 1rem 100% 100%;
+}
+.form_title {
+	position: absolute;
+	top: 3.5rem;
+	left: 50%;
+	transform: translateX(-50%);
+	font-size: 2.5rem;
+}
+.form {
+	padding: 2.5rem;
+	background-color: inherit;
+}
+.form_group {
+	position: relative;
+	display: flex;
+	align-items: baseline;
+	margin-inline: auto;
+}
+.form_icon {
+	font-size: 2rem;
+	margin-right: 1rem;
+	color: #06338A;
+}
+.form_input {
+	position: relative;
+	width: 100%;
+	margin-top: 0.5rem;
+	padding-block: 1rem;
+}
+.form_bar {
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	background-color: 
+		rgba(0, 0, 0, 0.1);
+	width: 100%;
+	height: 1px;
+}
+.form_bar::before {
+	content: '';
+	position: absolute;
+	background-color: #06338A;
+	width: 100%;
+	height: 2px;
+	transform: scaleX(0);
+	transform-origin: left;
+	transition: transform 0.5s;
+}
+.form_input:focus + .form__bar::before,
+.form_input:valid + .form__bar::before {
+	transform: scaleX(1);
+}
+.form_button {
+	display: block;
+	margin: 2.5rem auto 3rem;
+	padding: 1rem 5rem;
+	background-color: #06338A;
+	color: #fff;
+	border-radius: 3rem;
+	cursor: pointer;
+}
+.form_button:hover {
+	background-color: #042464;
+}
+.form_switch {
+	font-size: 1.5rem;
+	text-align: center;
+	color: #a1a1a1;
+}
+.form_switch a {
+	text-decoration: none;
+	color: #06338A;
+}
+.form_switch a:hover {
+	text-decoration: underline;
+}
+@media screen and (min-width: 43.75em) {
+	.container::before {
+		height: 30rem;
+	}
+	.form_title {
+		left: 10rem;
+		transform: none;
+	}
+	.form {
+		transform: translateX(10rem);
+		border-radius: inherit;
+		box-shadow: inherit;
+	}
+}
+
+/*-------Fim da tela de login------*/
+
 @media(max-width: 700px){
     /* x ----- Nav ----- x */
     nav img{
