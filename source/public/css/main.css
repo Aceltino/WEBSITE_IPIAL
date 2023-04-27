@@ -109,62 +109,91 @@ nav .fa-solid{
     display: none !important;
 }
 
-/* x ----- Cursos ----- x */
-.course{
-    width: 80%;
+/* x ----- Aluno ----- x */
+.pauta-section{
+    width: 90%;
     margin: auto;
     text-align: center;
     padding-top: 100px;
-}
-h1{
-    font-size: 36px;
-    font-weight: 600;
+    padding-bottom: 40px;
 }
 
-p{
-    color: #777;
-    font-size: 16px;
-    font-weight: 300;
-    line-height: 22px;
-    padding: 10px;
-}
-
-.row{
+.row-section{
     margin-top: 2%;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
 }
 
-.course-col{
-    flex-basis: 31%;
-    background: #06338A;
-    border-radius: 10px;
-    margin-bottom: 5%;
-    padding: 20px 12px;
-    transition: 0.5s;
-    margin: 5px;
-}
-.curso{
-    color:#ffffff;
+.form-search-for-school-grades{
+    background-color: rgba(252, 165, 5, 0.418);
+    padding: 40px;
+    border-radius: 20px;
 }
 
-h3{
-    text-align: center;
-    font-weight: 600;
+.form-section-one-aluno{
+    width: 70%;
     margin: 10px 0;
 }
-.color-p{
-    color:#ffffffd3;
-    font-size: 0.9em;
-}
-.fa-curso{
-    color: white;
-    font-size: 0.9em;
+
+.orange-bar{
+    background-color: orange;
+    height: 4px;
+    border: 0;
+    width: 200px;
 }
 
-.course-col:hover{
-    box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.2);
+.ipial{
+    display: flex;
 }
+
+.flex{
+    display: flex;
+}
+
+.mt-5{
+    margin-top: 5px;
+}
+
+.form-section-two-aluno{
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+     justify-content: space-between;
+}
+
+.col-curso{
+    width: 29%;
+}
+
+.col-turma, .col-classe, .col-turno, .col-trimestre, .col-btn{
+    width: 13%;
+}
+
+.select-curso, .select-turma, .select-classe, .select-turno, .select-trimestre, .col-btn > button{
+    width: 100%;
+    height: 40px;
+    border-radius: 20px;
+    outline: none;
+    padding-left: 5px;
+    border-color: orange;
+}
+
+.col-equal > label{
+    display: flex;  
+    margin-left: 5px;  
+}
+
+.col-btn > button{
+    margin-top: 23px;
+    background-color: orange;
+    border: 0;
+    color: white;
+}
+
+.col-btn > button:hover{
+    cursor: pointer;
+}
+
 
 /* x ----- Campus ----- x */
 .campus{
@@ -575,5 +604,25 @@ footer h4{
     /* x ----------- Página Blog ----------- x */
     .sub-header h1{
         font-size: 22px;
+    }
+
+    /* x ----- Alunos ----- x */
+
+    .form-section-one-aluno{
+        width: 80%;
+    }
+
+    .col-curso{
+        width: 100%;
+    }
+    
+    .col-turma, .col-classe, .col-turno, .col-trimestre{
+        width: 23%;
+        margin-top: 20px;
+    }
+
+    .col-btn{
+        margin-top: 20px;
+        width: 100%;
     }
 }
