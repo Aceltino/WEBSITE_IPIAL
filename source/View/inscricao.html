@@ -59,33 +59,35 @@
                 <form action="" class="form-search-for-school-grades">
                     <section class="form-section-one-aluno">
                         <hr class="orange-bar">
-                        <h4 class="ipial">Instituto Politécnico Industrial Alda Lara</h4>
+                        <h2 class="ipial">Dados Pessoais</h2>
                     </section>
-
-                    <h2 class="flex mt-5">Pauta - 2022/2023</h2>
 
                     <section class="form-section-two-aluno">
                         <div class="col-curso col-equal">
-                            <label for="curso">Curso</label>
-                            <select name="curso" id="curso" class="select-curso">
-                                <optgroup label="Cursos disponíveis">
-                                    <option value="D.P">Desenhador projetista - D.P</option>
-                                    <option value="T.E.I.E">Técnico de Energia e Instalações Electricas - T.E.I.E</option>
-                                    <option value="T.I">Técnico de Informática - T.I</option>
-                                    <option value="E.T">Electrónica e Telecomunicação - E.T</option>
-                                </optgroup>
-                            </select>
+                            <label for="nome">Nome</label>
+                            <input type="text" id="nome" placeholder="Nome completo">
                         </div>
-                        <div class="col-turma col-equal">
-                            <label for="curso">Turma</label>
-                            <select name="turma" id="turma" class="select-turma">
-                                <optgroup label="Turmas disponíveis">
-                                    <option value="A">A</option>
-                                    <option value="B">B</option>
-                                    <option value="C">C</option>
-                                    <option value="D">D</option>
-                                </optgroup>
-                            </select>
+
+                        <div class="col-curso col-equal">
+                            <label for="filho">Filho de</label>
+                            <input type="text" id="filho" placeholder="Nome do pai">
+                            e de 
+                            <input type="text" id="" placeholder="Nome da Mãe">
+                        </div>
+
+                        <div class="col-curso col-equal">
+                            <label for="data">Data</label>
+                            <input type="date" id="data">
+                        </div>
+                        
+                        <div class="col-curso col-equal">
+                            <label for="idade">Idade</label>
+                            <input type="number" id="idade">
+                        </div>
+                        
+
+
+
                         </div>
                         <div class="col-classe col-equal">
                             <label for="curso">Classe</label>
@@ -119,7 +121,7 @@
                             </select>
                         </div>
                         <div class="col-btn">
-                            <button type="submit">Buscar pauta</button>
+                            <button type="submit">Submeter</button>
                         </div>
                     </section>
                 </form>
