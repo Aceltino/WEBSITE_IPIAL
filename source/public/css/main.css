@@ -223,6 +223,18 @@ nav .fa-solid{
 
 /*Fim do estilos dos icones dos cursos lecionados*/
 
+/*------------------Estilo dos links dos Anuncios/Notícias----------------------*/
+a.link-news{
+    text-decoration:none;
+    color:#000;
+}
+
+a.link-news:hover{
+    color:#06338A;
+    text-decoration:underline;
+}
+
+/*------------------Fim do estilo dos links dos Anuncios/Notícias----------------------*/
 .orange-bar{
     background-color: orange;
     height: 4px;
