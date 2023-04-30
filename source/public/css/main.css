@@ -199,6 +199,70 @@ nav .fa-solid{
     padding: 20px 12px;
     transition: 0.5s;
 }
+
+/*Estilo da linha horizontal do perfil do DG*/
+hr.linha-horizontal{
+    margin:auto;
+    width:25%;
+    margin-bottom: 10px;
+}
+
+
+/*Estilo do perfil do DG*/
+div.director-geral{
+    
+    width:20%;
+    height:250px;
+    border: 1.5px solid #06338A;
+    border-radius:5px;
+    margin:auto;
+}
+
+/*Estilo do perfil dos restantes quadros do instituto*/
+article.linha-outros_quadros{
+    margin-top:10px;
+    display: flex;
+    justify-content: center;
+}
+div.coluna-outros_quadros{
+    flex-basis: 20%;
+    height:250px;
+    border: 1.5px solid #06338A;
+    border-radius: 5px;
+    padding: 15px;
+    margin:20px;
+}
+
+.coluna-subdiretores{
+    flex-basis: 35%;
+}
+
+/*Estilo dos títulos dos quadros*/
+.title-quadros{
+    text-align: center;
+    margin-top:20px;
+    font-size:1.5em;
+}
+
+/*Estilo da imagem dos quadros*/
+img.img-quadros{
+    width:130px;
+    height:130px;
+    display:block;
+    margin:auto;
+    border-radius:50%;
+    padding:10px;
+}
+
+img.img-quadros:hover{
+    border: 1px solid rgba(96, 96, 96, 0.6);
+    transform:translate(-2px, -2px);
+    box-shadow:0px 5px 0px rgba(0, 0, 0, 0.665);
+    transition: transform 0.5s;
+
+}
+
+
 /*Estilo do título dos cursos lecionados*/
 .curso{
     padding:3px;
