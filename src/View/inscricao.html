@@ -64,68 +64,73 @@
                         <h2 class="ipial">Dados Pessoais</h2>
                     </section>
 
-                    <section class="form-section-two-aluno">
-                        <div class="col-curso col-equal">
-                            <label for="nome">Nome</label>
-                            <input type="text" id="nome" placeholder="Nome completo">
+                    <section>
+
+                        <div class="alter-input">
+                            <label for="nome">Nome</label></br>
+                            <input type="name" id="nome" placeholder="Seu nome completo" required>
                         </div>
 
-                        <div class="col-curso col-equal">
-                            <label for="filho">Filho de</label>
-                            <input type="text" id="filho" placeholder="Nome do pai">
-                            e de 
-                            <input type="text" id="" placeholder="Nome da Mãe">
+                        <div class="alter-input">
+                            <label for="nome_mae">Filho de e de</label></br>
+                            <input type="name" id="nome_mae" placeholder="Nome de sua mãe" required> <input type="name" placeholder="Nome de seu pai" required>
                         </div>
 
-                        <div class="col-curso col-equal">
-                            <label for="data">Data</label>
-                            <input type="date" id="data">
+                        <div class="alter-input">
+                        <label for="nascimento">Data de nascimento</label></br>
+                        <input type="date" id="nascimento" required>
                         </div>
-                        
-                        <div class="col-curso col-equal">
-                            <label for="idade">Idade</label>
-                            <input type="number" id="idade">
-                        </div>
-                        
 
-
-
-                        </div>
-                        <div class="col-classe col-equal">
-                            <label for="curso">Classe</label>
-                            <select name="classe" id="classe" class="select-classe">
-                                <optgroup label="Classes disponíveis">
-                                    <option value="10">10ª</option>
-                                    <option value="11">11ª</option>
-                                    <option value="12">12ª</option>
-                                    <option value="13">13ª</option>
+                        <div>
+                            <label for="sexo">Sexo</label>
+                            <select name="sexo" id="sexo">
+                                <optgroup label="Sexo">
+                                    <option value="Masculino">Masculino</option>
+                                    <option value="Femenino">Femenino</option>
                                 </optgroup>
                             </select>
                         </div>
-                        <div class="col-turno col-equal">
-                            <label for="curso">Turno</label>
-                            <select name="turno" id="turno" class="select-turno">
-                                <optgroup label="Turnos disponíveis">
-                                    <option value="M">Manhã</option>
-                                    <option value="T">Tarde</option>
-                                    <option value="N">Noite</option>
+
+                        <div>
+                            <label for="sexo">Naturalidade</label>
+                            <select name="natural" id="natural">
+                                <optgroup label="Naturalidade">
+                                    <option value="Beno">Bengo</option>
+                                    <option value="Benguela">Benguela</option>
+                                    <option value="Bié">Bié</option>
+                                    <option value="Cabinda">Cabinda</option>
+                                    <option value="Cuando Cubango">Cuando Cubango</option>
+                                    <option value="Cuanza Norte">Cuanza Norte</option>
+                                    <option value="Cuanza Sul">Cuanza Sul</option>
+                                    <option value="Cunene">Cunene</option>
+                                    <option value="Huambo">Huambo</option>
+                                    <option value="Huíla">Huíla</option>
+                                    <option value="Luanda">Luanda</option>
+                                    <option value="Lunda Norte">Lunda Norte</option>
+                                    <option value="Lunda Sul">Lunda Sul</option>
+                                    <option value="Malanje">Malanje</option>
+                                    <option value="Moxico">Moxico</option>
+                                    <option value="Namibe">Namibe</option>
+                                    <option value="Uíge">Uíge</option>
+                                    <option value="Zaire">Zaire</option>
                                 </optgroup>
                             </select>
                         </div>
-                        <div class="col-trimestre col-equal">
-                            <label for="curso">Trimestre</label>
-                            <select name="trimestre" id="trimestre" class="select-trimestre">
-                                <optgroup label="Trimestres disponíveis">
-                                    <option value="Primeiro">Iº</option>
-                                    <option value="Segundo">IIº</option>
-                                    <option value="Terceiro">IIIº</option>
-                                </optgroup>
-                            </select>
+
+                        <div>
+                            <label for="bi">BI</label></br>
+                            <input type="text" id="bi" placeholder="0042662LA4592GF" required>
                         </div>
-                        <div class="col-btn">
-                            <button type="submit">Submeter</button>
+
+                        <div>
+                            <label for="tel">Telefone</label></br>
+                            <input type="text" id="tel" placeholder="+244 912345678" required>
                         </div>
+
                     </section>
+
+
+                      
                 </form>
             </article>
         </section>
