@@ -205,6 +205,8 @@ nav .fa-solid{
 hr.linha-horizontal{
     margin:auto;
     width:25%;
+    background-color: #06338A;
+    height: 3px;
     margin-bottom: 10px;
 }
 
