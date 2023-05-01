@@ -56,34 +56,42 @@
     </div>
     <main>
         <!-- x ---------- Início da secção Cursos ---------- x -->
-        <section class="pauta-section"> 
+        <section class="inscricao-section"> 
             <article class="row-center">
-                <form action="" class="form-search-for-school-grades">
+                <form action="" class="form-inscricao-for-school-grades">
                     <section class="form-section-one-aluno">
                         <hr class="orange-bar">
                         <h2 class="ipial">Dados Pessoais</h2>
                     </section>
 
-                    <section>
-
-                        <div class="alter-input">
-                            <label for="nome">Nome</label></br>
-                            <input type="name" id="nome" placeholder="Seu nome completo" required>
-                        </div>
-
-                        <div class="alter-input">
-                            <label for="nome_mae">Filho de e de</label></br>
-                            <input type="name" id="nome_mae" placeholder="Nome de sua mãe" required> <input type="name" placeholder="Nome de seu pai" required>
-                        </div>
-
-                        <div class="alter-input">
-                        <label for="nascimento">Data de nascimento</label></br>
-                        <input type="date" id="nascimento" required>
-                        </div>
-
+                    <section class="section-input-nome">
                         <div>
-                            <label for="sexo">Sexo</label>
-                            <select name="sexo" id="sexo">
+                            <label for="nome" class="position-label">Nome</label></br>
+                            <input class="alter-input" type="name" id="nome" placeholder="Seu nome completo" required>
+                        </div>
+                    </section>
+
+                    <section class="section-input-nome-pais">
+                        <div class="div-input-dados">
+                            <label for="mae">Nome da Mãe</label></br>
+                            <input class="alter-input" type="name" id="mae" placeholder="Nome de sua mãe" required>
+                        </div>
+
+                        <div class="div-input-dados">
+                        <label for="pai">Nome do Pai</label></br>
+                        <input class="alter-input" type="name" id="pai" placeholder="Nome de seu pai" required>
+                        </div>
+
+                        <div class="div-input-dados">
+                            <label for="nascimento">Data de nascimento</label></br>
+                            <input class="alter-input" type="date" id="nascimento" required>
+                            </div>
+                    </section>
+                    
+                    <section class="section-data_sexo_naturalidade">
+                        <div class="div-data_sexo_naturalidade">
+                            <label for="sexo">Sexo</label></br>
+                            <select class="alter-select" name="sexo" id="sexo">
                                 <optgroup label="Sexo">
                                     <option value="Masculino">Masculino</option>
                                     <option value="Femenino">Femenino</option>
@@ -91,9 +99,9 @@
                             </select>
                         </div>
 
-                        <div>
-                            <label for="sexo">Naturalidade</label>
-                            <select name="natural" id="natural">
+                        <div class="div-data_sexo_naturalidade">
+                            <label for="sexo">Naturalidade</label></br>
+                            <select name="natural" id="natural" class="alter-select">
                                 <optgroup label="Naturalidade">
                                     <option value="Beno">Bengo</option>
                                     <option value="Benguela">Benguela</option>
@@ -117,32 +125,37 @@
                             </select>
                         </div>
 
-                        <div>
+                    </section>
+
+                    <section class="section-dados">
+                        <div class="div-dados">
                             <label for="bi">BI</label></br>
-                            <input type="text" id="bi" placeholder="0042662LA4592GF" required>
+                            <input class="alter-input" type="text" id="bi" placeholder="0042662LA4592GF" required>
                         </div>
 
-                        <div>
+                        <div class="div-dados">
                             <label for="tel">Telefone</label></br>
-                            <input type="text" id="tel" placeholder="+244 912345678" required>
+                            <input class="alter-input" type="text" id="tel" placeholder="+244 912345678" required>
                         </div>
                        
-                        <div>
+                        <div class="div-dados">
                             <label for="email">Email</label></br>
-                            <input type="email" id="email" placeholder="otanielfernandes@gamil.com" required>
+                            <input class="alter-input" type="email" id="email" placeholder="otanielfernandes@gamil.com" required>
                         </div>
+                    </section>
 
                         <h2>DADOS ACADÉMICOS DA ESCOLA DE PROVENIÊNCIA</h2>
                         <hr>
 
+                    <section>
                         <div>
                             <label for="escola">Escola de proveniência</label></br>
-                            <input type="text" id="escola" placeholder="Nome da escola de providência" required >
+                            <input class="alter-input" type="text" id="escola" placeholder="Nome da escola de proveniência" required >
                         </div>
 
                         <div>
-                            <label for="sexo">Turno</label>
-                            <select name="turno" id="turno">
+                            <label for="sexo">Turno</label></br>
+                            <select class="alter-input" name="turno" id="turno">
                                 <optgroup label="Selecione o turno">
                                     <option value="manha">Manhã</option>
                                     <option value="tarde">Tarde</option>
@@ -150,26 +163,30 @@
                                 </optgroup>
                             </select>
                         </div>
-
-                        <div>   
+                    
+                    <section class="section-turma_numero_processo">
+                        <div class="div-turma_numero_processo">   
                             <label for="turma">Turma</label></br>
-                            <input type="text" id="turma" minlength="1" maxlength="5" placeholder="A" required>
+                            <input class="alter-input" type="text" id="turma" minlength="1" maxlength="5" placeholder="A" required>
                         </div>
 
-                        <div>   
+                        <div class="div-turma_numero_processo">   
                             <label for="numero">Número</label></br>
-                            <input type="number" id="numero" min="1" max="80" placeholder="0" required>
+                            <input class="alter-input" type="number" id="numero" min="1" max="80" placeholder="0" required>
                         </div>
 
-                        <div>   
+                        <div class="div-turma_numero_processo">   
                             <label for="processo">Processo nº</label></br>
-                            <input type="number" id="processo" placeholder="0" required>
+                            <input class="alter-input" type="number" id="processo" placeholder="0" required>
                         </div>
+                    </section>
 
-                        <h2>Selecione uma das opções</h2>
-                        <div>
+                        <h2 style="margin:10px;">Selecione uma das opções</h2>
+
+                    <section class="row-opcoes">
+                        <div class="col-opcoes">
                             <label for="opcao1">Opção 1</label></br>
-                            <select name="opcao1" id="opcao1">
+                            <select name="opcao1" id="opcao1" class="alter-opcoes">
                                 <optgroup label="Cursos Disponíveis">
                                     <option value="desenhador">Desenhador Projetista</option>
                                     <option value="eletronica">Electrónica e Telecomunicações</option>
@@ -179,9 +196,9 @@
                             </select>
                         </div>
 
-                        <div>
+                        <div class="col-opcoes">
                             <label for="opcao2">Opção 2</label></br>
-                            <select name="opcao2" id="opcao2">
+                            <select name="opcao2" id="opcao2" class="alter-opcoes">
                                 <optgroup label="Cursos Disponíveis">
                                     <option value="desenhador">Desenhador Projetista</option>
                                     <option value="eletronica">Electrónica e Telecomunicações</option>
@@ -191,9 +208,9 @@
                             </select>
                         </div>
 
-                        <div>
+                        <div class="col-opcoes">
                             <label for="opcao3">Opção 3</label></br>
-                            <select name="opcao3" id="opcao3">
+                            <select name="opcao3" id="opcao3" class="alter-opcoes">
                                 <optgroup label="Cursos Disponíveis">
                                     <option value="desenhador">Desenhador Projetista</option>
                                     <option value="eletronica">Electrónica e Telecomunicações</option>
@@ -203,9 +220,9 @@
                             </select>
                         </div>
 
-                        <div>
+                        <div class="col-opcoes">
                             <label for="opcao4">Opção 4</label></br>
-                            <select name="opcao4" id="opcao4">
+                            <select name="opcao4" id="opcao4" class="alter-opcoes">
                                 <optgroup label="Cursos Disponíveis">
                                     <option value="desenhador">Desenhador Projetista</option>
                                     <option value="eletronica">Electrónica e Telecomunicações</option>
@@ -214,7 +231,9 @@
                                 </optgroup>
                             </select>
                         </div>
+                    </section>
 
+                    <section>
                         <div class="col-btn">
                             <button type="submit">Submeter</button>
                         </div>

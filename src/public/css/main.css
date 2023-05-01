@@ -534,7 +534,95 @@ footer h4{
 .icons .fa-brands:hover{
     color:#042a76;
 }
-/*Estilo da tabela de cursos para inscrição*/
+
+/*Estilo para o formulario de inscrição crição*/
+.form-inscricao-for-school-grades{
+    background-color: #06338A;
+    padding: 40px;
+    border-radius: 20px;
+    color:#fff;
+
+}
+
+.inscricao-section{
+    width: 90%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+    padding-bottom: 40px;
+}
+
+.section-input-nome{
+    display: flex;
+    justify-content: space-between;
+}
+
+.section-input-nome-pais{
+display: flex;
+justify-content: space-between;
+}
+
+
+
+.alter-input{
+    text-align: center;
+    width: 200px;
+    height: 35px;
+    border-radius: 10px;
+}
+.div-input-dados{
+    flex-basis: 10%;
+    margin: 15px;
+}
+.section-data_sexo_naturalidade{
+    display: flex;
+    justify-content: space-between;
+}
+
+.div-data_sexo_naturalidade{
+    flex-basis: 15%;
+}
+
+.alter-select{
+    width: 150px;
+    height: 35px;
+    border-radius: 10px;
+}
+
+.section-dados{
+    display: flex;
+    justify-content: space-between;
+    margin: 20px;
+}
+.div-dados{
+    flex-basis: 10%;
+}
+
+
+.section-turma_numero_processo{
+    display: flex;
+    justify-content: space-between;
+}
+
+.div-turma_numero_processo{
+    flex-basis: 10;
+}
+
+section.row-opcoes{
+    display: flex;
+    justify-content: space-between;
+}
+
+div.col-opcoes{
+    flex-basis: 10%;
+}
+.alter-opcoes{
+    width: 170px;
+    height: 35px;
+    border-radius: 10px;
+}
+
+/*----------------Estilo da tabela de cursos para inscrição----------------*/
 table.alter-table{
     width: 70%;
     height: 180px;
@@ -551,6 +639,7 @@ tr, th, td{
     font-weight: bolder;
     background-color: #dfdfdf;
 }
+
 
 /* x ----------- Página About us ----------- x */
 /* x ----- Sub-header ----- x */
