@@ -534,6 +534,23 @@ footer h4{
 .icons .fa-brands:hover{
     color:#042a76;
 }
+/*Estilo da tabela de cursos para inscrição*/
+table.alter-table{
+    width: 70%;
+    height: 180px;
+    border: 2px solid #06338A;
+    margin:auto;
+    border-collapse: collapse;
+}
+
+tr, th, td{
+    border: 2px solid #06338A;
+}
+
+.alter-th{
+    font-weight: bolder;
+    background-color: #dfdfdf;
+}
 
 /* x ----------- Página About us ----------- x */
 /* x ----- Sub-header ----- x */
