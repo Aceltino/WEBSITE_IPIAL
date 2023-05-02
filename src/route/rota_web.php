@@ -16,12 +16,12 @@ class Rota_web{
     {
         $controller = ucfirst($url['0']).'Controller';
     } else  {
-        $controller = 'PessoaController';
+        $controller = 'HomeController';
     }
   
-    if(!class_exists('PessoaController')) 
+    if(!class_exists($controller)) 
     {
-        $controller = 'ErroController';
+        $controller = 'HomeController';
     }
 
     var_dump($_GET['url']);
@@ -31,7 +31,7 @@ class Rota_web{
     {
         $method = $url[1];
     } else {
-      $controller = 'PessoaController';
+      $controller = 'HomeController';
       $method = 'index';
     }
 
