@@ -20,7 +20,7 @@
             <a href="index.html"><img src="../public/img/ipial.png" alt="Logo"></a>
             <section class="nav-links" id="nav-links">
                 <i class="fa-solid fa-xmark" onclick="hideMenu()"></i>
-                <ul class="alter-link">
+                <ul>
                     <li><a href="index.html">PÁGINA INICIAL</a></li>
                     <li class="dropdown">
                         <a href="sobre-o-ipial.html">SOBRE O IPIAL</a>
@@ -38,6 +38,10 @@
             <i class="fa-solid fa-bars" onclick="showMenu()"></i>
         </nav>
         <!-- x ---------- Fim da barra de navegação ---------- x -->
+
+        <section class="text-box">
+            <h2 style="font-size: 1.9em;">Olá, seja bem-vindo ao página de inscrição do IPIAL</h2>
+        </section>
     </header>
     <!-- x ---------- Fim do cabeçalho ---------- x -->
     
@@ -64,45 +68,46 @@
                         <h2 class="ipial">Dados Pessoais</h2>
                     </section>
 
-                    <section class="section-input-nome">
-                        <div>
-                            <label for="nome" class="position-label">Nome</label></br>
-                            <input class="alter-input" type="name" id="nome" placeholder="Seu nome completo" required>
+                    <section class="section-nomes_inscrito">
+                        <div class="col-inscrito col-label">
+                            <label for="nome">Nome</label></br>
+                            <input class="input-nome" type="text" id="nome" placeholder="Seu nome completo" required>
+                        </div>
+
+                        <div class="col-mae col-label">
+                            <label for="pai">Nome do Pai</label></br>
+                            <input class="input-pais" type="text" id="pai" placeholder="Nome do seu pai">
+                        </div>
+                        <div class="col-pai col-label">
+                            <label for="mae">Nome da mãe</label></br>
+                            <input class="input-pais" type="text" id="mae" placeholder="Nome da sua mãe">
                         </div>
                     </section>
 
-                    <section class="section-input-nome-pais">
-                        <div class="div-input-dados">
-                            <label for="mae">Nome da Mãe</label></br>
-                            <input class="alter-input" type="name" id="mae" placeholder="Nome de sua mãe" required>
+                    <section class="section-data">
+                        <div class="col-data col-label">
+                            <label for="data">Sua data de nascimento</label></br>
+                            <input class="input-data" type="date" id="data" placeholder="Seu nome completo">
                         </div>
-
-                        <div class="div-input-dados">
-                        <label for="pai">Nome do Pai</label></br>
-                        <input class="alter-input" type="name" id="pai" placeholder="Nome de seu pai" required>
-                        </div>
-
-                        <div class="div-input-dados">
-                            <label for="nascimento">Data de nascimento</label></br>
-                            <input class="alter-input" type="date" id="nascimento" required>
-                            </div>
                     </section>
-                    
-                    <section class="section-data_sexo_naturalidade">
-                        <div class="div-data_sexo_naturalidade">
+
+                    <section class="section-sexo_naturalidade">
+                        <div class="col-sexo col-label">
                             <label for="sexo">Sexo</label></br>
-                            <select class="alter-select" name="sexo" id="sexo">
+                            <select class="select-sexo" name="sexo" id="sexo">
                                 <optgroup label="Sexo">
+                                    <option>----</option>
                                     <option value="Masculino">Masculino</option>
                                     <option value="Femenino">Femenino</option>
                                 </optgroup>
                             </select>
                         </div>
 
-                        <div class="div-data_sexo_naturalidade">
-                            <label for="sexo">Naturalidade</label></br>
-                            <select name="natural" id="natural" class="alter-select">
+                        <div class="col-naturalidade col-label">
+                            <label for="natural">Naturalidade</label></br>
+                            <select name="natural" id="natural" class="select-naturalidade">
                                 <optgroup label="Naturalidade">
+                                    <option>----</option>
                                     <option value="Beno">Bengo</option>
                                     <option value="Benguela">Benguela</option>
                                     <option value="Bié">Bié</option>
@@ -124,125 +129,139 @@
                                 </optgroup>
                             </select>
                         </div>
-
                     </section>
 
                     <section class="section-dados">
-                        <div class="div-dados">
-                            <label for="bi">BI</label></br>
-                            <input class="alter-input" type="text" id="bi" placeholder="0042662LA4592GF" required>
+                        <div class="col-bi col-label">
+                            <label for="nome">BI</label></br>
+                            <input class="input-bi" type="text" id="bi" maxlength="15" placeholder="0004755857592727" required>
                         </div>
 
-                        <div class="div-dados">
+                        <div class="col-phone col-label">
                             <label for="tel">Telefone</label></br>
-                            <input class="alter-input" type="text" id="tel" placeholder="+244 912345678" required>
+                            <input class="input-phone" type="number" id="tel" placeholder="+244 912345678" required>
                         </div>
-                       
-                        <div class="div-dados">
-                            <label for="email">Email</label></br>
-                            <input class="alter-input" type="email" id="email" placeholder="otanielfernandes@gamil.com" required>
+                        <div class="col-email col-label">
+                            <label for="mae">Email</label></br>
+                            <input class="input-email" type="email" id="email" placeholder="otanielfern@gmail.com" required>
                         </div>
                     </section>
+                    <h2>DADOS ACADÉMICOS DA ESCOLA DE PROVENIÊNCIA</h2>
+                    <hr>
 
-                        <h2>DADOS ACADÉMICOS DA ESCOLA DE PROVENIÊNCIA</h2>
-                        <hr>
-
-                    <section>
-                        <div>
-                            <label for="escola">Escola de proveniência</label></br>
-                            <input class="alter-input" type="text" id="escola" placeholder="Nome da escola de proveniência" required >
-                        </div>
-
-                        <div>
-                            <label for="sexo">Turno</label></br>
-                            <select class="alter-input" name="turno" id="turno">
-                                <optgroup label="Selecione o turno">
-                                    <option value="manha">Manhã</option>
-                                    <option value="tarde">Tarde</option>
-                                    <option value="noite">Noite</option>
-                                </optgroup>
-                            </select>
-                        </div>
                     
-                    <section class="section-turma_numero_processo">
-                        <div class="div-turma_numero_processo">   
+                    <section style="margin-top: 15px;" class="section-escola">
+                        <div class="col-escola col-label">
+                            <label for="escola">Nome da escola de proveniência</label></br>
+                            <input class="input-data" type="text" id="escola" placeholder="Insira aqui o nome da sua escola" required>
+                        </div>
+                    </section>
+
+                    
+                    <section class="section-escola_proveniencia">
+                        <div class="col-turnox col-label">
+                            <label for="turno">Turno</label></br>
+                            <select class="select-turnox" name="turno" id="turno">
+                                <optgroup label="Turno">
+                                    <option>----</option>
+                                    <option value="Manha">Manhã</option>
+                                    <option value="Noite">Noite</option>
+                                    <option value="Tarde">Tarde</option>
+                                </optgroup>
+                            </select>
+                        </div>
+
+                        <div class="col-turmax col-label">
                             <label for="turma">Turma</label></br>
-                            <input class="alter-input" type="text" id="turma" minlength="1" maxlength="5" placeholder="A" required>
+                            <select class="select-turmax" name="turma" id="turma">
+                                <optgroup label="Turno">
+                                    <option>----</option>
+                                    <option value="a">A</option>
+                                    <option value="b">B</option>
+                                    <option value="c">C</option>
+                                    <option value="d">D</option>
+                                    <option value="e">E</option>
+                                    <option value="f">F</option>
+                                </optgroup>
+                            </select>
                         </div>
-
-                        <div class="div-turma_numero_processo">   
+                        
+                        <div class="col-numero col-label">
                             <label for="numero">Número</label></br>
-                            <input class="alter-input" type="number" id="numero" min="1" max="80" placeholder="0" required>
+                            <input class="input-numero" type="text" id="numero" placeholder="Nº 43" required>
                         </div>
 
-                        <div class="div-turma_numero_processo">   
-                            <label for="processo">Processo nº</label></br>
-                            <input class="alter-input" type="number" id="processo" placeholder="0" required>
+                        <div class="col-processo col-label">
+                            <label for="processo">Processo Nº</label></br>
+                            <input class="input-processo" type="text" id="processo" placeholder="Número de processo" required>
                         </div>
                     </section>
 
-                        <h2 style="margin:10px;">Selecione uma das opções</h2>
-
-                    <section class="row-opcoes">
-                        <div class="col-opcoes">
+                    <section class="section-opcao">
+                        <div class="col-opcao1 col-label">
                             <label for="opcao1">Opção 1</label></br>
-                            <select name="opcao1" id="opcao1" class="alter-opcoes">
-                                <optgroup label="Cursos Disponíveis">
-                                    <option value="desenhador">Desenhador Projetista</option>
-                                    <option value="eletronica">Electrónica e Telecomunicações</option>
-                                    <option value="electricidade">Técnico de Energia e Instalações Eléctricas</option>
-                                    <option value="informatica">Técnico de Informática</option>
+                            <select class="select-opcao" name="opcao1" id="opcao1">
+                                <optgroup label="Opcao1">
+                                    <option>----</option>
+                                    <option value="Desenahdor">Desenhador Projetista (DP)</option>
+                                    <option value="Electronica">Electrónica e Telecomunicações</option>
+                                    <option value="Electricidade">Técnico de Energias e Instalações Eléctricas (TEIE)</option>
+                                    <option value="Informatica">Técnico de Informática (TI)</option>
                                 </optgroup>
                             </select>
                         </div>
 
-                        <div class="col-opcoes">
+                        <div class="col-opcao2 col-label">
                             <label for="opcao2">Opção 2</label></br>
-                            <select name="opcao2" id="opcao2" class="alter-opcoes">
-                                <optgroup label="Cursos Disponíveis">
-                                    <option value="desenhador">Desenhador Projetista</option>
-                                    <option value="eletronica">Electrónica e Telecomunicações</option>
-                                    <option value="electricidade">Técnico de Energia e Instalações Eléctricas</option>
-                                    <option value="informatica">Técnico de Informática</option>
+                            <select class="select-opcao" name="opcao2" id="opcao2">
+                                <optgroup label="Opcao2">
+                                    <option>----</option>
+                                    <option value="Desenahdor">Desenhador Projetista (DP)</option>
+                                    <option value="Electronica">Electrónica e Telecomunicações</option>
+                                    <option value="Electricidade">Técnico de Energias e Instalações Eléctricas (TEIE)</option>
+                                    <option value="Informatica">Técnico de Informática (TI)</option>
                                 </optgroup>
                             </select>
                         </div>
 
-                        <div class="col-opcoes">
+                        <div class="col-opcao3 col-label">
                             <label for="opcao3">Opção 3</label></br>
-                            <select name="opcao3" id="opcao3" class="alter-opcoes">
-                                <optgroup label="Cursos Disponíveis">
-                                    <option value="desenhador">Desenhador Projetista</option>
-                                    <option value="eletronica">Electrónica e Telecomunicações</option>
-                                    <option value="electricidade">Técnico de Energia e Instalações Eléctricas</option>
-                                    <option value="informatica">Técnico de Informática</option>
+                            <select class="select-opcao" name="opcao3" id="opcao3">
+                                <optgroup label="Opcao3">
+                                    <option>----</option>
+                                    <option value="Desenahdor">Desenhador Projetista (DP)</option>
+                                    <option value="Electronica">Electrónica e Telecomunicações</option>
+                                    <option value="Electricidade">Técnico de Energias e Instalações Eléctricas (TEIE)</option>
+                                    <option value="Informatica">Técnico de Informática (TI)</option>
                                 </optgroup>
                             </select>
                         </div>
 
-                        <div class="col-opcoes">
+                        <div class="col-opcao4 col-label">
                             <label for="opcao4">Opção 4</label></br>
-                            <select name="opcao4" id="opcao4" class="alter-opcoes">
-                                <optgroup label="Cursos Disponíveis">
-                                    <option value="desenhador">Desenhador Projetista</option>
-                                    <option value="eletronica">Electrónica e Telecomunicações</option>
-                                    <option value="electricidade">Técnico de Energia e Instalações Eléctricas</option>
-                                    <option value="informatica">Técnico de Informática</option>
+                            <select class="select-opcao" name="opcao4" id="opcao4">
+                                <optgroup label="Opcao4">
+                                    <option>----</option>
+                                    <option value="Desenahdor">Desenhador Projetista (DP)</option>
+                                    <option value="Electronica">Electrónica e Telecomunicações</option>
+                                    <option value="Electricidade">Técnico de Energias e Instalações Eléctricas (TEIE)</option>
+                                    <option value="Informatica">Técnico de Informática (TI)</option>      
                                 </optgroup>
                             </select>
                         </div>
                     </section>
 
-                    <section>
-                        <div class="col-btn">
-                            <button type="submit">Submeter</button>
-                        </div>
-
+                    <section class="section-btn_submeter">
+                            <div class="col-submeter">
+                                <button type="submit">Submeter</button>
+                            </div>
                     </section>
+        
                 </form>
             </article>
-            <h2>Nota Informativa</h2>
-            <p>O aluno poderá candidatar-se aos cursos abaixo indicados com as seguintes condições de admissibilidade:</p>
+        </section>   
+            <h2 style="text-align:center">Nota Informativa</h2>
+            <p style="text-align:center">O aluno poderá candidatar-se aos cursos abaixo indicados com as seguintes condições:</p>
             
             <table class="alter-table">
                 <tr>

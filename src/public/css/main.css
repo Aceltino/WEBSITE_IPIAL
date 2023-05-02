@@ -19,13 +19,15 @@ header{
     position: relative;
 }
 
-/*Alteração do estilo do header*/
-header.alter-header{
+.alter-header{
     background-image: none;
-    background-color: #FFF;
-    min-height: 100px;
-
+    background-image: linear-gradient(rgba(4,9,30,0.7), rgba(4,9,30,0.7)), url(../img/laboratorio.jpeg);
 }
+
+
+/*Alteração do estilo do header de inscrição*/
+
+
 /*Fim de alteração do bg do header*/
 
 /*Estilo do quadro de inscrição*/
@@ -536,92 +538,106 @@ footer h4{
 }
 
 /*Estilo para o formulario de inscrição crição*/
+.inscricao-section{
+    width: 90%;
+    margin:auto;
+}
 .form-inscricao-for-school-grades{
     background-color: #06338A;
     padding: 40px;
-    border-radius: 20px;
+    border-radius: 20px;    
     color:#fff;
-
 }
-
-.inscricao-section{
-    width: 90%;
-    margin: auto;
-    text-align: center;
-    padding-top: 100px;
-    padding-bottom: 40px;
-}
-
-.section-input-nome{
-    display: flex;
-    justify-content: space-between;
-}
-
-.section-input-nome-pais{
-display: flex;
-justify-content: space-between;
-}
-
-
-
-.alter-input{
-    text-align: center;
-    width: 200px;
+.input-nome, .input-pais, .input-data, .input-bi, .input-phone, .input-email, .input-numero, .input-processo{
+    width: 100%;
     height: 35px;
-    border-radius: 10px;
+    border-radius: 7px;
+    text-align: center;
 }
-.div-input-dados{
-    flex-basis: 10%;
-    margin: 15px;
+.select-sexo, .select-naturalidade, .select-turnox, .select-turmax, .select-opcao{
+    width: 100%;
+    height: 35px;
+    border-radius: 7px;
+    text-align: center;
 }
-.section-data_sexo_naturalidade{
+
+.section-nomes_inscrito, .section-data, .section-sexo_naturalidade, .section-dados, .section-escola, .section-escola_proveniencia, .section-opcao, .section-btn_submeter{
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
+    margin-bottom: 15px;
 }
 
-.div-data_sexo_naturalidade{
-    flex-basis: 15%;
+.col-inscrito{
+    width: 35%;
+
+}
+.col-label > label{
+    display: flex;
+    margin-left: 5px;
+    font-size: 1.3em;
+    font-weight: 600;
+    margin-bottom: -12px;
 }
 
-.alter-select{
+.col-pai, .col-mae{
+    width: 30%;
+}
+
+.col-data{
+    width: 60%;
+}
+
+.col-naturalidade{
+    width: 40%
+}
+
+.col-sexo{
+    width: 40%;
+}
+
+.col-bi{
+    width: 35%;
+} .col-email{
+    width: 37%;
+}
+.col-phone{
+    width: 26%;
+}
+
+.col-escola{
+    width:70%;
+}
+
+.col-turnox, .col-turmax{
+    width: 25%;
+}
+
+.col-numero{
+    width: 15%;
+}
+.col-processo{
+    width: 30%px;
+}
+.col-opcao1, .col-opcao2, .col-opcao3, .col-opcao4{
+    width: 20%;
+}
+
+.col-submeter button{
     width: 150px;
     height: 35px;
-    border-radius: 10px;
-}
+    border-radius: 5px;
+    border: 1px solid #FFF;
+    color: #fff;
+    background-color: #06338a;
+    
 
-.section-dados{
-    display: flex;
-    justify-content: space-between;
-    margin: 20px;
 }
-.div-dados{
-    flex-basis: 10%;
+.col-submeter button:hover{
+    border: 2px solid #FFF;
+    background-color: #fff;
+    color: #06338A;
 }
-
-
-.section-turma_numero_processo{
-    display: flex;
-    justify-content: space-between;
-}
-
-.div-turma_numero_processo{
-    flex-basis: 10;
-}
-
-section.row-opcoes{
-    display: flex;
-    justify-content: space-between;
-}
-
-div.col-opcoes{
-    flex-basis: 10%;
-}
-.alter-opcoes{
-    width: 170px;
-    height: 35px;
-    border-radius: 10px;
-}
-
 /*----------------Estilo da tabela de cursos para inscrição----------------*/
 table.alter-table{
     width: 70%;
@@ -633,6 +649,7 @@ table.alter-table{
 
 tr, th, td{
     border: 2px solid #06338A;
+    text-align: center;
 }
 
 .alter-th{
