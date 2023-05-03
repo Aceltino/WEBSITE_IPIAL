@@ -161,3 +161,38 @@ input{
 .btn:hover{
     box-shadow: 0 0 0 2px #f34d00, 0 0 0 2px;
 }
+
+/*********************Estilo do modal******************/
+dialog{
+    border: none;
+    border-radius: .5rem;
+    box-shadow: 0 0 1em rgb(0 0 0 .3);
+    margin: auto;
+    width: 65%;
+    height: 180px;
+}
+
+.btn-modal{
+    width: 70px;
+    border: none;
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: 10px;
+    border-radius: 7px;
+    border: 2px solid #06338a;
+    background-color: #fff;
+    color: #06338a;
+    font-weight: 600;
+}
+
+.btn-modal:hover{
+    background-color: #06338a;
+    color: #fff;
+    transition: 0.5s;
+}
+
+.conteudo-modal{
+    margin-top: 10px;
+    margin-left: 10px;
+    font-size: 1.1rem;
+}
