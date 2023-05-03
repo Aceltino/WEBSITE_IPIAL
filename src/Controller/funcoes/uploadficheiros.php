@@ -31,7 +31,6 @@
 
         public static function files($file): void
         {
-            
             $quantidade = count($file['arquivo']['name']);
             $contador   = 0;
 
