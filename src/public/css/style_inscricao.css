@@ -54,7 +54,7 @@ input{
 .progress-step{
     width: 35px;
     height: 35px;
-    background-color: #2152b5;
+    background-color: #f34d00;
     border-radius: 50%;
     display: flex;
     justify-content: center;
@@ -63,7 +63,7 @@ input{
     color:#fff;
 }
 .progress-step.active{
-    background-color: #f34d00;
+    background-color: #06338a;
 }
 
 .progress-step::before{
