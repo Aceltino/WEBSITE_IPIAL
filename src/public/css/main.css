@@ -10,10 +10,10 @@ body{
     overflow-x: hidden;
 }
 header{
-    min-height: 100vh;
+    min-height: 70vh;
     width: 100vw;
-    background-image: linear-gradient(rgba(4,9,30,0.7), rgba(4,9,30,0.7)), url(../img/entrada-escola2.png);
-    background-position: top center;
+    background-image: linear-gradient(rgba(4,9,30,0.7), rgba(4,9,30,0.7)), url(../img/parte-salas.jpeg);
+    background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
@@ -497,7 +497,7 @@ a.link-news:hover{
 .cta{
     margin: 100px auto;
     width: 80%;
-    background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url(../img/entrada-escola2.png);
+    background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url(../img/parte-salas2.jpeg);
     background-position: center;
     background-size:cover;
     border-radius: 10px;
