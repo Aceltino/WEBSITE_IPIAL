@@ -11,6 +11,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css" integrity="sha384-QYIZto+st3yW+o8+5OHfT6S482Zsvz2WfOzpFSXMF9zqeLcFV0/wlZpMtyFcZALm" crossorigin="anonymous">
+    <link rel="stylesheet" href="../public/bootstrap/css/bootstrap.min.css">
 </head>
 <body>
     <!-- x ---------- Início do cabeçalho ---------- x -->
@@ -49,221 +50,27 @@
 
     <div class="title-inscricao">
         <h2 style="margin:auto; border-bottom: 2px solid  #f34d00;">INSTRUÇÕES</h2>
+    </div> 
+
+    <div class="div-instrucoes">
         <p>1. Preencha cuidadosamente o formulário de inscrição.</p>
         <p>2. Precisas ter terminado o ensino secundário com uma média igual ou superior a 14 valores.</p>
-        <p>3. Adicionar seus documentos em formato pdf (Bilhete de Identidade e Certifiacdo de habiltações literárias).</p>
-        <p>4. Maiores de 18 anos de idade correm o risco de não serem selecionados para o acto de matricula, isso devido a iadade.</p>
-        <p>5. Se o nome de um dos conjugues não constar, pode deixar o campo de preenchimento vázio.</p>
-        <p>6. Caso tenha escrito mal uma informação e já tivera enviado o formulário, por favor, envia uma mensagem para o <a href="contactos.html">nosso email</a>, especificando o assunto em causa.</p>
-        <p>7. Usarás seu email, para verificar seu id de inscrição, caso seja aceite, e aguardar a lista que será lançada com o nome e id dos inscritos admitidos.</p>
+        <p>3. Adicionar seus documentos em formato pdf (Bilhete de Identidade e Certifiacdo dehabiltações literárias).</p>
+        <p>4. Maiores de 18 anos de idade correm o risco de não serem selecionados para o acto dematricula, isso devido a iadade.</p>
+        <p>5. Se o nome de um dos conjugues não constar, pode deixar o campo de preenchimento vázio.<p>
+        <p>6. Caso tenha escrito mal uma informação e já tivera enviado o formulário, por favor,envia uma mensagem para o <a href="contactos.html">nosso email</a>, especificando o assuntoem causa.</p>
+        <p>7. Usarás seu email, para verificar seu id de inscrição, caso seja aceite, e aguardar alista que será lançada com o nome e id dos inscritos admitidos.</p>
         <p>8. Frisar que a inscrição é diferente da matricula, após seu nome constar na lista dos inscritos admitidos, deverá dirigir-se ao IPIAL, fazer o pagamento do RUPE e após ser entregue o comprovativo, somente será matriculado.</p>
     </div>
     <main>
         <!-- x ---------- Início da secção Cursos ---------- x -->
-        <section class="inscricao-section"> 
-            <article class="row-center">
-                <form action="" class="form-inscricao-for-school-grades">
-                    <section class="form-section-one-aluno">
-                        <hr class="orange-bar">
-                        <h2 class="ipial">Dados Pessoais</h2>
-                    </section>
-
-                    <section class="section-nomes_inscrito">
-                        <div class="col-inscrito col-label">
-                            <label for="nome">Nome</label></br>
-                            <input class="input-nome" type="text" id="nome" placeholder="Seu nome completo" required>
-                        </div>
-
-                        <div class="col-mae col-label">
-                            <label for="pai">Nome do Pai</label></br>
-                            <input class="input-pais" type="text" id="pai" placeholder="Nome do seu pai">
-                        </div>
-                        <div class="col-pai col-label">
-                            <label for="mae">Nome da mãe</label></br>
-                            <input class="input-pais" type="text" id="mae" placeholder="Nome da sua mãe">
-                        </div>
-                    </section>
-
-                    <section class="section-data">
-                        <div class="col-data col-label">
-                            <label for="data">Sua data de nascimento</label></br>
-                            <input class="input-data" type="date" id="data" placeholder="Seu nome completo">
-                        </div>
-                    </section>
-
-                    <section class="section-sexo_naturalidade">
-                        <div class="col-sexo col-label">
-                            <label for="sexo">Sexo</label></br>
-                            <select class="select-sexo" name="sexo" id="sexo">
-                                <optgroup label="Sexo">
-                                    <option>----</option>
-                                    <option value="Masculino">Masculino</option>
-                                    <option value="Femenino">Femenino</option>
-                                </optgroup>
-                            </select>
-                        </div>
-
-                        <div class="col-naturalidade col-label">
-                            <label for="natural">Naturalidade</label></br>
-                            <select name="natural" id="natural" class="select-naturalidade">
-                                <optgroup label="Naturalidade">
-                                    <option>----</option>
-                                    <option value="Beno">Bengo</option>
-                                    <option value="Benguela">Benguela</option>
-                                    <option value="Bié">Bié</option>
-                                    <option value="Cabinda">Cabinda</option>
-                                    <option value="Cuando Cubango">Cuando Cubango</option>
-                                    <option value="Cuanza Norte">Cuanza Norte</option>
-                                    <option value="Cuanza Sul">Cuanza Sul</option>
-                                    <option value="Cunene">Cunene</option>
-                                    <option value="Huambo">Huambo</option>
-                                    <option value="Huíla">Huíla</option>
-                                    <option value="Luanda">Luanda</option>
-                                    <option value="Lunda Norte">Lunda Norte</option>
-                                    <option value="Lunda Sul">Lunda Sul</option>
-                                    <option value="Malanje">Malanje</option>
-                                    <option value="Moxico">Moxico</option>
-                                    <option value="Namibe">Namibe</option>
-                                    <option value="Uíge">Uíge</option>
-                                    <option value="Zaire">Zaire</option>
-                                </optgroup>
-                            </select>
-                        </div>
-                    </section>
-
-                    <section class="section-dados">
-                        <div class="col-bi col-label">
-                            <label for="nome">BI</label></br>
-                            <input class="input-bi" type="text" id="bi" maxlength="15" placeholder="0004755857592727" required>
-                        </div>
-
-                        <div class="col-phone col-label">
-                            <label for="tel">Telefone</label></br>
-                            <input class="input-phone" type="number" id="tel" placeholder="+244 912345678" required>
-                        </div>
-                        <div class="col-email col-label">
-                            <label for="mae">Email</label></br>
-                            <input class="input-email" type="email" id="email" placeholder="otanielfern@gmail.com" required>
-                        </div>
-                    </section>
-                    <h2>DADOS ACADÉMICOS DA ESCOLA DE PROVENIÊNCIA</h2>
-                    <hr>
-
-                    
-                    <section style="margin-top: 15px;" class="section-escola">
-                        <div class="col-escola col-label">
-                            <label for="escola">Nome da escola de proveniência</label></br>
-                            <input class="input-data" type="text" id="escola" placeholder="Insira aqui o nome da sua escola" required>
-                        </div>
-                    </section>
-
-                    
-                    <section class="section-escola_proveniencia">
-                        <div class="col-turnox col-label">
-                            <label for="turno">Turno</label></br>
-                            <select class="select-turnox" name="turno" id="turno">
-                                <optgroup label="Turno">
-                                    <option>----</option>
-                                    <option value="Manha">Manhã</option>
-                                    <option value="Noite">Noite</option>
-                                    <option value="Tarde">Tarde</option>
-                                </optgroup>
-                            </select>
-                        </div>
-
-                        <div class="col-turmax col-label">
-                            <label for="turma">Turma</label></br>
-                            <select class="select-turmax" name="turma" id="turma">
-                                <optgroup label="Turno">
-                                    <option>----</option>
-                                    <option value="a">A</option>
-                                    <option value="b">B</option>
-                                    <option value="c">C</option>
-                                    <option value="d">D</option>
-                                    <option value="e">E</option>
-                                    <option value="f">F</option>
-                                </optgroup>
-                            </select>
-                        </div>
-                        
-                        <div class="col-numero col-label">
-                            <label for="numero">Número</label></br>
-                            <input class="input-numero" type="text" id="numero" placeholder="Nº 43" required>
-                        </div>
-
-                        <div class="col-processo col-label">
-                            <label for="processo">Processo Nº</label></br>
-                            <input class="input-processo" type="text" id="processo" placeholder="Número de processo" required>
-                        </div>
-                    </section>
-
-                    <section class="section-opcao">
-                        <div class="col-opcao1 col-label">
-                            <label for="opcao1">Opção 1</label></br>
-                            <select class="select-opcao" name="opcao1" id="opcao1">
-                                <optgroup label="Opcao1">
-                                    <option>----</option>
-                                    <option value="Desenahdor">Desenhador Projetista (DP)</option>
-                                    <option value="Electronica">Electrónica e Telecomunicações</option>
-                                    <option value="Electricidade">Técnico de Energias e Instalações Eléctricas (TEIE)</option>
-                                    <option value="Informatica">Técnico de Informática (TI)</option>
-                                </optgroup>
-                            </select>
-                        </div>
-
-                        <div class="col-opcao2 col-label">
-                            <label for="opcao2">Opção 2</label></br>
-                            <select class="select-opcao" name="opcao2" id="opcao2">
-                                <optgroup label="Opcao2">
-                                    <option>----</option>
-                                    <option value="Desenahdor">Desenhador Projetista (DP)</option>
-                                    <option value="Electronica">Electrónica e Telecomunicações</option>
-                                    <option value="Electricidade">Técnico de Energias e Instalações Eléctricas (TEIE)</option>
-                                    <option value="Informatica">Técnico de Informática (TI)</option>
-                                </optgroup>
-                            </select>
-                        </div>
-
-                        <div class="col-opcao3 col-label">
-                            <label for="opcao3">Opção 3</label></br>
-                            <select class="select-opcao" name="opcao3" id="opcao3">
-                                <optgroup label="Opcao3">
-                                    <option>----</option>
-                                    <option value="Desenahdor">Desenhador Projetista (DP)</option>
-                                    <option value="Electronica">Electrónica e Telecomunicações</option>
-                                    <option value="Electricidade">Técnico de Energias e Instalações Eléctricas (TEIE)</option>
-                                    <option value="Informatica">Técnico de Informática (TI)</option>
-                                </optgroup>
-                            </select>
-                        </div>
-
-                        <div class="col-opcao4 col-label">
-                            <label for="opcao4">Opção 4</label></br>
-                            <select class="select-opcao" name="opcao4" id="opcao4">
-                                <optgroup label="Opcao4">
-                                    <option>----</option>
-                                    <option value="Desenahdor">Desenhador Projetista (DP)</option>
-                                    <option value="Electronica">Electrónica e Telecomunicações</option>
-                                    <option value="Electricidade">Técnico de Energias e Instalações Eléctricas (TEIE)</option>
-                                    <option value="Informatica">Técnico de Informática (TI)</option>      
-                                </optgroup>
-                            </select>
-                        </div>
-                    </section>
-
-                    <section class="section-btn_submeter">
-                            <div class="col-submeter">
-                                <button type="submit">Submeter</button>
-                            </div>
-                    </section>
-        
-                </form>
-            </article>
-        </section>   
-            <h2 style="text-align:center">Nota Informativa</h2>
-            <p style="text-align:center">O aluno poderá candidatar-se aos cursos abaixo indicados com as seguintes condições:</p>
+          
+            <div class="nota-info">
+                <h2>Nota Informativa</h2>
+                <p>O aluno poderá candidatar-se aos cursos abaixo indicados com as seguintes condições:</p>
+            </div>
             
-            <table class="alter-table">
+            <table class="alter-table table-bordered">
                 <tr>
                     <th class="alter-th">Área de Formação</th>
                     <th class="alter-th">Curso</th>
@@ -293,8 +100,13 @@
                 </tr>
             </table>
         </section>
-    
+
+        <div>
+            <a class="btn-inscricao" href="inscricao2.html" target="_blank">Iniciar Inscrição</a>
+        </div>
     </main>
+
+   
     <!-- x ---------- Fim do conteúdo principal ---------- x -->
     
     <!-- x ---------- Início do Footer ---------- x -->
@@ -309,5 +121,6 @@
     </footer>
     <!-- x ---------- Fim do Footer ---------- x -->
     <script src="../public/js/app.js"></script>
+    <script src="../public/bootstrap/js/bootstrap.min.js"></script>
 </body>
 </html>

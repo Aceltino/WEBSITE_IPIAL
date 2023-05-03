@@ -537,124 +537,69 @@ footer h4{
     color:#042a76;
 }
 
-/*Estilo para o formulario de inscrição crição*/
-.inscricao-section{
-    width: 90%;
-    margin:auto;
-}
-.form-inscricao-for-school-grades{
-    background-color: #06338A;
-    padding: 40px;
-    border-radius: 20px;    
-    color:#fff;
-}
-.input-nome, .input-pais, .input-data, .input-bi, .input-phone, .input-email, .input-numero, .input-processo{
-    width: 100%;
-    height: 35px;
-    border-radius: 7px;
-    text-align: center;
-}
-.select-sexo, .select-naturalidade, .select-turnox, .select-turmax, .select-opcao{
-    width: 100%;
-    height: 35px;
-    border-radius: 7px;
-    text-align: center;
-}
-
-.section-nomes_inscrito, .section-data, .section-sexo_naturalidade, .section-dados, .section-escola, .section-escola_proveniencia, .section-opcao, .section-btn_submeter{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    margin-bottom: 15px;
-}
-
-.col-inscrito{
-    width: 35%;
-
-}
-.col-label > label{
-    display: flex;
-    margin-left: 5px;
-    font-size: 1.3em;
-    font-weight: 600;
-    margin-bottom: -12px;
-}
-
-.col-pai, .col-mae{
-    width: 30%;
-}
-
-.col-data{
-    width: 60%;
-}
-
-.col-naturalidade{
-    width: 40%
-}
-
-.col-sexo{
-    width: 40%;
-}
-
-.col-bi{
-    width: 35%;
-} .col-email{
-    width: 37%;
-}
-.col-phone{
-    width: 26%;
-}
-
-.col-escola{
-    width:70%;
-}
-
-.col-turnox, .col-turmax{
-    width: 25%;
-}
-
-.col-numero{
-    width: 15%;
-}
-.col-processo{
-    width: 30%px;
-}
-.col-opcao1, .col-opcao2, .col-opcao3, .col-opcao4{
-    width: 20%;
-}
-
-.col-submeter button{
-    width: 150px;
-    height: 35px;
-    border-radius: 5px;
-    border: 1px solid #FFF;
-    color: #fff;
-    background-color: #06338a;
-    
-
-}
-.col-submeter button:hover{
-    border: 2px solid #FFF;
-    background-color: #fff;
-    color: #06338A;
-}
 /*----------------Estilo da tabela de cursos para inscrição----------------*/
+.div-instrucoes{
+    width: 70%;
+    font-weight: 400;
+    font-size: 1.7rem;
+    padding-top: 10px;
+    margin: auto;
+}
+
+div.nota-info{
+    width: 70%;
+    text-align: center;
+    margin: 20px auto;
+    font-size: 1.5rem;
+}
+
 table.alter-table{
     width: 70%;
     height: 180px;
     border: 2px solid #06338A;
-    margin:auto;
+    margin: auto;
     border-collapse: collapse;
 }
 
 tr, th, td{
     border: 2px solid #06338A;
     text-align: center;
+    font-size: 1.7rem;
 }
 
 .alter-th{
     font-weight: bolder;
-    background-color: #dfdfdf;
+    background-color: #f34d00;
+    color: #fff;
+}
+ 
+/****************Estilo do botão de inscrição******************/
+.btn-inscricao{
+    width: 180px;
+    height: 40px;
+    display: block;
+    margin: 20px auto;
+    padding: .45rem;
+    font-size: 1.7rem;
+    font-weight: 600;
+    text-decoration: none;
+    text-align: center;
+    background-color: #fff;
+    border: 3px solid #06338A;
+    color: #06338A;
+    border-radius: 25px;
+}
+
+.btn-inscricao:hover{
+    transition: all 250ms ease-in-out;
+    box-shadow: 0 0 0 2px #f34d00, 0 0 0 2px;
+    background-color: #06338A;
+    color: #FFF;
+
+}
+
+.btn-inscricao:active{
+    transform: scale(.100);
 }
 
 
