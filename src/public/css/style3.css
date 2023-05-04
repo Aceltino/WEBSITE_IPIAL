@@ -17,8 +17,9 @@ body{
 
 /*Estilo do menu lateral*/
 .lateral-menu{
+    height: 100vh;
     position: relative;
-    right: 40%;
+    right: 0%;
     width: 70px;
     height: 500px;
     background-color: #f34d00;
