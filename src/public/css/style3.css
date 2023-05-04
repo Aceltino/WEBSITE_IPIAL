@@ -121,3 +121,24 @@ div.area-publicacao{
     min-height: 100vh;
     background-color: #06338a;
 }
+
+div.area-procura{
+    width: 70%;
+    height: 45px;
+    margin: 15px auto;
+}
+.input-search{
+    width: 80%;
+    height: 40px;
+    border-radius: 10px;
+    text-align: center;
+    font-size: 1.3rem;
+}
+
+.publicacoes{
+    width: 90%;
+    height: 80vh;
+    margin: auto;
+    background-color: #fff;
+}
+
