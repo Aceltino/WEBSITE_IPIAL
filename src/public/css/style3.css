@@ -93,7 +93,7 @@ body{
     position: absolute;
     top: -30px;
     right: 0;
-    width: 30px;
+    width: 20px;
     height: 30px;
     background-color: #f34d00;
     border-radius: 50%;
@@ -106,7 +106,7 @@ body{
     position: absolute;
     bottom: -30px;
     right: 0;
-    width: 30px;
+    width: 20px;
     height: 30px;
     background-color: #f34d00;
     border-radius: 50%;
