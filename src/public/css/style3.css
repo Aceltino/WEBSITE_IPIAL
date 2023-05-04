@@ -30,7 +30,7 @@ body{
 }
 
 .lateral-menu:hover{
-    width: 300px;
+    width: 250px;
 }
 .lateral-menu ul{
     position: absolute;
@@ -76,7 +76,7 @@ body{
 .lateral-menu ul li a .titulo{
     position: relative;
     display: block;
-    padding-left: 10px;
+    padding-left: -5px;
     height: 60px;
     line-height: 65px;
     white-space: nowrap;
@@ -112,4 +112,12 @@ body{
     border-radius: 50%;
     box-shadow: 15px -15px 0 #06338a;
 
+}
+ 
+
+/*Área de Publicação*/
+div.area-publicacao{
+    width: 70%;
+    min-height: 100vh;
+    background-color: #06338a;
 }
