@@ -3,12 +3,16 @@ const nextBtns = document.querySelectorAll(('.btn-next'))
 const progress = document.getElementById('progress')
 const formSteps = document.querySelectorAll('.form-step')
 const progressSteps = document.querySelectorAll('.progress-step');
+const incrementProgress = 30;
+var incrementProgressTotal;
 
 let formStepsNum = 0;
 
 nextBtns.forEach(btn =>{
     btn.addEventListener('click', ()=>{
         formStepsNum++;
+        incrementProgressTotal += incrementProgress;
+        progress.style.width = incrementProgressTotal+"%";
         updateFormSteps();
         updateProgressbar();
     })
@@ -17,6 +21,8 @@ nextBtns.forEach(btn =>{
 backBtns.forEach(btn =>{
     btn.addEventListener('click', ()=>{
         formStepsNum--;
+        incrementProgressTotal -= incrementProgress;
+        progress.style.width = incrementProgressTotal+"%";
         updateFormSteps();
         updateProgressbar();
     })
