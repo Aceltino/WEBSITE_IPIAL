@@ -118,7 +118,7 @@ input{
     font-size: 1.05rem;
 }
 .input-group{
-    margin: 1.4rem 0;
+    margin: 1.3rem 0;
 }
 .place-center{
     text-align: center;
@@ -129,7 +129,7 @@ input{
     border-radius: 25px;
     text-align: center;
     border: 1px solid #ccc;
-}
+} 
 
 /*-------Botões do formulário----------*/
 .wth-50{
