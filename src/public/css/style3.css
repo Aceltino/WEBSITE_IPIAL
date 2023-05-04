@@ -93,8 +93,8 @@ body{
     position: absolute;
     top: -30px;
     right: 0;
-    width: 10px;
-    height: 10px;
+    width: 5px;
+    height: 15px;
     background-color: #f34d00;
     border-radius: 50%;
     box-shadow: 15px 15px 0 #06338a;
@@ -106,8 +106,8 @@ body{
     position: absolute;
     bottom: -30px;
     right: 0;
-    width: 10px;
-    height: 10px;
+    width: 5px;
+    height: 15px;
     background-color: #f34d00;
     border-radius: 50%;
     box-shadow: 15px -15px 0 #06338a;
