@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="pt-pt">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página de Inscrição</title>
+    <link rel="stylesheet" href="../public/css/style_inscricao.css">
+    
+</head>
+<body>
+    <form action="#" class="form">
+        <h2 class="text-center">Formulário do Inscrição</h2>
+
+        <!--*********************Progressbar*****************-->
+        <div class="progressbar">
+            <div class="progress" id="progress">
+
+            </div>
+            <div class="progress-step active" data-title="Dados"></div>
+            <div class="progress-step" data-title="Contato"></div>
+            <div class="progress-step" data-title="Escola"></div>
+            <div class="progress-step" data-title="Opcao"></div>
+        </div>
+       <!--**********************Steps***********************-->
+        <div class="form-step active">
+            <div class="input-group">
+                <label for="nome">Seu nome</label>
+                <input type="text" id="nome" name="nome" placeholder="Seu nome completo" class="place-center" required>
+            </div>
+    
+            <div class="input-group">
+                <label for="pai">Nome do pai</label>
+                <input type="text" id="pai" name="pai" placeholder="Nome do seu pai" class="place-center" required>
+            </div>
+    
+            <div class="input-group">
+                <label for="mae">Nome da mãe</label>
+                <input type="text" id="mae" name="mae" placeholder="Nome do sua mae" class="place-center" required>
+            </div>
+            
+            <div class="input-group">
+                <label for="data">Data de nascimento</label>
+                <input type="data" id="data" name="data" placeholder="dia/mês/ano" class="place-center" required>
+            </div>
+
+            <div>
+                <a href="#" class="btn btn-next wth-50 ml-auto">Avançar</a>
+            </div>
+        </div>
+
+            <div class="form-step">
+                <div class="input-group">
+                    <label for="sexo">Sexo</label>
+                    <select class="select-group" name="sexo" id="sexo">
+                        <optgroup label="Sexo">
+                            <option>----</option>
+                            <option value="Masculino">Masculino</option>
+                            <option value="Femenino">Femenino</option>
+                        </optgroup>
+                    </select>
+                </div>
+                <div class="input-group">
+                    <label for="bi">Nº do BI</label>
+                    <input type="text" id="bi" name="bi" placeholder="0040877823LA145" class="place-center" required>
+                </div>
+                <div class="input-group">
+                    <label for="tel">Telefone</label>
+                    <input type="tel" id="tel" name="tel" placeholder="+244 912345678" class="place-center" required>
+                </div>
+                <div class="input-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" placeholder="otanielfernandes@gmail.com" class="place-center" required>
+                </div>
+                <div class="btns-group">
+                    <a href="#" class="btn btn-back">Retroceder</a>
+                    <a href="#" class="btn btn-next">Avançar</a>
+                </div>
+            </div>
+
+            <div class="form-step">
+
+                <div class="input-group">
+                    <label for="escola">Nome da Escola de proveniência</label>
+                    <input type="text" id="escola" name="escola" placeholder="Insira o nome da tua ex escola" class="place-center" required>
+                </div>
+                <div class="input-group">
+                    <label for="turno">Turno</label>
+                    <select class="select-group" name="turno" id="turno">
+                        <optgroup label="Turno">
+                            <option>----</option>
+                            <option value="Manha">Manhã</option>
+                            <option value="Noite">Noite</option>
+                            <option value="Tarde">Tarde</option>
+                        </optgroup>
+                    </select>
+                </div>
+                <div class="input-group">
+                    <label for="turma">Turma</label>
+                    <select class="select-group" name="turma" id="turma">
+                        <optgroup label="Turma">
+                            <option>----</option>
+                            <option value="A">A</option>
+                            <option value="B">B</option>
+                            <option value="C">C</option>
+                            <option value="C">D</option>
+                            <option value="C">E</option>
+                            <option value="C">F</option>
+                        </optgroup>
+                    </select>
+                </div>
+                <div class="input-group">
+                    <label for="processo">Processo Nº</label>
+                    <input type="number" id="email" name="processo" placeholder="Número de processo" class="place-center" required>
+                </div>
+                <div class="btns-group">
+                    <a href="#" class="btn btn-back">Retroceder</a>
+                    <a href="#" class="btn btn-next">Avançar</a>
+                </div>
+            </div>
+
+            <div class="form-step">
+                <div class="input-group">
+                    <label for="opcao1">Opção 1</label></br>
+                    <select class="select-group" name="opcao1" id="opcao1">
+                        <optgroup label="Opcao1">
+                            <option>----</option>
+                            <option value="Desenahdor">Desenhador Projetista (DP)</option>
+                            <option value="Electronica">Electrónica e Telecomunicações</option>
+                            <option value="Electricidade">Técnico de Energias e Instalações Eléctricas (TEIE)</option>
+                            <option value="Informatica">Técnico de Informática (TI)</option>
+                        </optgroup>
+                    </select>
+                </div>
+                <div class="input-group">
+                    <label for="opcao1">Opção 2</label></br>
+                    <select class="select-group" name="opcao2" id="opcao2">
+                        <optgroup label="Opcao2">
+                            <option>----</option>
+                            <option value="Desenahdor">Desenhador Projetista (DP)</option>
+                            <option value="Electronica">Electrónica e Telecomunicações</option>
+                            <option value="Electricidade">Técnico de Energias e Instalações Eléctricas (TEIE)</option>
+                            <option value="Informatica">Técnico de Informática (TI)</option>
+                        </optgroup>
+                    </select>
+                </div>
+                <div class="input-group">
+                    <label for="opcao3">Opção 3</label></br>
+                    <select class="select-group" name="opcao3" id="opcao3">
+                        <optgroup label="Opcao3">
+                            <option>----</option>
+                            <option value="Desenahdor">Desenhador Projetista (DP)</option>
+                            <option value="Electronica">Electrónica e Telecomunicações</option>
+                            <option value="Electricidade">Técnico de Energias e Instalações Eléctricas (TEIE)</option>
+                            <option value="Informatica">Técnico de Informática (TI)</option>
+                        </optgroup>
+                    </select>
+                </div>
+                <div class="input-group">
+                    <label for="opcao4">Opção 4</label></br>
+                    <select class="select-group" name="opcao4" id="opcao4">
+                        <optgroup label="Opcao4">
+                            <option>----</option>
+                            <option value="Desenahdor">Desenhador Projetista (DP)</option>
+                            <option value="Electronica">Electrónica e Telecomunicações</option>
+                            <option value="Electricidade">Técnico de Energias e Instalações Eléctricas (TEIE)</option>
+                            <option value="Informatica">Técnico de Informática (TI)</option>
+                        </optgroup>
+                    </select>
+                </div>
+                <div class="btns-group">
+                    <a href="#" class="btn btn-back">Retroceder</a>
+                    <button class="btn">Submeter</button> 
+                </div>
+            </div>
+        </div>
+    </form>
+    
+    <dialog>
+        <h2 class="conteudo-modal">Inscrição Concluída</h2>
+        <hr>
+        <p class="conteudo-modal">Os meus parábens, você acabou de concluir a sua inscrição, seja bem-vindo ao IPIAL. Verifque seu email, pois enviamos-lhe o seu código de inscrição</p>
+
+        <div>
+            <a href="index.html" class="btn btn-modal">OK</a>
+        </div>
+    </dialog>
+    
+    <script src="../public/js/app2.js"></script>
+
+    <!--Script do Modal-->
+    <script src="../public/js/app3.js"></script>
+    
+</body>
+</html>

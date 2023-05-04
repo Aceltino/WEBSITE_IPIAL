@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;500;700&family=Sriracha&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;;
+}
+/**************Estilo do body do Admin******************/
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #fff;
+}
+
+/*Estilo do menu lateral*/
+.lateral-menu{
+    position: relative;
+    right: 40%;
+    width: 70px;
+    height: 500px;
+    background-color: #f34d00;
+    box-shadow: 10px 0 0 #06338a;
+    border-left: 10px solid #f34d00;
+    overflow-x: hidden;
+    transition: 0.5s;
+}
+
+.lateral-menu:hover{
+    width: 300px;
+}
+.lateral-menu ul{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding-left: 5px;
+    padding-top: 40px;
+
+}
+.lateral-menu ul li{
+    position: relative;
+    list-style: none;
+    width: 100%;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+
+.lateral-menu ul li a{
+    position: relative;
+    width: 100%;
+    display: flex;
+    text-decoration: none;
+    color: #fff;
+}
+
+.lateral-menu ul li a .icons{
+    position: relative;
+    display: block;
+    min-width: 60px;
+    height: 60px;
+    text-align: center;
+    line-height: 70px;
+}
+
+.lateral-menu ul li a .icons fa-solid, fa-regular{
+    position: relative;
+    font-size: 1.5rem;
+    z-index: 1;
+    
+}
+
+.lateral-menu ul li a .titulo{
+    position: relative;
+    display: block;
+    padding-left: 10px;
+    height: 60px;
+    line-height: 65px;
+    white-space: nowrap;
+}
+
+
+.lateral-menu ul li.active{
+    background-color: #06338a;
+
+}
+
+.lateral-menu ul li.active a::before{
+    content: '';
+    position: absolute;
+    top: -30px;
+    right: 0;
+    width: 30px;
+    height: 30px;
+    background-color: #f34d00;
+    border-radius: 50%;
+    box-shadow: 15px 15px 0 #06338a;
+
+}
+
+.lateral-menu ul li.active a::after{
+    content: '';
+    position: absolute;
+    bottom: -30px;
+    right: 0;
+    width: 30px;
+    height: 30px;
+    background-color: #f34d00;
+    border-radius: 50%;
+    box-shadow: 15px -15px 0 #06338a;
+
+}
