@@ -142,3 +142,20 @@ div.area-procura{
     background-color: #fff;
 }
 
+.div-btn-publicar{
+    width: 130px;
+    height: 35px;
+    margin: auto;
+    margin-top: 10px;
+    background-color: #f34d00;
+    border-radius: 25px;
+    text-align: center;
+}
+
+.div-btn-publicar .btn-publicar{
+    text-decoration: none;
+    text-align: center;
+    color: #fff;
+    font-size: 1.2rem;
+    font-weight: 600;
+}
