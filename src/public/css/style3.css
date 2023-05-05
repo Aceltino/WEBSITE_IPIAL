@@ -122,6 +122,73 @@ div.area-publicacao{
     background-color: #06338a;
 }
 
+.lista-de-publicacoes{
+    width: 100%;
+    padding: 9px 5px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.publicacao{
+    width: 24%;
+    height: inherit;
+    border: 2px solid #06338a;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 8px;
+}
+
+.p-titulo, .p-data{
+    color: black;
+    font-size: 1.3rem;
+    text-align: center;
+}
+
+.a-abrir-publicacao, .a-editar-publicacao{
+    text-decoration: none;
+}
+
+.a-abrir-publicacao, .a-editar-publicacao, .btn-eliminar-publicacao{
+    font-size: 1.5rem;
+    color: white;
+    text-align: center;
+    cursor: pointer;
+}
+
+.a-editar-publicacao, .btn-eliminar-publicacao{
+    width: 50%;
+}
+
+.a-abrir-publicacao{
+    width: 100%;
+    background-color: #06338a;
+}
+
+.a-editar-publicacao{
+    background-color: rgb(30, 190, 30);
+    transition: 0.3s;
+}
+
+.a-editar-publicacao:hover{
+    background-color: white;
+    color: rgb(30, 190, 30);
+}
+
+.btn-eliminar-publicacao{
+    background-color: red;
+    transition: 0.3s;
+}
+
+.btn-eliminar-publicacao:hover{
+    background-color: white;
+    color: red;
+}
+
+.div-botoes-2{
+    display: flex;
+}
+
 div.area-procura{
     width: 70%;
     height: 45px;
