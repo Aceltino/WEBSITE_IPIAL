@@ -210,19 +210,29 @@ div.area-procura{
 }
 
 .div-btn-publicar{
-    width: 130px;
+    display: flex;
+    justify-content: center;
+    width: 135px;
     height: 35px;
     margin: auto;
     margin-top: 10px;
-    background-color: #f34d00;
     border-radius: 25px;
     text-align: center;
+    border: 2px solid white;
 }
 
 .div-btn-publicar .btn-publicar{
+    justify-content: center;
+    align-items: center;
     text-decoration: none;
     text-align: center;
     color: #fff;
+    padding: 8px;
     font-size: 1.2rem;
     font-weight: 600;
+}
+
+.div-btn-publicar:hover{
+    border: 3px solid #f34d00;
+    transition: 0.3s;
 }
