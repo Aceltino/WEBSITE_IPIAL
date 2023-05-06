@@ -877,7 +877,7 @@ input {
 	top: 3.5rem;
 	left: 50%;
 	transform: translateX(-50%);
-	font-size: 1.5rem;
+	font-size: 2.3rem;
 }
 .form {
 	padding: 2.5rem;
@@ -952,7 +952,7 @@ input {
 		height: 30rem;
 	}
 	.form_title {
-		left: 10rem;
+		left: 5rem;
 		transform: none;
 	}
 	.form {
