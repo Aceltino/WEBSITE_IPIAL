@@ -278,7 +278,7 @@ div.area-procura{
 
 .div-table-admitidos{
     border-collapse: collapse;
-    width: 90%;
+    width: 95%;
     margin: 20px auto;
     padding: 10px;
     text-align: center;
@@ -289,12 +289,9 @@ div.area-procura{
     color:#fff;
     padding: 10px;
 }
-.linha-table-cabeçalho{
-    padding: 10px;
-}
 
 .corpo-table-admitidos, td{
-    padding: 7px;
+    padding: 7px 25px;
     color: rgb(201, 201, 201);
     border: 2px solid white;
 }
