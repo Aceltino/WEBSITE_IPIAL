@@ -240,7 +240,7 @@ div.area-procura{
 
 
 /*Estilo da tabela das pautas*/
-.div-table{
+.div-table-pauta{
     width: 70%;
     margin: 20px auto;
 }
@@ -269,3 +269,33 @@ div.area-procura{
 .content-table td{
     color: #9d9d9d;
 }
+/****************Estilo da area de admitidos*************************/
+.div-area-admitidos{
+    width: 70%;
+    min-height: 100vh;
+    background-color: #06338a;
+}
+
+.div-table-admitidos{
+    border-collapse: collapse;
+    width: 90%;
+    margin: 20px auto;
+    padding: 10px;
+    text-align: center;
+}
+
+.cabecalho-table-admitidos{
+    background-color: #f34d00;
+    color:#fff;
+    padding: 10px;
+}
+.linha-table-cabeçalho{
+    padding: 10px;
+}
+
+.corpo-table-admitidos, td{
+    padding: 7px;
+    color: rgb(201, 201, 201);
+    border: 2px solid white;
+}
+
