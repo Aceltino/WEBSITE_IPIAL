@@ -296,3 +296,9 @@ div.area-procura{
     border: 2px solid white;
 }
 
+/*Estilo do input da pauta*/
+.input-pauta{
+    width: 80%;
+    border:2px solid black;
+    border-radius: 25px;
+}
