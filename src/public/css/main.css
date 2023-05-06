@@ -10,9 +10,9 @@ body{
     overflow-x: hidden;
 }
 header{
-    min-height: 70vh;
+    min-height: 100vh;
     width: 100vw;
-    background-image: linear-gradient(rgba(4,9,30,0.7), rgba(4,9,30,0.7)), url(../img/parte-salas.jpeg);
+    background-image: linear-gradient(rgb(4 9 30 / 43%), rgb(4 9 30 / 27%)), url(../img/parte-salas.jpeg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -90,7 +90,7 @@ width: 100%;
 }
 
 .text-box{
-    width: 99%;
+    width: 90%;
     color: white;
     position: absolute;
     top: 50%;
@@ -122,16 +122,25 @@ width: 100%;
     font-size: 62px;
 }
 
+.h1-index{
+    font-size: 2.5rem;
+}
+
 .text-box p{
     margin: 10px 0 10px;
     font-size: 18px;
+}
+
+.all-p{
+    font-size: 1.5rem;
 }
 
 .hero-btn{
     display: inline-block;
     text-decoration: none;
     color: white;
-    border: 1px solid white;
+    border: 2px solid white;
+    border-radius: 25px;
     padding: 12px 34px;
     font-size: 13px;
     position: relative;
@@ -140,14 +149,14 @@ width: 100%;
 }
 
 .course {
-    width: 80%;
+    width: 95%;
     margin: auto;
     text-align: center;
     padding-top: 100px;
 }
 
 .hero-btn:hover{
-    border: 1px solid #06338A;
+    border: 2px solid #06338A;
     background: #06338A;;
     transition: 1.5s;
 }
@@ -191,10 +200,11 @@ nav .fa-solid{
     margin-top: 5%;
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 .course-col {
-    flex-basis: 24%;
+    flex-basis: 47%;
     background: #06338a;
     height:330px;
     border-radius: 10px;
@@ -291,6 +301,12 @@ img.img-quadros:hover{
 
 /*Fim do estilos dos icones dos cursos lecionados*/
 
+
+/*Estilos do h3 das área de extensões*/
+.h3-extensoes, .h3-sms-dg{
+    font-size: 1.6rem;
+}
+
 /*------------------Estilo dos links dos Anuncios/Notícias----------------------*/
 a.link-news{
     text-decoration:none;
@@ -365,7 +381,7 @@ a.link-news:hover{
 
 /* x ----- Campus ----- x */
 .campus{
-    width: 80%;
+    width: 95%;
     margin: auto;
     text-align: center;
     padding-top: 50px;
@@ -420,7 +436,7 @@ a.link-news:hover{
 
 /* x ----- Facilities ----- x */
 .facilities{
-    width: 80%;
+    width: 95%;
     margin: auto;
     text-align: center;
     padding-top: 100px;
@@ -457,7 +473,7 @@ a.link-news:hover{
 }
 
 .testimonal-col{
-    flex-basis: 45%;
+    flex-basis: 75%;
     border-radius: 10px;
     margin-bottom: 10px;
     margin:auto;
@@ -490,19 +506,19 @@ a.link-news:hover{
 }
 /*---------Estilos das notícias------------*/
 
-
 /*---------Fim de estilos de noticias*/
 /* x ----- Call to action ----- x */
 .cta{
     margin: 100px auto;
     width: 80%;
-    background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url(../img/parte-salas2.jpeg);
+    background-image: linear-gradient(rgb(0 0 0 / 48%), rgb(0 0 0 / 28%)), url(../img/parte-salas2.jpeg);
     background-position: center;
     background-size:cover;
     border-radius: 10px;
     text-align: center;
     padding: 100px 0;
 }
+
 
 .cta h1{
     color: white;
@@ -523,16 +539,22 @@ footer h4{
     font-weight: 600;
 }
 
-.icons .fa-brands{
+.icons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.icons .fa-brands, .fa-solid-login{
     color:#364a72b2;
     margin: 0 13px;
     cursor: pointer;
     padding: 18px 0;
-    font-size: 28px;
+    font-size: 28px !important;
     transition: 0.3s;
 }
 
-.icons .fa-brands:hover{
+.icons .fa-brands:hover, .fa-solid-login:hover{
     color:#042a76;
 }
 
@@ -616,6 +638,7 @@ tr, th, td{
 
 .sub-header h1{
     margin-top: 100px;
+    font-size: 4rem;
 }
 
 /* x ----- About Us ----- x */
@@ -663,6 +686,7 @@ tr, th, td{
 }
 
 .blog-left{
+    font-size: 1.7rem;
     flex-basis: 65%;
 }
 
@@ -676,20 +700,30 @@ tr, th, td{
     margin: 30px 0;
 }
 
-.blog-left p{
-    color: #999;
+.blog-left h2 .blog-left p{
+    color: #000;
     padding: 0;
 }
 
+.blog-left small{
+    font-size: 1.5rem;
+    color: #999;
+}
+
 .blog-right{
+    margin-top: 2%;
     flex-basis: 32%;
+}
+
+.blog-right a{
+    font-size: 1.5rem;
 }
 
 .blog-right h3{
     background:#f34d00;
     color: white;
     padding: 7px 0;
-    font-size: 16px;
+    font-size: 1.9rem;
     margin-bottom: 20px;
 }
 
@@ -777,18 +811,26 @@ tr, th, td{
     border: 1px solid #ccc;
 }
 
+textarea{
+    resize: none;
+}
 
+.last-p{
+    margin-top: 15px;
+    font-size: 1.7rem;
+}
 /*--------------------------Estilo da tela de Login------------------------*/
 *::after {
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
 }
+
 html {
 	font-size: 62.5%;
 }
-html,
-body {
+
+html,body {
 	height: 100%;
 }
 body.alter-login {
@@ -961,7 +1003,7 @@ input {
     }
 
     .text-box h1{
-        font-size: 20px;
+        font-size: 1.7rem;
     }
 
     .text-box p{

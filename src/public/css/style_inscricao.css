@@ -132,8 +132,8 @@ input{
 } 
 
 /*-------Botões do formulário----------*/
-.wth-50{
-    width: 50%;
+.wth-100{
+    width: 100%;
 }
 .ml-auto{
     margin-left: auto;
@@ -144,6 +144,10 @@ input{
     gap: 1.5rem;
 
 }
+.btn-v-home{
+    width: 100%;
+}
+
 .btn{
     padding: 0.75rem;
     display:block;
