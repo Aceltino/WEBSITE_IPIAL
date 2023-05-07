@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;500;700&family=Sriracha&display=swap');
+
 *{
     margin: 0;
     padding: 0;
@@ -213,6 +215,12 @@ nav .fa-solid{
     transition: 0.5s;
 }
 
+/*******Estilo do título do header da inscrição********/
+.header-inscricao{
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
 /*Estilo da linha horizontal do perfil do DG*/
 hr.linha-horizontal{
     margin:auto;
@@ -349,7 +357,7 @@ a.link-news:hover{
     width: 29%;
 }
 
-.col-turma, .col-classe, .col-turno, .col-trimestre, .col-btn{
+.col-turma, .col-classe, .col-turno, .col-btn{
     width: 13%;
 }
 
@@ -623,13 +631,12 @@ tr, th, td{
     transform: scale(.100);
 }
 
-
 /* x ----------- Página About us ----------- x */
 /* x ----- Sub-header ----- x */
 .sub-header{
     height: 80vh;
     width: 100%;
-    background-image: linear-gradient(rgba(4,9,30,0.7), rgba(4,9,30,0.7)), url(../img/parte-salas2.jpeg);
+    background-image: linear-gradient(rgb(4 9 30 / 1%), rgb(4 9 30 / 24%)), url(../img/parte-salas2.jpeg);
     background-position: center;
     background-size: cover;
     text-align: center;
@@ -652,6 +659,7 @@ tr, th, td{
 .about-us .about-col{
     flex-basis: 90%;
     padding: 30px 2px;
+    font-size: 1.7rem;
 }
 
 .about-us img{
@@ -711,8 +719,7 @@ tr, th, td{
 }
 
 .blog-right{
-    margin-top: 2%;
-    flex-basis: 32%;
+    flex-basis: 30%;
 }
 
 .blog-right a{
@@ -720,11 +727,16 @@ tr, th, td{
 }
 
 .blog-right h3{
-    background:#f34d00;
+    background:#06338A;
     color: white;
-    padding: 7px 0;
-    font-size: 1.9rem;
-    margin-bottom: 20px;
+    text-align:center; 
+    padding: 5px 0;
+    font-size: 1.7rem;
+    margin-bottom: 55px;
+}
+/**********Estilo da tabela de infraestrutura do IPIAL************/
+.section-infra-ipial{
+    font-size: 1.7rem;
 }
 
 .blog-right section{
