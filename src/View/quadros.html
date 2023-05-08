@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Website IPIAL</title>
     <link rel="stylesheet" href="../public/css/main.css">
+    <link rel="stylesheet" href="../public/css/quadros.css">
     <link rel="stylesheet" href="../public/webfont/fontawesome-free-6.3.0-web/css/all.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -45,85 +46,107 @@
     
     <!-- x ---------- Início do conteúdo principal ---------- x -->
     <main>
-        <!-- x ---------- Início da secção do Blog ---------- x -->
-        <div>
-        <h1  class="title-quadros">Perfil do Diretor Geral</h1>
-        <hr class="linha-horizontal">            
-        <div class="director-geral">
-            <img src="../public/img/director.jpg" alt="Imagem do Director Geral" class="img-quadros">
-            <h2 class="title-quadros">Vitorino André Caculo
-            </br>
-            <small>Diretor Geral<small>
-            </h2>
-            <h3 class="title-quadros">Doutorado em Electromagnética</h3>
-        </div>
+        <!-- x ---------- Início da secção dos Quadros ---------- x -->
+        <h2 class="title-direcao">Direcção Executiva</h2>
+        <hr class="linha-quadros">
+        <article class="card">
+			<div class="card__inner">
+				<div class="card__body card__body--front">
+					<h2 class="h2-card">Diretor Geral</h2>
+				</div>
+				<div class="card__body card__body--back">
+                    <img src="../public/img/director.jpg" alt="Diretor Geral" class="alter-img">
+					<h2>Vitorino Caculo</h2>
+                    <h3 class="h3-formacao-quadros">Licenciado em...</h3>
+				</div>
+			</div>
+        </article>
 
-        <h1 class="title-quadros" style="margin-top:5%;">Perfil dos Subdiretores</h1>
-        <hr class="linha-horizontal">
-       <article class="linha-outros_quadros">
-
-        <div class="coluna-outros_quadros">
-            <img src="../public/img/director.jpg" alt="Subdiretora do IPIAL" class="img-quadros">
-            <h2 class="title-quadros">Maria de Almeida Diassonama
-            </br>
-            <small>Subdiretora Administrativa</small>
-            </h2>
-            <h3 class="title-quadros">Licenciada em Gestão e Administração Pública</h3>
-        </div>
+        <section class="container-dr-executiva">
+            <article class="card child-dr-executiva">
+                <div class="card__inner">
+                    <div class="card__body card__body--front">
+                        <h2 class="h2-card">Subdiretora Administrativa</h2>
+                    </div>
+                    <div class="card__body card__body--back">
+                        <img src="../public/img/director.jpg" alt="Subdiretora Administrativa" class="alter-img">
+                        <h2>Maria Diassonama</h2>
+                        <h3 class="h3-formacao-quadros">Licenciada em Gestão e Administração Pública</h3>
+                    </div>
+                </div>
+            </article>
+    
+            <article class="card child-dr-executiva">
+                <div class="card__inner">
+                    <div class="card__body card__body--front">
+                        <h2 class="h2-card">Subdiretor Pedagógico</h2>
+                    </div>
+                    <div class="card__body card__body--back">
+                        <img src="../public/img/director.jpg" alt="Subdiretor Pedagógico" class="alter-img">
+                        <h2>Francisco Matos</h2>
+                        <h3 class="h3-formacao-quadros">Licenciado em...</h3>
+                    </div>
+                </div>
+            </article>
+        </section>
         
-        <div class="coluna-outros_quadros">
-            <img src="../public/img/director.jpg" alt="Subdiretora do IPIAL" class="img-quadros">
-            <h2 class="title-quadros">Jão Manuel Gonsalves
-            </br>
-            <small>Subdiretor Pedagógico</small>
-            </h2>
-            <h3 class="title-quadros">Licenciada em Gestão e Administração Pública</h3>
-        </div>
+        <!-----------------------------Área dos Coordenadores---------------------------------->
+        <h2 class="title-direcao">Coordenadores dos Cursos</h2>
+        <hr class="linha-quadros">
+        <section class="container-coordenadores">
+            <article class="card child-coordenadores">
+                <div class="card__inner">
+                    <div class="card__body card__body--front">
+                        <h2 class="h2-card">Coordenador de Construção Civil</h2>
+                    </div>
+                    <div class="card__body card__body--back">
+                        <img src="../public/img/director.jpg" alt="Coordenador de  Construção Civil" class="alter-img">
+                        <h2>António Pedro</h2>
+                        <h3 class="h3-formacao-quadros">Licenciado em...</h3>
+                    </div>
+                </div>
+            </article>
+    
+            <article class="card child-coordenadores">
+                <div class="card__inner">
+                    <div class="card__body card__body--front">
+                        <h2 class="h2-card">Coordenadora de Eletricidade</h2>
+                    </div>
+                    <div class="card__body card__body--back">
+                        <img src="../public/img/director.jpg" alt="Coordenadora de Eletricidade" class="alter-img">
+                        <h2>Joana Pires</h2>
+                        <h3 class="h3-formacao-quadros">Licenciado em...</h3>
+                    </div>
+                </div>
+            </article>
 
-       </article>
-
-       <h1 class="title-quadros" style="margin-top:5%;">Perfil dos Coordenadores</h1>
-       <hr class="linha-horizontal">
-       <article class="linha-outros_quadros">
-
-        <div class="coluna-outros_quadros">
-            <img src="../public/img/director.jpg" alt="Subdiretora do IPIAL" class="img-quadros">
-            <h2 class="title-quadros">António Pedro
-            </br>
-            <small>Coordenador de Construção Cívil</small>
-            </h2>
-            <h3 class="title-quadros">Licenciada em Gestão e Administração Pública</h3>
-        </div>
-        
-        <div class="coluna-outros_quadros">
-            <img src="../public/img/director.jpg" alt="Subdiretora do IPIAL" class="img-quadros">
-            <h2 class="title-quadros">Joana Pires
-            </br>
-            <small>Coordenandora de ELetricidade</small>
-            </h2>
-            <h3 class="title-quadros">Licenciada em Gestão e Administração Pública</h3>
-        </div>
-
-        <div class="coluna-outros_quadros">
-            <img src="../public/img/director.jpg" alt="Subdiretora do IPIAL" class="img-quadros">
-            <h2 class="title-quadros">Patrícia Miguel
-            </br>
-            <small>Coordenadora de Electrónicas e Telecomunicações</small>
-            </h2>
-            <h3 class="title-quadros">Licenciada em Gestão e Administração Pública</h3>
-        </div>
-
-        <div class="coluna-outros_quadros">
-            <img src="../public/img/director.jpg" alt="Subdiretora do IPIAL" class="img-quadros">
-            <h2 class="title-quadros">Sivi Sebastião
-            </br>
-            <small>Coordenador de Informática</small>
-            </h2>
-            <h3 class="title-quadros">Licenciada em Gestão e Administração Pública</h3>
-        </div>
-
-       </article>
-        <!-- x ---------- Fim da secção do Blog ---------- x -->
+            <article class="card child-coordenadores">
+                <div class="card__inner">
+                    <div class="card__body card__body--front">
+                        <h2 class="h2-card">Coordenadora de Electrónica e Telecomunicações</h2>
+                    </div>
+                    <div class="card__body card__body--back">
+                        <img src="../public/img/director.jpg" alt="Coordenadora de Electrónica e Telecomunicações" class="alter-img">
+                        <h2>Patrícia Miguel</h2>
+                        <h3 class="h3-formacao-quadros">Licenciada em...</h3>
+                    </div>
+                </div>
+            </article>
+    
+            <article class="card child-coordenadores">
+                <div class="card__inner">
+                    <div class="card__body card__body--front">
+                        <h2 class="h2-card">Coordenador de Informática</h2>
+                    </div>
+                    <div class="card__body card__body--back">
+                        <img src="../public/img/director.jpg" alt="Coordenador de Informática" class="alter-img">
+                        <h2>Sivi Sebastião</h2>
+                        <h3 class="h3-formacao-quadros">Licenciado em...</h3>
+                    </div>
+                </div>
+            </article>
+        </section>
+        <!-- x ---------- Fim da secção dos Quadros ---------- x -->
     </main>
     <!-- x ---------- Fim do conteúdo principal ---------- x -->
     

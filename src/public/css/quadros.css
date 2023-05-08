@@ -1,0 +1,94 @@
+/* ======================== */
+/*Estilos da Direcção Executiva*/
+.title-direcao{
+    font-size: 2rem;
+    font-weight: 600;
+    text-align: center;
+    color: #06338a;
+    margin: 20px auto;
+}
+
+.linha-quadros{
+    width: 60%;
+    height: 4px;
+    margin: -15px auto;
+    background-color: #06338a;
+    
+}
+/*********Estilo dos cards*********/
+.h2-card{
+    font-size: 1.42rem;
+    color: #fff;
+    text-align: center;
+}
+.h3-formacao-quadros{
+    text-align: center;
+    font-size: 1.3rem;
+}
+
+.card {
+    margin: 30px auto;
+	width: 200px;
+	height: 250px;
+	perspective: 800px;
+}
+.card__inner {
+	position: relative;
+	height: 100%;
+	transform-style: preserve-3d;
+	transition: transform 0.5s;
+}
+.card:hover .card__inner {
+	transform: rotateY(180deg);
+}
+.card__body {
+	position: absolute;
+	inset: 0;
+	display: grid;
+	place-items: center;
+	backface-visibility: hidden;
+	border-radius: 8px;
+	box-shadow: 0 5px 10px 
+		rgba(0, 0, 0, 0.15);
+}
+.card__body--front {
+	background-image: linear-gradient(
+		#06338a 0%,#186fcb 47%,
+		#06338a 100%
+	);
+}
+.card__body--back {
+	background-color: rgb(244, 244, 244);
+	transform: rotateY(180deg);
+}
+/*Estilo das sesões dos cards*/
+.container-dr-executiva{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.child-dr-executiva{
+    flex-basis: 15%;
+}
+
+.container-coordenadores{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap:wrap;
+}
+.child-coordenadores{
+    flex-basis: 15%;
+}
+
+/*Imagens que constam nos cards*/
+.alter-img{
+    border-radius: 50%;
+    margin-top: 20px;
+}
+
+/********Estilo do nome dos quadros*********/
+.h2-name-quadros{
+    margin-bottom: 10px;
+    color:#06338a;
+}
