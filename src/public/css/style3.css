@@ -113,7 +113,8 @@ body{
     box-shadow: 15px -15px 0 #06338a;
 
 }
- 
+
+/**************Estilo do botão de inscrição ON e OFF****************/
 
 /*Área de Publicação*/
 div.area-publicacao{
@@ -237,7 +238,6 @@ div.area-procura{
     border: 3px solid #f34d00;
     transition: 0.3s;
 }
-
 
 
 /*Estilo da tabela das pautas*/
