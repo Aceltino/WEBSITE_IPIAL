@@ -119,7 +119,7 @@ body{
 div.area-publicacao{
     width: 70%;
     min-height: 100vh;
-    background-color: #06338a;
+    background-color: #fff;
 }
 
 .lista-de-publicacoes{
@@ -200,6 +200,7 @@ div.area-procura{
     border-radius: 10px;
     text-align: center;
     font-size: 1.3rem;
+    background-color: #bcbcbc;
 }
 
 .publicacoes{
@@ -218,7 +219,7 @@ div.area-procura{
     margin-top: 10px;
     border-radius: 25px;
     text-align: center;
-    border: 2px solid white;
+    border: 2px solid #06338a;
 }
 
 .div-btn-publicar .btn-publicar{
@@ -226,7 +227,7 @@ div.area-procura{
     align-items: center;
     text-decoration: none;
     text-align: center;
-    color: #fff;
+    color: #06338a;
     padding: 8px;
     font-size: 1.2rem;
     font-weight: 600;
@@ -241,7 +242,7 @@ div.area-procura{
 
 /*Estilo da tabela das pautas*/
 .div-table-pauta{
-    width: 70%;
+    width: 95%;
     margin: 20px auto;
 }
 
@@ -264,7 +265,7 @@ div.area-procura{
     padding: 10px 10px;
 }
 .content-table tbody tr{
-    border-bottom: 1.5px solid #fffcfc;
+    border-bottom: 1.5px solid #2a2a2a;
 }
 .content-table td{
     color: #9d9d9d;
@@ -273,27 +274,32 @@ div.area-procura{
 .div-area-admitidos{
     width: 70%;
     min-height: 100vh;
-    background-color: #06338a;
+    background-color: #fff;
+}
+.div-table-admitidos{
+    width: 95%;
 }
 
-.div-table-admitidos{
+.table-admitidos{
     border-collapse: collapse;
-    width: 95%;
     margin: 20px auto;
     padding: 10px;
     text-align: center;
+    font-size: 1.4rem;
 }
 
-.cabecalho-table-admitidos{
+.cabecalho-table-admitidos th{
     background-color: #f34d00;
     color:#fff;
-    padding: 10px;
+    font-size: 1.7rem;
+    font-weight: bold;
+    padding: 5px;
 }
 
 .corpo-table-admitidos, td{
     padding: 7px 25px;
-    color: rgb(201, 201, 201);
-    border: 2px solid white;
+    color: rgb(59, 59, 59);
+    border-bottom: 3px solid rgb(198, 198, 198);
 }
 
 /*Estilo do input da pauta*/

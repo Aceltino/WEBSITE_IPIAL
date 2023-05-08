@@ -206,12 +206,12 @@ nav .fa-solid{
 }
 
 .course-col {
-    flex-basis: 47%;
+    flex-basis: 22%;
     background: #06338a;
-    height:330px;
+    height:300px;
     border-radius: 10px;
     margin-bottom: 5%;
-    padding: 20px 12px;
+    padding: 10px;
     transition: 0.5s;
 }
 
@@ -236,14 +236,14 @@ hr.linha-horizontal{
 /*Estilo do título dos cursos lecionados*/
 .curso{
     padding:3px;
-    font-size: 1.37em;
+    font-size: 1.4rem;
     color:#FFF;
 }
 /*Estilo para os paragrafos dos cursos lecionandos*/
 .alter-p{
     padding: 5px;
     color:#e4e3e3;
-    font-size: 1.3em;
+    font-size: 1.49em;
 }
 /*Fim do estilo dos paragrafos*/
 
@@ -538,7 +538,7 @@ table.alter-table{
     border-collapse: collapse;
 }
 
-tr, th, td{
+.alter-table tr, .alter-able th, .alter-table td{
     border: 2px solid #06338A;
     text-align: center;
     font-size: 1.7rem;
