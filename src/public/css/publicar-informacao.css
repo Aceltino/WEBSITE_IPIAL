@@ -24,9 +24,8 @@ main{
 /*Formulário do cadastro das pautas*/
 form{
     background-color: white;
-    max-height: 700px;
-    max-width: 700px;
-    min-height: 200px;
+    width: 541px;
+    height: 488px;
     border-radius: 25px;
     padding: 20px;
 }
@@ -54,6 +53,7 @@ textarea{
     padding: 10px;
     width: 100%;
     border-radius: 25px;
+    resize: none;
 }
 
 div{
@@ -101,4 +101,12 @@ a, input[type="submit"]{
     height: 40px;
     border-radius: 25px;
     text-align: center;
+}
+
+@media screen and (max-width: 550px){
+    form{
+        width: 94%;
+        height: 550px;
+        padding: 20px;
+    }
 }

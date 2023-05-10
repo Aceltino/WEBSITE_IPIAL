@@ -118,8 +118,7 @@ body{
 
 /*Área de Publicação*/
 div.area-publicacao{
-    width: 70%;
-    min-height: 100vh;
+    width: 100%;
     background-color: #fff;
 }
 
@@ -137,6 +136,7 @@ div.area-publicacao{
     border: 2px solid #06338a;
     display: flex;
     flex-direction: column;
+    align-items: center;
     margin-bottom: 8px;
 }
 
@@ -162,8 +162,8 @@ div.area-publicacao{
 }
 
 .a-abrir-publicacao{
-    width: 100%;
     background-color: #06338a;
+    width: 98%;
 }
 
 .a-editar-publicacao{
@@ -188,6 +188,7 @@ div.area-publicacao{
 
 .div-botoes-2{
     display: flex;
+    width: 100%;
 }
 
 div.area-procura{
@@ -206,16 +207,13 @@ div.area-procura{
 
 .publicacoes{
     width: 90%;
-    height: 80vh;
     margin: auto;
     background-color: #fff;
 }
 
 .div-btn-publicar{
     display: flex;
-    justify-content: center;
     width: 135px;
-    height: 35px;
     margin: auto;
     margin-top: 10px;
     border-radius: 25px;
@@ -310,4 +308,16 @@ div.area-procura{
     width: 80%;
     border:2px solid black;
     border-radius: 25px;
+}
+
+@media screen and (max-width: 950px){
+    .publicacao {
+        width: 30%;
+    }
+}
+
+@media screen and (max-width: 800px){
+    .publicacao {
+        width: 45%;
+    }
 }
