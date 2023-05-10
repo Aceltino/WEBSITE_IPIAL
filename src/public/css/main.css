@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;500;700&family=Sriracha&display=swap');
 
 *{
-    margin: 0;
+    margin: 3px;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
@@ -633,8 +633,7 @@ table.alter-table{
     color: white;
 }
 
-/* x ----------- Página Blog ----------- x */
-/* x ----- Blog Content ----- x */
+/* x ----------- Página de Contactos ----------- x */
 .blog-content{
     width: 80%;
     margin: auto;
@@ -681,6 +680,15 @@ table.alter-table{
     padding: 5px 0;
     font-size: 1.7rem;
     margin-bottom: 55px;
+}
+
+/********Estilo dos spans do formulário de contactos*********/
+.span-required{
+    font-size: 12px;
+    padding-bottom: 15px;
+    padding-left: 15px ;
+    color: red;
+    display: none;
 }
 /**********Estilo da tabela de infraestrutura do IPIAL************/
 .section-infra-ipial{
@@ -766,9 +774,11 @@ table.alter-table{
 .contact-col input, .contact-col textarea{
     width: 100%;
     padding: 15px;
-    margin-bottom: 17px;
+    margin-bottom: 5px;
+    border-radius: 25px;
+    font-size: 1.4rem;
     outline: none;
-    border: 1px solid #ccc;
+    border: 1.5px solid #06338a;
 }
 
 textarea{

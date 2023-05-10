@@ -287,6 +287,9 @@ div.area-procura{
     text-align: center;
     font-size: 1.4rem;
 }
+.tbody-aling{
+    text-align:center;
+}
 
 .cabecalho-table-admitidos th{
     background-color: #f34d00;
