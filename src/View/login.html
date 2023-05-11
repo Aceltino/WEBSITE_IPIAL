@@ -19,26 +19,20 @@
         <!-- x ---------- Início da Tela de Login ---------- x -->
         <div class="container">
 			<span class="form_title">Login</span>
-			<form class="form">
+			<form class="form" id="form-login">
 				<div class="form_group">
 					<i class="fa-regular fa-user form_icon"></i>
-					<input type="email" placeholder="Username" 
-                    required 
-                    class="form__input" 
-                    />
-					<span class="form__bar"></span>
+					<input type="text" placeholder="Username" 
+                    required class="form__input required-login" oninput="userValidate()">
 				</div>
+				<span class="form__bar span-required-login">Digite correctamente o username do admin.</span>
 
 				<div class="form_group">
 					<i class="fa-solid fa-key form_icon"></i>
 					<input
-						type="password"
-						placeholder="Password"
-						required
-						class="form_input"
-					/>
-					<span class="form__bar"></span>
+						type="password" placeholder="Password" required class="form_input required-login" oninput="senhaValidate(senha)">
 				</div>
+				<span class="form__bar span-required-login">Digite correctamente a password.</span>
 				<!--Botão de Entrar como adm-->
 				<button type="submit" class="form_button">Entrar</button>
 				<p class="form_switch">
@@ -46,12 +40,10 @@
 				</p>
 			</form>
 		</div>
-
-       
-        
     </main>
     
     <script src="../public/js/app.js"></script>
+	<script src="../public/js/form-login.js"></script>
     <link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css">
 </body>
 </html>

@@ -917,6 +917,12 @@ input {
 .form_switch a:hover {
 	text-decoration: underline;
 }
+/**********Estilo dos spans de erro da tela de login*************/
+.span-required-login{
+    display: none;
+    font-size: 1.4rem;
+}
+
 @media screen and (min-width: 43.75em) {
 	.container::before {
 		height: 30rem;
