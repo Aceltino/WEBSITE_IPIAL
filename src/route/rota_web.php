@@ -31,7 +31,7 @@ class Rota_web{
   
     if(!class_exists($controller)) 
     {
-        $controller = 'HomeController';
+        $controller = 'ErroController';
     }
 
     // var_dump($_GET['url']);
@@ -39,9 +39,8 @@ class Rota_web{
 
     if(isset($url[1]) && $url[1] != null) 
     {
-        $method = $url[1];
+      $method = $url[1];
     } else {
-      $controller = 'HomeController';
       $method = 'index';
     }
 
@@ -49,7 +48,7 @@ class Rota_web{
 
     if(!method_exists($controller, $url[1]))
     {
-      $method = 'index';
+      $controller = 'ErroController';
     }
    }
 
