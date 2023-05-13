@@ -192,10 +192,17 @@ div.area-publicacao{
 }
 
 div.area-procura{
-    width: 70%;
+    width: 100%;
     height: 45px;
     margin: 15px auto;
+    display: flex;
+    align-items: center;
 }
+
+.search-section{
+    width: 65%;
+}
+
 .input-search{
     width: 80%;
     height: 40px;
@@ -203,6 +210,33 @@ div.area-procura{
     text-align: center;
     font-size: 1.3rem;
     background-color: #bcbcbc;
+}
+
+.toggle-button {
+  display: flex;
+  border-radius: 25px;
+}
+
+.toggle-button button {
+  padding: 10px 20px;
+  background-color: #eaeaea;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  margin: 0;
+}
+
+button.option1{
+    border-radius: 25px 0 0 25px;
+}
+
+button.option2{
+    border-radius: 0 25px 25px 0;
+}
+
+.toggle-button button.active {
+  background-color: #f34d00;
+  color: #fff;
 }
 
 .publicacoes{
