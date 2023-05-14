@@ -215,6 +215,15 @@ nav .fa-solid{
     transition: 0.5s;
 }
 
+.show-pauta-pdf{
+    width: 100%;
+    display: flex;
+    margin-bottom: 50px;
+    justify-content: center;
+    align-items: center;
+    height: 600px;
+}
+
 /*******Estilo do título do header da inscrição********/
 .header-inscricao{
     font-size: 1.5rem;
@@ -670,6 +679,7 @@ table.alter-table{
 
 .blog-right{
     flex-basis: 30%;
+    margin-top: 18px;
 }
 
 .blog-right a{
@@ -682,7 +692,6 @@ table.alter-table{
     text-align:center; 
     padding: 5px 0;
     font-size: 1.7rem;
-    margin-bottom: 55px;
 }
 
 /********Estilo dos spans do formulário de contactos*********/

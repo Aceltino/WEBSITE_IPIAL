@@ -1,7 +1,5 @@
 /*--------Modal do fim da inscrição--------*/
 
-
-
  const button = document.querySelector("button")
  const modal = document.querySelector("dialog")
  const btnClose = document.querySelector("dialog div")

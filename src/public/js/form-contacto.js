@@ -92,3 +92,21 @@ const assuntoRegEx = /^([A-Z][a-z]{0,}.*) ([A-z]{0,}.*)/;
             removeError(3);
         }
     }
+
+    //Criando uma constante para o botão de enviar mensagem
+    const btn_Contacto = document.querySelector("button");
+    //Criando uma constante para a modal, após visitante ter preenchido o formulário
+    const modal_Contacto = document.querySelector("dialog");
+    //Criando uma constante para fechar a modal
+    const close_Mensagem = document.querySelectorAll("dialog div");
+
+    //Criando uma função para abrir o modal
+    btn_Contacto.onclick = function(){
+    modal_Contacto.show();
+    }
+
+    //Criando uma função para fechar o modal
+    close_Mensagem.onclick = function(){
+    modal_Contacto.close();
+}
+   
