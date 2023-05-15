@@ -11,7 +11,7 @@
 </head>
 <body>
     <main>
-        <form action="">
+        <form action="" id="form-pauta">
             <div class="div-texto">
                 <h3>Cadastre aqui uma nova pauta</h3>
                 <p class="unico-p">Introduza o nome da turma que deseja publicar a pauta.</p>
@@ -65,8 +65,8 @@
             </div>
 
             <div class="div-select">
-                <label for="docnumento">Doc. PDF</label></br>
-                <input type="file" name="documento">
+                <label for="documento">Doc. PDF</label></br>
+                <input type="file" id="documento" name="documento" required>
             </div>
 
             <div class="div-link-e-botao">
@@ -75,5 +75,6 @@
             </div>
         </form>
     </main>
+    <script src="../public/js/form-pauta.js"></script>
 </body>
 </html>
