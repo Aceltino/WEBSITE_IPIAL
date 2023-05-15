@@ -134,9 +134,10 @@ input{
 
 /*----------Spans dos formulários de inscrição--------------*/
 .span-required-inscricao{
-    font-size:0.7em;
+    font-size:0.8em;
     color:red;
     margin-left: 10px;
+    margin-top: 5px;
     display: none;
 }
 /*-------Botões do formulário----------*/

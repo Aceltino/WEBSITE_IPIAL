@@ -11,16 +11,18 @@
 </head>
 <body>
     <main>
-        <form action="">
+        <form action="" id="form-publicar">
             <div class="div-texto">
                 <h3>Publique uma nova informação</h3>
                 <p class="unico-p">Introduza o título e o conteúdo da informação a ser publicada.</p>
             </div>
             <div class="div-input">
-                <input type="text" placeholder="Título da publicação" class="input-info">
+                <input type="text" placeholder="Título da publicação" class="input-info required-publicar" oninput="tituloValidate()">
+                <span class="span-required-publicar">Digite um título como deve ser</span>
             </div>
             <div class="div-textarea">
-                <textarea name="" id="" cols="30" rows="10" placeholder="Informação a ser publicada"></textarea>
+                <textarea name="" id="" cols="30" rows="10" placeholder="Informação a ser publicada" class="required-publicar" oninput="textoValidate()"></textarea>
+                <span class="span-required-publicar">O texto da informação publicada dever ter mais de 40 caracteres</span>
             </div>
             <div class="div-link-e-botao">
                 <a href="noticias-admin.html" class="a-retroceder">Voltar</a>
@@ -28,5 +30,6 @@
             </div>
         </form>
     </main>
+    <script src="../public/js/form-publicar.js"></script>
 </body>
 </html>

@@ -26,7 +26,6 @@ const assuntoRegEx = /^([A-Z][a-z]{0,}.*) ([A-z]{0,}.*)/;
         emailValidate();
         assuntoValidate();
         smsValidate();
-
     })
 
 //Criando uma função para exibir os erros que receberá o "index" de cada input
@@ -36,7 +35,6 @@ const assuntoRegEx = /^([A-Z][a-z]{0,}.*) ([A-z]{0,}.*)/;
     }
 
 //Criando uma função para remover o erro
-
     function removeError(index){
         campos[index].style.border = '2px solid #06338a';
         spans[index].style.display = 'none';

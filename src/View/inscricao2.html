@@ -33,40 +33,39 @@
         <div class="form-step active">
             <div class="input-group">
                 <label for="nome">Seu nome</label>
-                <input type="text" id="nome" name="nome" placeholder="Seu nome completo" class="place-center required-inscricao" required>
-                <span class="span-required-inscricao">Digite o seu nome completo</span>
+                <input type="text" id="nome" name="nome" placeholder="Seu nome completo" class="place-center required-inscricao" required oninput="nome_candidatoValidate()">
+                <span class="span-required-inscricao">Digite corretamente o seu nome completo</span>
             </div>
     
             <div class="input-group">
                 <label for="pai">Nome do pai</label>
-                <input type="text" id="pai" name="pai" placeholder="Nome do seu pai" class="place-center required-inscricao" required>
+                <input type="text" id="pai" name="pai" placeholder="Nome do seu pai" class="place-center required-inscricao" required oninput="nome_paiValidate()">
                 <span class="span-required-inscricao">Digite corretamente o nome do seu encarregado</span>
             </div>
     
             <div class="input-group">
                 <label for="mae">Nome da mãe</label>
-                <input type="text" id="mae" name="mae" placeholder="Nome do sua mae" class="place-center required-inscricao" required>
+                <input type="text" id="mae" name="mae" placeholder="Nome do sua mae" class="place-center required-inscricao" required oninput="nome_maeValidate()">
                 <span class="span-required-inscricao">Digite o nome da sua encarregada</span>
             </div>
             
             <div class="input-group">
                 <label for="data">Data de nascimento</label>
                 <input type="date" id="data" name="data" placeholder="dia/mês/ano" class="place-center required-inscricao" required>
-                <span class="span-required-inscricao">Deve ter nascido no mínimo em 2009</span>
+                <span class="span-required-inscricao">Digite corretamente a sua data de nascimento</span>
             </div>
 
             <div class="btns-group">
                 <a href="http://localhost/ipial-alda-lara/Inscricao" class="btn btn-back btn-v-home">Voltar</a>
-                <a href="#" class="btn btn-next wth-100 ml-auto">Avançar</a>
+                <input type="submit" value="Avançar" class="btn btn-next wth-100 ml-auto">
             </div>
         </div>
 
             <div class="form-step">
                 <div class="input-group">
                     <label for="sexo">Sexo</label>
-                    <select class="select-group required-inscricao" name="sexo" id="sexo">
+                    <select class="select-group" name="sexo" id="sexo">
                         <optgroup label="Sexo">
-                            <option>----</option>
                             <option value="Masculino">Masculino</option>
                             <option value="Femenino">Femenino</option>
                         </optgroup>
@@ -74,17 +73,17 @@
                 </div>
                 <div class="input-group">
                     <label for="bi">Nº do BI</label>
-                    <input type="text" id="bi" name="bi" placeholder="0040877823LA145" class="place-center required-inscricao" required>
+                    <input type="text" id="bi" name="bi" placeholder="0040877823LA145" class="place-center required-inscricao" required oninput="biValidate()">
                     <span class="span-required-inscricao">Nº de BI inválido, digite corretamente</span>
                 </div>
                 <div class="input-group">
                     <label for="tel">Telefone</label>
-                    <input type="tel" id="tel" name="tel" placeholder="+244 912345678" class="place-center required-inscricao" required>
-                    <span class="span-required-inscricao">Números de tefone começam com 9 e possuem 9 digitos</span>
+                    <input type="tel" id="tel" name="tel" placeholder="+244" class="place-center required-inscricao" required oninput="telValidate()">
+                    <span class="span-required-inscricao">Números de tefone e começam com 9 possuem 9 digitos</span>
                 </div>
                 <div class="input-group">
                     <label for="email">Email</label>
-                    <input type="email" id="email" name="email" placeholder="otanielfernandes@gmail.com" class="place-center required-inscricao" required>
+                    <input type="email" id="email" name="email" placeholder="otanielfernandes@gmail.com" class="place-center required-inscricao" required oninput="emailValidate()">
                     <span class="span-required-inscricao">Digite um email válido</span>
                 </div>
                 <div class="btns-group">
@@ -97,14 +96,13 @@
 
                 <div class="input-group">
                     <label for="escola">Nome da Escola de proveniência</label>
-                    <input type="text" id="escola" name="escola" placeholder="Insira o nome da tua ex escola" class="place-center required-inscricao" required>
+                    <input type="text" id="escola" name="escola" placeholder="Insira o nome da tua ex escola" class="place-center required-inscricao" required oninput="escola_antigaValidate()">
                     <span class="span-required-inscricao">Digite corretamente o nome da sua antiga escola</span>
                 </div>
                 <div class="input-group">
                     <label for="turno">Turno</label>
-                    <select class="select-group required-inscricao" name="turno" id="turno">
+                    <select class="select-group " name="turno" id="turno">
                         <optgroup label="Turno">
-                            <option>----</option>
                             <option value="Manha">Manhã</option>
                             <option value="Noite">Noite</option>
                             <option value="Tarde">Tarde</option>
@@ -113,9 +111,8 @@
                 </div>
                 <div class="input-group">
                     <label for="turma">Turma</label>
-                    <select class="select-group required-inscricao" name="turma" id="turma">
+                    <select class="select-group" name="turma" id="turma">
                         <optgroup label="Turma">
-                            <option>----</option>
                             <option value="A">A</option>
                             <option value="B">B</option>
                             <option value="C">C</option>
@@ -127,8 +124,8 @@
                 </div>
                 <div class="input-group">
                     <label for="processo">Processo Nº</label>
-                    <input type="number" id="email" name="processo" placeholder="Número de processo" class="place-center required-inscricao" required>
-                    <span class="span-required-inscricao">Um nº de processo não pode ter mais de 6 números</span>
+                    <input type="number" id="processo" name="processo" placeholder="Número de processo" class="place-center required-inscricao" required oninput="nprocessoValiate()">
+                    <span class="span-required-inscricao">Um nº de processo deve ter entre 2-6 números</span>
                 </div>
                 <div class="btns-group">
                     <a href="#" class="btn btn-back">Retroceder</a>
@@ -139,9 +136,8 @@
             <div class="form-step">
                 <div class="input-group">
                     <label for="opcao1">Opção 1</label>
-                    <select class="select-group required-inscricao" name="opcao1" id="opcao1">
+                    <select class="select-group" name="opcao1" id="opcao1" required>
                         <optgroup label="Opcao1">
-                            <option>----</option>
                             <option value="Desenahdor">Desenhador Projetista (DP)</option>
                             <option value="Electronica">Electrónica e Telecomunicações</option>
                             <option value="Electricidade">Técnico de Energias e Instalações Eléctricas (TEIE)</option>
@@ -151,9 +147,8 @@
                 </div>
                 <div class="input-group">
                     <label for="opcao1">Opção 2</label>
-                    <select class="select-group required-inscricao" name="opcao2" id="opcao2">
+                    <select class="select-group" name="opcao2" id="opcao2">
                         <optgroup label="Opcao2">
-                            <option>----</option>
                             <option value="Desenahdor">Desenhador Projetista (DP)</option>
                             <option value="Electronica">Electrónica e Telecomunicações</option>
                             <option value="Electricidade">Técnico de Energias e Instalações Eléctricas (TEIE)</option>
@@ -163,9 +158,8 @@
                 </div>
                 <div class="input-group">
                     <label for="opcao3">Opção 3</label>
-                    <select class="select-group required-inscricao" name="opcao3" id="opcao3">
+                    <select class="select-group" name="opcao3" id="opcao3" required>
                         <optgroup label="Opcao3">
-                            <option>----</option>
                             <option value="Desenahdor">Desenhador Projetista (DP)</option>
                             <option value="Electronica">Electrónica e Telecomunicações</option>
                             <option value="Electricidade">Técnico de Energias e Instalações Eléctricas (TEIE)</option>
@@ -175,9 +169,8 @@
                 </div>
                 <div class="input-group">
                     <label for="opcao4">Opção 4</label>
-                    <select class="select-group required-inscricao" name="opcao4" id="opcao4">
+                    <select class="select-group" name="opcao4" id="opcao4" required>
                         <optgroup label="Opcao4">
-                            <option>----</option>
                             <option value="Desenahdor">Desenhador Projetista (DP)</option>
                             <option value="Electronica">Electrónica e Telecomunicações</option>
                             <option value="Electricidade">Técnico de Energias e Instalações Eléctricas (TEIE)</option>
@@ -226,5 +219,7 @@
 
     <!--Script do Modal-->
     <script src="s../public/js/app3.js"></script>
+    <!--Script do formulário de inscrição-->
+    <script src="../public/js/form-inscricao.js"></script>
 </body>
 </html>
