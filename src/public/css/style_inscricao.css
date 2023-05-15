@@ -81,7 +81,7 @@ input{
 }
 /*Estilo do formulário de inscrição*/
 .form{
-    width: clamp(320px, 30%, 430px);
+    width: clamp(320px, 45%, 430px);
     margin: 0 auto;
     border: 1px solid #ccc;
     border-radius: .35rem;
@@ -119,7 +119,7 @@ input{
     font-size: 1.05rem;
 }
 .input-group{
-    margin: 1.3rem 0;
+    margin: 0.7rem 0;
 }
 .place-center{
     text-align: center;
@@ -132,6 +132,13 @@ input{
     border: 1px solid #ccc;
 } 
 
+/*----------Spans dos formulários de inscrição--------------*/
+.span-required-inscricao{
+    font-size:0.7em;
+    color:red;
+    margin-left: 10px;
+    display: none;
+}
 /*-------Botões do formulário----------*/
 .wth-100{
     width: 100%;

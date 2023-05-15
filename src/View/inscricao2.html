@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Página de Inscrição</title>
-    <link rel="stylesheet" href="../public/css/style-inscricao.css">
+    <link rel="stylesheet" href="../public/css/style_inscricao.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="stylesheet" href="../public/webfont/fontawesome-free-6.3.0-web/css/all.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -15,7 +15,7 @@
     
 </head>
 <body>
-    <form action="#" class="form">
+    <form action="#" class="form" id="form_inscricao">
         <h2 class="text-center">Formulário do Inscrição</h2>
 
         <!--*********************Progressbar*****************-->
@@ -33,22 +33,26 @@
         <div class="form-step active">
             <div class="input-group">
                 <label for="nome">Seu nome</label>
-                <input type="text" id="nome" name="nome" placeholder="Seu nome completo" class="place-center" required>
+                <input type="text" id="nome" name="nome" placeholder="Seu nome completo" class="place-center required-inscricao" required>
+                <span class="span-required-inscricao">Digite o seu nome completo</span>
             </div>
     
             <div class="input-group">
                 <label for="pai">Nome do pai</label>
-                <input type="text" id="pai" name="pai" placeholder="Nome do seu pai" class="place-center" required>
+                <input type="text" id="pai" name="pai" placeholder="Nome do seu pai" class="place-center required-inscricao" required>
+                <span class="span-required-inscricao">Digite corretamente o nome do seu encarregado</span>
             </div>
     
             <div class="input-group">
                 <label for="mae">Nome da mãe</label>
-                <input type="text" id="mae" name="mae" placeholder="Nome do sua mae" class="place-center" required>
+                <input type="text" id="mae" name="mae" placeholder="Nome do sua mae" class="place-center required-inscricao" required>
+                <span class="span-required-inscricao">Digite o nome da sua encarregada</span>
             </div>
             
             <div class="input-group">
                 <label for="data">Data de nascimento</label>
-                <input type="data" id="data" name="data" placeholder="dia/mês/ano" class="place-center" required>
+                <input type="date" id="data" name="data" placeholder="dia/mês/ano" class="place-center required-inscricao" required>
+                <span class="span-required-inscricao">Deve ter nascido no mínimo em 2009</span>
             </div>
 
             <div class="btns-group">
@@ -60,7 +64,7 @@
             <div class="form-step">
                 <div class="input-group">
                     <label for="sexo">Sexo</label>
-                    <select class="select-group" name="sexo" id="sexo">
+                    <select class="select-group required-inscricao" name="sexo" id="sexo">
                         <optgroup label="Sexo">
                             <option>----</option>
                             <option value="Masculino">Masculino</option>
@@ -70,15 +74,18 @@
                 </div>
                 <div class="input-group">
                     <label for="bi">Nº do BI</label>
-                    <input type="text" id="bi" name="bi" placeholder="0040877823LA145" class="place-center" required>
+                    <input type="text" id="bi" name="bi" placeholder="0040877823LA145" class="place-center required-inscricao" required>
+                    <span class="span-required-inscricao">Nº de BI inválido, digite corretamente</span>
                 </div>
                 <div class="input-group">
                     <label for="tel">Telefone</label>
-                    <input type="tel" id="tel" name="tel" placeholder="+244 912345678" class="place-center" required>
+                    <input type="tel" id="tel" name="tel" placeholder="+244 912345678" class="place-center required-inscricao" required>
+                    <span class="span-required-inscricao">Números de tefone começam com 9 e possuem 9 digitos</span>
                 </div>
                 <div class="input-group">
                     <label for="email">Email</label>
-                    <input type="email" id="email" name="email" placeholder="otanielfernandes@gmail.com" class="place-center" required>
+                    <input type="email" id="email" name="email" placeholder="otanielfernandes@gmail.com" class="place-center required-inscricao" required>
+                    <span class="span-required-inscricao">Digite um email válido</span>
                 </div>
                 <div class="btns-group">
                     <a href="#" class="btn btn-back">Retroceder</a>
@@ -90,11 +97,12 @@
 
                 <div class="input-group">
                     <label for="escola">Nome da Escola de proveniência</label>
-                    <input type="text" id="escola" name="escola" placeholder="Insira o nome da tua ex escola" class="place-center" required>
+                    <input type="text" id="escola" name="escola" placeholder="Insira o nome da tua ex escola" class="place-center required-inscricao" required>
+                    <span class="span-required-inscricao">Digite corretamente o nome da sua antiga escola</span>
                 </div>
                 <div class="input-group">
                     <label for="turno">Turno</label>
-                    <select class="select-group" name="turno" id="turno">
+                    <select class="select-group required-inscricao" name="turno" id="turno">
                         <optgroup label="Turno">
                             <option>----</option>
                             <option value="Manha">Manhã</option>
@@ -105,7 +113,7 @@
                 </div>
                 <div class="input-group">
                     <label for="turma">Turma</label>
-                    <select class="select-group" name="turma" id="turma">
+                    <select class="select-group required-inscricao" name="turma" id="turma">
                         <optgroup label="Turma">
                             <option>----</option>
                             <option value="A">A</option>
@@ -119,7 +127,8 @@
                 </div>
                 <div class="input-group">
                     <label for="processo">Processo Nº</label>
-                    <input type="number" id="email" name="processo" placeholder="Número de processo" class="place-center" required>
+                    <input type="number" id="email" name="processo" placeholder="Número de processo" class="place-center required-inscricao" required>
+                    <span class="span-required-inscricao">Um nº de processo não pode ter mais de 6 números</span>
                 </div>
                 <div class="btns-group">
                     <a href="#" class="btn btn-back">Retroceder</a>
@@ -130,7 +139,7 @@
             <div class="form-step">
                 <div class="input-group">
                     <label for="opcao1">Opção 1</label>
-                    <select class="select-group" name="opcao1" id="opcao1">
+                    <select class="select-group required-inscricao" name="opcao1" id="opcao1">
                         <optgroup label="Opcao1">
                             <option>----</option>
                             <option value="Desenahdor">Desenhador Projetista (DP)</option>
@@ -142,7 +151,7 @@
                 </div>
                 <div class="input-group">
                     <label for="opcao1">Opção 2</label>
-                    <select class="select-group" name="opcao2" id="opcao2">
+                    <select class="select-group required-inscricao" name="opcao2" id="opcao2">
                         <optgroup label="Opcao2">
                             <option>----</option>
                             <option value="Desenahdor">Desenhador Projetista (DP)</option>
@@ -154,7 +163,7 @@
                 </div>
                 <div class="input-group">
                     <label for="opcao3">Opção 3</label>
-                    <select class="select-group" name="opcao3" id="opcao3">
+                    <select class="select-group required-inscricao" name="opcao3" id="opcao3">
                         <optgroup label="Opcao3">
                             <option>----</option>
                             <option value="Desenahdor">Desenhador Projetista (DP)</option>
@@ -166,7 +175,7 @@
                 </div>
                 <div class="input-group">
                     <label for="opcao4">Opção 4</label>
-                    <select class="select-group" name="opcao4" id="opcao4">
+                    <select class="select-group required-inscricao" name="opcao4" id="opcao4">
                         <optgroup label="Opcao4">
                             <option>----</option>
                             <option value="Desenahdor">Desenhador Projetista (DP)</option>
@@ -187,7 +196,7 @@
 
                 <div class="input-group">
                     <label for="foto1">Fotagrafia do BI</label>
-                    <input type="file" id="foto1" name="foto1" placeholder="Adicione a fotografia" class="place-center" required>
+                    <input type="file" id="foto1" name="foto1" placeholder="Adicione a fotografia" class="place-center required-inscricao" required>
                 </div>
 
                 <div class="input-group">
@@ -213,9 +222,9 @@
         </div>
     </dialog>
     
-    <script src="src/public/js/app2.js"></script>
+    <script src="../public/js/app2.js"></script>
 
     <!--Script do Modal-->
-    <script src="src/public/js/app3.js"></script>
+    <script src="s../public/js/app3.js"></script>
 </body>
 </html>
