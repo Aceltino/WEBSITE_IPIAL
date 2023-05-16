@@ -139,8 +139,8 @@ div.area-publicacao{
     align-items: center;
     margin-bottom: 8px;
 }
-
-.p-titulo, .p-data{
+/*----Estilos dos paragrafos dos articles da área de respostas e dos anuncios----*/
+.p-titulo, .p-data, .p-nome, .p-email{
     color: black;
     font-size: 1.3rem;
     text-align: center;
@@ -270,8 +270,32 @@ button.option2{
     border: 3px solid #f34d00;
     transition: 0.3s;
 }
+/*---------Estilo para as respostas dos visitantes-----------*/
+.respostas{
+    width: 90%;
+    margin: auto;
+    background-color: #fff;
+}
 
+/*-----Estilo para lista de respostas-----*/
+.lista-de-respostas{
+    width: 100%;
+    padding: 9px 5px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+/*---Estilo para cada div de uma questão/inquietação colocada----*/
+.inquietacao{
+    width: 24%;
+    height: inherit;
+    border: 2px solid #06338a;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 8px;
 
+}
 /*Estilo da tabela das pautas*/
 .div-table-pauta{
     width: 95%;
