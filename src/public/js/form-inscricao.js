@@ -14,7 +14,7 @@ const spans = document.querySelectorAll('.span-required-inscricao');
 const regExnome = /^[A-Z][A-Za-zÀ-ÿ\s]+[A-Z][A-Za-zÀ-ÿ\s]+$/;
 
 /*-------------Criando uma regEx para a data de nascimento----------------*/
-const regExnascimento = /^([0-9]{2}\/)([0-9]{2}\/)([0-9]{4})/;
+const regExnascimento = /(^[0-9]{2})\/([0-9]{2})\/(19[6-9][0-9]|200[0-9])$/;
 
 /*---------------Criando um RegEx para o BI-----------------*/
 const regExbi = /^([0-9-A-Z]{14})$/;
@@ -28,6 +28,9 @@ const regExemail = /^([a-z0-9]{2,}\.)?([a-z0-9]{2,})@([a-z0-9]{2,})(\.[a-z]{2,})
 /*-----Criando uma RegEx para o número de processo------*/
 const regExprocesso = /^([0-9]{2,6})$/;
 
+//Criando uma const para pegar o primeiro botão avançar
+const btnNext1 = document.getElementById('btnNext1');
+
 //Criando um evento para que toda vez que o botão do tipo submit for criado
     form_inscricao.addEventListener('submit', (event) =>{
         event.preventDefault();
@@ -40,6 +43,10 @@ const regExprocesso = /^([0-9]{2,6})$/;
         emailValidate();
         escola_antigaValidate();
         nprocessoValiate();
+    })
+/*---Função para validar etapas----*/
+    btnNext1.addEventListener('submit', (event) =>{
+
     })
 
 /*---------Criando uma função que retornará o erro de cada input-----------*/
@@ -85,7 +92,6 @@ function nome_maeValidate(){
         setError(2);
     }
 }
-
 
 
 /*----Criando uma função para validação da data de nascimento do candidato---*/

@@ -51,13 +51,13 @@
             
             <div class="input-group">
                 <label for="data">Data de nascimento</label>
-                <input type="date" id="data" name="data" placeholder="dia/mês/ano" class="place-center required-inscricao" required>
+                <input type="text" id="data" name="data" placeholder="dia/mês/ano" class="place-center required-inscricao" required oninput="data_nascimentoValidate()">
                 <span class="span-required-inscricao">Digite corretamente a sua data de nascimento</span>
             </div>
 
             <div class="btns-group">
                 <a href="http://localhost/ipial-alda-lara/Inscricao" class="btn btn-back btn-v-home">Voltar</a>
-                <input type="submit" value="Avançar" class="btn btn-next wth-100 ml-auto">
+                <input type="submit" value="Avançar" class="btn btn-next wth-100 ml-auto" id="btnNext1">
             </div>
         </div>
 
