@@ -1,15 +1,17 @@
 <?php
 
+require_once 'funcoes/email.php';
  class HomeController{
 
-    public function index(){
+    
+   public function index(){
+      Email::EnviarEmail();
+    //   $loader = new \Twig\Loader\FilesystemLoader('src/View');
+    //   $twig = new \Twig\Environment($loader);
+    //   $template = $twig->load('index.html');
 
-      $loader = new \Twig\Loader\FilesystemLoader('src/View');
-      $twig = new \Twig\Environment($loader);
-      $template = $twig->load('index.html');
-
-      $conteudo = $template->render();
-      echo $conteudo;
+    //   $conteudo = $template->render();
+    //   echo $conteudo;
 
      }
 
