@@ -78,18 +78,22 @@
                     </div>
                 </div>
                 <div class="contact-col">
-                    <form id="form-contacto">
+                    {% if resultado %}
+                    <h1>{{ resultado }}</h1>
+                    {% endif %} 
+                    <form id="form-contacto" method="post" action="http://localhost/ipial-alda-lara/Contactos" >
                         <!--Cada span será demonstrado consoante um determinado tipom de erro, de acordo com as condições adicionadas no JS-->
-                        <input type="text" placeholder="Introduza o seu nome" class="required" oninput="nameValidate()">
+                        <input type="text" placeholder="Introduza o seu nome" class="required" name="nome" oninput="nameValidate()">
                         <span class="span-required">Digite corretamente seu nome e sobrenome</span>
-                        <input type="email" placeholder="Introduza o seu e-mail" class="required" oninput="emailValidate()">
+                        <input type="email" placeholder="Introduza o seu e-mail" class="required" name="email" oninput="emailValidate()">
                         <span class="span-required">O email deve ser válido.</span>
-                        <input type="text" placeholder="Introduza o seu assunto" class="required" oninput="assuntoValidate()" minlength="5" maxlength="20">
+                        <input type="text" placeholder="Introduza o seu assunto" class="required" name="assunto" oninput="assuntoValidate()" minlength="5" maxlength="20">
                         <span class="span-required">Informe o tema do assunto</span>
-                        <textarea  id="" rows="8" placeholder="Mensagem" class="required" oninput="smsValidate()"></textarea>
+                        <textarea  id="" rows="8" placeholder="Mensagem" class="required" name="mensagem" oninput="smsValidate()"></textarea>
                         <span class="span-required">A descrição deve ter mais de 20 caracteres</span>
-                        <button type="submit" class="hero-btn blue-btn">ENVIAR</button>
+                        <button type="submit" name="btnEnviar" class="hero-btn blue-btn">ENVIAR</button>
                     </form>
+                    
                 </div>
             </article>
         </section>
@@ -116,7 +120,7 @@
             <a href="http://localhost/ipial-alda-lara/Contactos" class="btn btn-modal">Percebido</a>
         </div>
     </dialog>
-    <script src="src/public/js/app.js"></script>
-    <script src="src/public/js/form-contacto.js"></script>
+    <!-- <script src="src/public/js/app.js"></script>
+    <script src="src/public/js/form-contacto.js"></script> -->
 </body>
 </html>

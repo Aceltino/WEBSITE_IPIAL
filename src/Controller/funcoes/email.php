@@ -4,7 +4,7 @@ use PHPMailer\PHPMailer\SMTP;
 
 class Email 
 {
-        static public function EnviarEmail()
+        static public function EnviarEmail($emailInfo)
     {
          $mail = new PHPMailer(true);
          //Server settings
@@ -30,12 +30,13 @@ class Email
  
          if($mail->send())
          {
-         echo 'Message has been sent';
+         return true;
          }  else 
          {
-         echo "Message could not be sent. Mailer Error: {$mail->ErrorInfo}";
+         return false;
+    //      echo "Message could not be sent. Mailer Error: {$mail->ErrorInfo}";
          }
-     }
+      }
                
         
 }
