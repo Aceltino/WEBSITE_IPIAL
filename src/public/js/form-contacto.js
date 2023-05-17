@@ -25,12 +25,12 @@ const emailRegEx = /^([a-z0-9]{2,}\.)?([a-z0-9]{2,})@([a-z0-9]{2,})(\.[a-z]{2,})
 
     function emailValidate(){
         if(emailRegEx.test(campos[0].value)){
-            campos[index].style.border = '2px solid #06338a';
-            spans[index].style.display = 'none';
+            campos[0].style.border = '2px solid #06338a';
+            spans[0].style.display = 'none';
         }
         else{
-            campos[index].style.border = '2px solid red';
-            spans[index].style.display = 'block';
+            campos[0].style.border = '2px solid red';
+            spans[0].style.display = 'block';
         }
     }
 
