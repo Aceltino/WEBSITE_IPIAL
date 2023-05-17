@@ -5,9 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Página de Inscrição</title>
-    <link rel="stylesheet" href="../public/css/style_inscricao.css">
+    <link rel="stylesheet" href="src/public/css/style_inscricao.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="stylesheet" href="../public/webfont/fontawesome-free-6.3.0-web/css/all.min.css">
+    <link rel="stylesheet" href="src/public/webfont/fontawesome-free-6.3.0-web/css/all.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
@@ -15,7 +15,7 @@
     
 </head>
 <body>
-    <form action="#" class="form" id="form_inscricao">
+    <form method="post" action="http://localhost/ipial-alda-lara/Inscricao" class="form" id="form_inscricao">
         <h2 class="text-center">Formulário do Inscrição</h2>
 
         <!--*********************Progressbar*****************-->
@@ -51,7 +51,7 @@
             
             <div class="input-group">
                 <label for="data">Data de nascimento</label>
-                <input type="text" id="data" name="data" placeholder="dia/mês/ano" class="place-center required-inscricao" required oninput="data_nascimentoValidate()">
+                <input type="date" id="data" name="data" placeholder="dia/mês/ano" class="place-center required-inscricao" required oninput="data_nascimentoValidate()">
                 <span class="span-required-inscricao">Digite corretamente a sua data de nascimento</span>
             </div>
 
@@ -110,17 +110,9 @@
                     </select>
                 </div>
                 <div class="input-group">
-                    <label for="turma">Turma</label>
-                    <select class="select-group" name="turma" id="turma">
-                        <optgroup label="Turma">
-                            <option value="A">A</option>
-                            <option value="B">B</option>
-                            <option value="C">C</option>
-                            <option value="C">D</option>
-                            <option value="C">E</option>
-                            <option value="C">F</option>
-                        </optgroup>
-                    </select>
+                    <label for="escola">Nome da turma de proveniência</label>
+                    <input type="text" id="escola" name="escola" placeholder="Insira o nome da tua ex escola" class="place-center required-inscricao" required oninput="escola_antigaValidate()">
+                    <span class="span-required-inscricao">Digite corretamente o nome da sua antiga turma</span>
                 </div>
                 <div class="input-group">
                     <label for="processo">Processo Nº</label>
@@ -199,7 +191,7 @@
 
                 <div class="btns-group">
                     <a href="#" class="btn btn-back">Retroceder</a>
-                    <button class="btn">Submeter</button> 
+                    <button type="submit" name="btnSubmeter" class="btn">Submeter</button> 
                 </div>
             </div>
         </div>
@@ -215,11 +207,10 @@
         </div>
     </dialog>
     
-    <script src="../public/js/app2.js"></script>
-
+    <!-- <script src="../src/public/js/app2.js"></script> -->
     <!--Script do Modal-->
-    <script src="s../public/js/app3.js"></script>
+    <!-- <script src="../src/public/js/app3.js"></script> -->
     <!--Script do formulário de inscrição-->
-    <script src="../public/js/form-inscricao.js"></script>
+    <!-- <script src="../src/public/js/form-inscricao.js"></script> -->
 </body>
 </html>

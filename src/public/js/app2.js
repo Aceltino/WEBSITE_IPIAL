@@ -9,9 +9,7 @@ var incrementProgressTotal;
 let formStepsNum = 0;
 
 nextBtns.forEach(btn =>{
-    if(campos[0].value == "" && campos[1].value == "" && campos[2].value == "" && campos[3].value == ""){
-        setError(index);
-    }
+
     
 
     btn.addEventListener('click', ()=>{
