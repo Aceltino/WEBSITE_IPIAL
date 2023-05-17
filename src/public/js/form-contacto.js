@@ -26,6 +26,7 @@ const assuntoRegEx = /^([A-Z][a-z]{0,}.*) ([A-z]{0,}.*)/;
         emailValidate();
         assuntoValidate();
         smsValidate();
+        
     })
 
 //Criando uma função para exibir os erros que receberá o "index" de cada input
@@ -93,18 +94,12 @@ const assuntoRegEx = /^([A-Z][a-z]{0,}.*) ([A-z]{0,}.*)/;
 
     //Criando uma constante para o botão de enviar mensagem
     const btn_Contacto = document.querySelector("button");
-    //Criando uma constante para a modal, após visitante ter preenchido o formulário
-    const modal_Contacto = document.querySelector("dialog");
-    //Criando uma constante para fechar a modal
-    const close_Mensagem = document.querySelectorAll("dialog div");
+   
 
-    //Criando uma função para abrir o modal
+    //Criando uma função para abrir o alert quando o botão for clicado
     btn_Contacto.onclick = function(){
-    modal_Contacto.show();
+        console.log('Sua sms foi');
     }
 
-    //Criando uma função para fechar o modal
-    close_Mensagem.onclick = function(){
-    modal_Contacto.close();
-}
+
    
