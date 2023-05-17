@@ -22,84 +22,22 @@ const assuntoRegEx = /^([A-Z][a-z]{0,}.*) ([A-z]{0,}.*)/;
 
     form.addEventListener('submit', (event) => {
         event.preventDefault();
-        nameValidate();
         emailValidate();
-        assuntoValidate();
-        smsValidate();
-        
     })
-
-//Criando uma função para exibir os erros que receberá o "index" de cada input
-    function setError(index){
-        campos[index].style.border = '2px solid red';
-        spans[index].style.display = 'block';
-    }
-
-//Criando uma função para remover o erro
-    function removeError(index){
-        campos[index].style.border = '2px solid #06338a';
-        spans[index].style.display = 'none';
-
-    }
-
-//Criando uma função para validar o nome:
-    function nameValidate(){
-
-        if(nomeRegEx.test(campos[0].value))
-        {
-           removeError(0);
-        }
-
-        else{
-            setError(0);
-        }
-    }
 
 
     //Criando uma funcão para validar o Email
 
     function emailValidate(){
-        if(emailRegEx.test(campos[1].value)){
-            removeError(1);
+        if(emailRegEx.test(campos[0].value)){
+            campos[index].style.border = '2px solid #06338a';
+            spans[index].style.display = 'none';
         }
         else{
-            setError(1);
+            campos[index].style.border = '2px solid red';
+            spans[index].style.display = 'block';
         }
     }
 
-
-    //Criando uma função para validar o assunto
-
-    function assuntoValidate(){
-        if(assuntoRegEx.test(campos[2].value)){
-            removeError(2);
-        }
-
-        else{
-            setError(2);
-        }
-    }
-
-
-    //Craindo uma função para o texto
-    function smsValidate(){
-        if(campos[3].value.length < 25){
-            setError(3);
-        }
-
-        else{
-            removeError(3);
-        }
-    }
-
-    //Criando uma constante para o botão de enviar mensagem
-    const btn_Contacto = document.querySelector("button");
-   
-
-    //Criando uma função para abrir o alert quando o botão for clicado
-    btn_Contacto.onclick = function(){
-        console.log('Sua sms foi');
-    }
-
-
+    
    

@@ -5,8 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Website IPIAL</title>
-    <link rel="stylesheet" href="src/public/css/main.css">
-    <link rel="stylesheet" href="src/public/webfont/fontawesome-free-6.3.0-web/css/all.min.css">
+    <link rel="stylesheet" href="../public/css/main.css">
+    <link rel="stylesheet" href="../public/webfont/fontawesome-free-6.3.0-web/css/all.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
@@ -69,13 +69,7 @@
                             <p>De Segunda à Sexta, das 08 ás 16h</p>
                         </span>
                     </div>
-                    <div>
-                        <i class="fa-solid fa-envelope" style="color: #06338A;"></i>
-                        <span>
-                            <h5>aldalara@gmail.com</h5>
-                            <p>Invie-nos as suas inquietações</p>
-                        </span>
-                    </div>
+                
                 </div>
                 <div class="contact-col">
                     {% if resultado %}
@@ -83,14 +77,8 @@
                     {% endif %} 
                     <form id="form-contacto" method="post" action="http://localhost/ipial-alda-lara/Contactos" >
                         <!--Cada span será demonstrado consoante um determinado tipom de erro, de acordo com as condições adicionadas no JS-->
-                        <input type="text" placeholder="Introduza o seu nome" class="required" name="nome" oninput="nameValidate()">
-                        <span class="span-required">Digite corretamente seu nome e sobrenome</span>
                         <input type="email" placeholder="Introduza o seu e-mail" class="required" name="email" oninput="emailValidate()">
-                        <span class="span-required">O email deve ser válido.</span>
-                        <input type="text" placeholder="Introduza o seu assunto" class="required" name="assunto" oninput="assuntoValidate()" minlength="5" maxlength="20">
-                        <span class="span-required">Informe o tema do assunto</span>
-                        <textarea  id="" rows="8" placeholder="Mensagem" class="required" name="mensagem" oninput="smsValidate()"></textarea>
-                        <span class="span-required">A descrição deve ter mais de 20 caracteres</span>
+                        <span class="span-required">Digite um email válido.</span>
                         <button type="submit" name="btnEnviar" class="hero-btn blue-btn">ENVIAR</button>
                     </form>
                     
@@ -120,7 +108,7 @@
             <a href="http://localhost/ipial-alda-lara/Contactos" class="btn btn-modal">Percebido</a>
         </div>
     </dialog>
-    <!-- <script src="src/public/js/app.js"></script>
-    <script src="src/public/js/form-contacto.js"></script> -->
+     <script src="../public/js/app.js"></script>
+    <script src="../public/js/form-contacto.js"></script>
 </body>
 </html>
