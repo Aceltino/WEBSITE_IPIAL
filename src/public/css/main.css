@@ -141,7 +141,7 @@ width: 100%;
 }
 
 .all-p{
-    font-size: 3rem;
+    font-size: 2rem;
 }
 
 
@@ -521,8 +521,8 @@ a.link-news:hover{
 }
 
 .testimonal-col img{
-    height: 50px;
-    width: 50px;
+    height: 100px;
+    width: 100px;
     margin-left: 5px;
     margin-right: 30px;
     border-radius: 50%;

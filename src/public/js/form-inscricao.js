@@ -26,7 +26,7 @@ const regExphone = /^([9][0-9]{8})$/;
 const regExemail = /^([a-z0-9]{2,}\.)?([a-z0-9]{2,})@([a-z0-9]{2,})(\.[a-z]{2,})(\.ao|\.gov|\.co)?/;
 
 /*-----Criando uma RegEx para o número de processo------*/
-const regExprocesso = /^([0-9]{2,6})$/;
+const regExprocesso = /^([0-9]{6})$/;
 
 //Criando uma const para pegar o primeiro botão avançar
 const btnNext1 = document.getElementById('btnNext1');
