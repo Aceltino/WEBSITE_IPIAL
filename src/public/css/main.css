@@ -123,7 +123,12 @@ width: 100%;
 /*---------Fi do estilo do dropdown da navbar*/
 
 .text-box h1{
-    font-size: 62px;
+    width: 96%;
+    margin: auto;
+    font-size: 5rem;
+    border-right: 2px solid white;
+    white-space: nowrap;
+    overflow: hidden;
 }
 
 .h1-index{
@@ -132,12 +137,14 @@ width: 100%;
 
 .text-box p{
     margin: 10px 0 10px;
-    font-size: 18px;
+    font-size: 1.8rem;
 }
 
 .all-p{
-    font-size: 1.5rem;
+    font-size: 3rem;
 }
+
+
 
 .hero-btn{
     display: inline-block;
@@ -174,6 +181,69 @@ nav .fa-solid{
     display: none !important;
 }
 
+/*---Estilo dos títulos da header para adicionar o cursor------*/
+.line{
+    width: 480px;
+    font-size: 2rem;
+    border-right: 3px solid rgba(255, 255, 255, 0.75);
+    display: inline-block;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+/*-------Esse estilo é referencial a animação do cursor (para ele piscar)----------*/
+.type-animation{
+    animation: showcursor 950ms infinite normal, typing 4s steps(40) 1s normal both;
+}
+
+
+@keyframes typing{
+    from{
+        width: 0;
+    }
+    to{
+        width: 480px;
+    }
+}
+
+@keyframes showcursor{
+    from{
+        border-right-color: rgba(255, 255, 255, 0.75);
+    }
+
+    to{
+        border-right-color: transparent;
+    }
+
+}
+
+
+/*-----Animação para o título do header de inscrição 1-----*/
+.type-animation2{
+    animation: showcursor2 950ms infinite normal, typing2 5s steps(50) 1s normal both;
+}
+
+@keyframes typing2{
+    from{
+        width: 0;
+    }
+
+    to{
+        width: 96%;
+    }
+}
+
+@keyframes showcursor2{
+    from{
+        border-right-color: rgba(255, 255, 255, 0.75);
+    }
+
+    to{
+        border-right-color: transparent;
+    }
+
+
+}
 /* x ----- Aluno ----- x */
 .pauta-section{
     width: 90%;
