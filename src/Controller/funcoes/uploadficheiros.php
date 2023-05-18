@@ -1,17 +1,20 @@
 <?php
 
-    abstract class Upload
+    class Upload
     {
-        private static $formato = array("pdf");
-
-        public static function file($file): bool
+        private $formato = array("pdf");
+        // private $dataHoraAtual = date('Y-m-d H:i:s');
+        
+        public function bilhete($file): bool
         {
-            $extensao = pathinfo($file['arquivo']['name'], PATHINFO_EXTENSION);
 
-            if( in_array($extensao, self::$formato)) 
+            $extensao = pathinfo($file['docBI']['name'], PATHINFO_EXTENSION);
+
+            if(in_array($extensao, $this->formato)) 
             {
-                $pasta      = "../../public/arquivosInscricacao/";
-                $temporario = $file['arquivo']['tmp_name'];
+                $pasta      = "src/public/arquivosInscricacao/";
+                $temporario = $file['docBI']['tmp_name'];
+                // $novoNome   = $this->dataHoraAtual.".$extensao";
                 $novoNome   = uniqid().".$extensao";
 
                 if(move_uploaded_file($temporario, $pasta.$novoNome))
@@ -19,17 +22,41 @@
                     return true;
                 } else 
                 {
-                    throw new Exception ("Não foi possível carregar o ficheiro, tente novamente.");
+                    return false;
                 }
 
             } else
-            {
-                throw new Exception ("Formato inválido, só aceitamos arquivo do tipo 'PDF'.");
-            }
-                    
+                {
+                    return false;
+                }
         }
 
-        public static function files($file): void
+        public function certificado($file): bool
+        {
+            $extensao = pathinfo($file['docCert']['name'], PATHINFO_EXTENSION);
+
+            if(in_array($extensao, $this->formato)) 
+            {
+                $pasta      = "src/public/arquivosInscricacao/";
+                $temporario = $file['docCert']['tmp_name'];
+                // $novoNome   = $this->dataHoraAtual.".$extensao";
+                $novoNome   = uniqid().".$extensao";
+
+                if(move_uploaded_file($temporario, $pasta.$novoNome))
+                {
+                    return true;
+                } else 
+                {
+                    return false;
+                }
+
+            } else
+                {
+                    return false;
+                }
+        }
+
+        public function files($file): void
         {
             $quantidade = count($file['arquivo']['name']);
             $contador   = 0;
@@ -37,7 +64,7 @@
         while($contador < $quantidade) 
         {
             $extensao   = pathinfo($file['arquivo']['name'][$contador], PATHINFO_EXTENSION);
-            if( in_array($extensao, self::$formato)) 
+            if( in_array($extensao, $this->formato)) 
             {
             $pasta      = "../../public/arquivosInscricacao/";
             $temporario = $file['arquivo']['tmp_name'][$contador];
