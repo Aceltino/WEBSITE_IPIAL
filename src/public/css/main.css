@@ -694,7 +694,11 @@ table.alter-table{
     padding: 5px 0;
     font-size: 1.7rem;
 }
-
+/*-----Estilos dos textos dos sub-cabeçalhos-------*/
+.text-sub-header p{
+    text-align: center;
+    font-size: 4rem;
+}
 /********Estilo dos spans do formulário de contactos*********/
 .span-required{
     font-size: 12px;
