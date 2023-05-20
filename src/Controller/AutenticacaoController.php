@@ -54,7 +54,7 @@ class AutenticacaoController{
                 "codigo" => $resultado[0]->codigo_rec
               ];
               $_SESSION['logado'] = true;
-              header("location:http://localhost/ipial-alda-lara/Administrador/");
+              header("location:http://localhost/ipial-alda-lara/Administrador");
               exit();
             } else 
             {            
