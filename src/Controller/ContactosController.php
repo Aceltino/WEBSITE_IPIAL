@@ -13,28 +13,28 @@ require_once 'funcoes/email.php';
 
     public function index():void
     {
-            $loader = new \Twig\Loader\FilesystemLoader('src/View');
-            $twig = new \Twig\Environment($loader);
-            $template = $twig->load('contactos.html');
+      $loader = new \Twig\Loader\FilesystemLoader('src/View');
+      $twig = new \Twig\Environment($loader);
+      $template = $twig->load('contactos.html');
 
-            if(isset($_POST['btnEnviar']))
-            {
-               $resultado = $this->ValidarInputsEmail($_POST);
-               $parametro['resultado'] = $resultado;
-               $conteudo = $template->render($parametro);
-               echo $conteudo;
+      if(isset($_POST['btn_Entrar']))
+      {
+         $resultado = $this->ValidarInputsEmail($_POST);
+         $parametro['resultado'] = $resultado;
+         $conteudo = $template->render($parametro);
+         echo $conteudo;
 
-            } else {
-               $conteudo = $template->render();
-               echo $conteudo;
-            }
+      } else {
+         $conteudo = $template->render();
+         echo $conteudo;
+      }
 
-     }
+   }
    //   if(empty($inputs['nome']) !== null && empty($inputs['email']) !== null && empty($inputs['assunto']) !== null && empty($inputs['mensagem']) == null)
 
      public function ValidarInputsEmail($inputs)
      {
-            if(empty($inputs['email']) !== null)
+            if($inputs['email'] != null)
             {
                $this->email = $this->input($inputs['email']);
 
