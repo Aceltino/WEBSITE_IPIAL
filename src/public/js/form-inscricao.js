@@ -26,10 +26,11 @@ const regExphone = /^([9][0-9]{8})$/;
 const regExemail = /^([a-z0-9]{2,}\.)?([a-z0-9]{2,})@([a-z0-9]{2,})(\.[a-z]{2,})(\.ao|\.gov|\.co)?/;
 
 /*-----Criando uma RegEx para o número de processo------*/
-const regExprocesso = /^([0-9]{2,6})$/;
+const regExprocesso = /^([0-9]{6})$/;
 
 //Criando uma const para pegar o primeiro botão avançar
 const btnNext1 = document.getElementById('btnNext1');
+
 
 //Criando um evento para que toda vez que o botão do tipo submit for criado
     form_inscricao.addEventListener('submit', (event) =>{
@@ -46,7 +47,12 @@ const btnNext1 = document.getElementById('btnNext1');
     })
 /*---Função para validar etapas----*/
     btnNext1.addEventListener('submit', (event) =>{
-
+        if(campos[0].value == "" && campos[1].value == "" &&  campos[2].value == "" && campos[3].value == ""){
+            setError(0);
+            setError(1);
+            setError(2);
+            setError(3);
+        }
     })
 
 /*---------Criando uma função que retornará o erro de cada input-----------*/

@@ -54,7 +54,7 @@ class AutenticacaoController{
                 "codigo" => $resultado[0]->codigo_rec
               ];
               $_SESSION['logado'] = true;
-              header("location:http://localhost/ipial-alda-lara/Administrador/".$_SESSION['dados_user']['id']);
+              header("location:http://localhost/ipial-alda-lara/Administrador/");
               exit();
             } else 
             {            
@@ -64,7 +64,7 @@ class AutenticacaoController{
           }
 
         }else {
-          return $resultado = "Não deve ter apenas campos null.";
+          return $resultado = "Não deve ter campos null.";
         } 
     }
 
