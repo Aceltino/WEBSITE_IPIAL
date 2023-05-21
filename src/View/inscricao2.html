@@ -19,10 +19,6 @@
     <form method="post" action="http://localhost/ipial-alda-lara/Inscricao" enctype="multipart/form-data" class="form" id="form_inscricao" >
         <h2 class="text-center">Formulário do Inscrição</h2>
 =======
-    <form method="post" action="http://localhost/ipial-alda-lara/Inscricao" class="form" id="form_inscricao">
-        <h2 class="text-center">Formulário de Inscrição</h2>
->>>>>>> 55757409949eb7aca20fc1dae0c0510acbd742e7
-
         <!--*********************Progressbar*****************-->
         <div class="progressbar">
             <div class="progress" id="progress">
@@ -36,7 +32,7 @@
         </div>
        <!--**********************Steps***********************-->
         <div class="form-step active">
-            <div class="input-group">
+            <div class="input-group" >
                 <label for="nome">Seu nome</label>
                 <input type="text" id="nome" name="nome" placeholder="Seu nome completo" class="place-center required-inscricao" required oninput="nome_candidatoValidate()">
                 <span class="span-required-inscricao">Digite corretamente o seu nome completo</span>
@@ -56,7 +52,7 @@
             
             <div class="input-group">
                 <label for="data">Data de nascimento</label>
-                <input type="text" id="data" name="data" placeholder="dia/mês/ano" class="place-center required-inscricao" required oninput="data_nascimentoValidate()">
+                <input type="date" id="data" name="data" placeholder="dia/mês/ano" class="place-center required-inscricao" required oninput="data_nascimentoValidate()">
                 <span class="span-required-inscricao">Digite corretamente a sua data de nascimento</span>
             </div>
 

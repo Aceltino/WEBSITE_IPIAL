@@ -166,7 +166,6 @@ input{
     color:#fff;
     border-radius: 25px;
     cursor:pointer;
-    transition: all 250ms ease-in-out;
 }
 .btn:active{
     transform: scale(.100);
