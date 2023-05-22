@@ -15,10 +15,9 @@
     
 </head>
 <body>
-<<<<<<< HEAD
     <form method="post" action="http://localhost/ipial-alda-lara/Inscricao" enctype="multipart/form-data" class="form" id="form_inscricao" >
         <h2 class="text-center">Formulário do Inscrição</h2>
-=======
+
         <!--*********************Progressbar*****************-->
         <div class="progressbar">
             <div class="progress" id="progress">
@@ -52,8 +51,8 @@
             
             <div class="input-group">
                 <label for="data">Data de nascimento</label>
-                <input type="date" id="data" name="data" placeholder="dia/mês/ano" class="place-center required-inscricao" required oninput="data_nascimentoValidate()">
-                <span class="span-required-inscricao">Digite corretamente a sua data de nascimento</span>
+                <input type="date" id="data" name="data" class="place-center required-inscricao" required oninput="nascimentoValidate()">
+                <span class="span-required-inscricao">Data não permitida para este acto</span>
             </div>
 
             <div class="btns-group">
