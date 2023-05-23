@@ -14,7 +14,7 @@ const spans = document.querySelectorAll('.span-required-inscricao');
 const regExnome = /^[A-Z][A-Za-zÀ-ÿ\s]+[A-Z][A-Za-zÀ-ÿ\s]+$/;
 
 /*-------------Criando uma regEx para a data de nascimento----------------*/
-const regExnascimento = /^([0-9]{2})\/([0-9]{2})\/(19[6-9][0-9]|200[0-9])$/;
+const regExnascimento = /^(0[1-9]|1[0-9]|2[0-9]|3[01])\/(0[1-9]|1[0-2])\/(19[6-9][0-9]|200[0-9])$/;
 
 /*---------------Criando um RegEx para o BI-----------------*/
 const regExbi = /^([0-9-A-Z]{14})$/;
@@ -38,7 +38,6 @@ const btnNext1 = document.getElementById('btnNext1');
         nome_candidatoValidate();
         nome_paiValidate();
         nome_maeValidate();
-        nascimentoValidate();
         biValidate();
         telValidate();
         emailValidate();
@@ -94,14 +93,6 @@ function nome_maeValidate(){
 
 
 /*----Criando uma função para validação da data de nascimento do candidato---*/
-function nascimentoValidate(){
-    if(regExnascimento.test(campos[3].value)){
-        removeError(3);
-    }
-    else{
-        setError(3);
-    }
-}
 
 /*---Criando uma função para o número de BI do candidato----*/
 function biValidate(){
