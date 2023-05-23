@@ -10,8 +10,6 @@ let formStepsNum = 0;
 
 nextBtns.forEach(btn =>{
 
-    
-
     btn.addEventListener('click', ()=>{
         formStepsNum++;
         incrementProgressTotal += incrementProgress;
