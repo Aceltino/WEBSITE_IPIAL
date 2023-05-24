@@ -40,7 +40,7 @@
         </nav>
         <!-- x ---------- Fim da barra de navegação ---------- x -->
         <section class=" text-box">
-        <h1>É um prazer recebê-lo em nossa página de contactos</h1>
+        <h1 class="type-animation2">Olá, seja bem-vindo a nossa página de contactos!</h1>
             <p class="text-sub-header">
                 Esta página é referente a área de contacto do IPIAL, ao preencher o campo ilustrado abaixo, será enviado uma breve descrição referente ao nosso Instituto, que de uma forma será util para si.
             </p>
@@ -63,7 +63,7 @@
                     <div>
                         <i class="fa-solid fa-house" style="color: #06338A;"></i>
                         <span>
-                            <h5>Luanda -Mun. Ingombota</h5>
+                            <h5>Luanda - Distrito da Ingombota</h5>
                             <p>Avenida Lencast</p>
                         </span>
                     </div>
@@ -81,7 +81,7 @@
                     <h1>{{ resultado }}</h1>
                     {% endif %} 
                     <form id="form-contacto" method="post" action="http://localhost/ipial-alda-lara/Contactos" >
-                        <!--Cada span será demonstrado consoante um determinado tipom de erro, de acordo com as condições adicionadas no JS-->
+                        <!--Cada span será demonstrado consoante um determinado tipo de erro, de acordo com as condições adicionadas no JS-->
                         <input type="email" placeholder="Introduza o seu e-mail" class="required" name="email" oninput="emailValidate()">
                         <span class="span-required">Digite um email válido.</span>
                         <button type="submit" name="btnEnviar" class="hero-btn blue-btn">ENVIAR</button>
@@ -92,8 +92,7 @@
         </section>
         <!-- x ---------- Fim da secção Contacte-nos ---------- x -->
     </main>
-    <!-- x ---------- Fim do conteúdo principal ---------- x -->
-    
+   
     <!-- x ---------- Início do Footer ---------- x -->
     <footer>
         <section class="icons">
@@ -106,7 +105,7 @@
     </footer>
     <!-- x ---------- Fim do Footer ---------- x -->
 
-     <!-- <script src="../public/js/app.js"></script>
-    <script src="../public/js/form-contacto.js"></script> -->
+    <script src="src/public/js/app.js"></script>
+    <script src="src/public/js/form-contacto.js"></script>
 </body>
 </html>

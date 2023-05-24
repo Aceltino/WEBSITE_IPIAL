@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;500;700&family=Sriracha&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    padding: 20px 40px;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+}
+
+main{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.unica-secao{
+    max-width: 600px;
+    max-height: 350px;
+    width: 600px;
+    height: 350px;
+}
+
+.text-center{
+    text-align: center;
+}
+
+.titulo-1{
+    font-size: 8rem;
+    color: #1e1f1e;
+}
+
+.titulo-2{
+    color: #1e1f1e;
+}
+
+.unico-p{
+    margin-top: 50px;
+    color: #1e1f1e;
+}
+
+@media screen and (max-width:650px){
+    .titulo-1{
+        font-size: 5rem;
+    }
+}

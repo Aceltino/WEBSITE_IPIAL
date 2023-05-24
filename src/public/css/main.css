@@ -33,7 +33,20 @@ header{
     width: 85px;
     height: 85px;
 }
-
+/*Estilos do conatiner do botão de voltar ao topo*/
+.container-arrowup{
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    
+}
+.child-arrowup{
+    width: 40px;
+    height: 40px;
+    background-color: #06338A;
+    border-radius: 50%;
+    margin-right: 30px;
+}
 /*Estilo do quadro de inscrição*/
 .title-inscricao{
     width:70%;
@@ -92,9 +105,9 @@ ul.alter-link li a{
 .nav-links ul li:hover::after{
 width: 100%;
 }
-
+/*Estilo da text-box 1, página inicial*/
 .text-box{
-    width: 90%;
+    width: 82%;
     color: white;
     position: absolute;
     top: 50%;
@@ -102,6 +115,19 @@ width: 100%;
     transform: translate(-50%,-50%);
     text-align: center;
 }
+
+/*Estilo do text-box2, da página sobre o IPIAL*/
+.text-box2{
+    width: 82%;
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+
+
 
 /*-------Estilos do dropdown da navbar*/
 .dropdown-menu{
@@ -125,7 +151,8 @@ width: 100%;
 .text-box h1{
     width: 96%;
     margin: auto;
-    font-size: 5rem;
+    font-size: 4.5rem;
+    text-align: center;
     border-right: 2px solid white;
     white-space: nowrap;
     overflow: hidden;
@@ -141,7 +168,7 @@ width: 100%;
 }
 
 .all-p{
-    font-size: 2rem;
+    font-size: 1.5rem;
 }
 
 
@@ -193,7 +220,7 @@ nav .fa-solid{
 
 /*-------Esse estilo é referencial a animação do cursor (para ele piscar)----------*/
 .type-animation{
-    animation: showcursor 950ms infinite normal, typing 4s steps(40) 1s normal both;
+    animation: showcursor 950ms infinite normal, typing 5s steps(0) 1s normal both;
 }
 
 
@@ -202,7 +229,7 @@ nav .fa-solid{
         width: 0;
     }
     to{
-        width: 480px;
+        width: 43%;
     }
 }
 
@@ -229,7 +256,7 @@ nav .fa-solid{
     }
 
     to{
-        width: 96%;
+        width: 94%;
     }
 }
 
@@ -241,9 +268,10 @@ nav .fa-solid{
     to{
         border-right-color: transparent;
     }
-
-
 }
+
+
+
 /* x ----- Aluno ----- x */
 .pauta-section{
     width: 90%;
@@ -648,7 +676,6 @@ table.alter-table{
 }
 
 .btn-inscricao:hover{
-    transition: all 250ms ease-in-out;
     box-shadow: 0 0 0 2px #f34d00, 0 0 0 2px;
     background-color: #06338A;
     color: #FFF;
