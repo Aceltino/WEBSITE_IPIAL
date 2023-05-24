@@ -5,10 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Área de Pautas</title>
-    <link rel="stylesheet" href="../public/webfont/fontawesome-free-6.3.0-web/css/all.min.css">
-    <link rel="stylesheet" href="../public/webfont/fontawesome-free-6.3.0-web/css/fontawesome.min.css">
-    <link rel="stylesheet" href="../public/css/style3.css">
-    <link rel="stylesheet" href="../public/css/main.css">
+    <link rel="stylesheet" href="src/public/webfont/fontawesome-free-6.3.0-web/css/all.min.css">
+    <link rel="stylesheet" href="src/public/webfont/fontawesome-free-6.3.0-web/css/fontawesome.min.css">
+    <link rel="stylesheet" href="src/public/css/style3.css">
+    <link rel="stylesheet" href="src/public/css/main.css">
 </head>
 <body>
     <div class="lateral-menu">
@@ -65,75 +65,24 @@
                 </thead>
     
                 <tbody class="tbody-aling">
+                    {% if pautas != null %}
+                    {% for pauta in pautas %}
                     <tr>
-                        <td>Técnico de Informática</td>
-                        <td>I10AM</td>
-                        <td><a href="#"><i class="fa-solid fa-eye fa-lg" style="color: #525252;"></i></a></td>
-                        <td><a href="#"><i class="fa-solid fa-trash fa-lg" style="color: #d61f0a;"></i></a></td>
+                        <td>{{ pauta.curso }}</td>
+                        <td>{{ pauta.turma }}</td>
+                        <td><a href="src/public/arquivospautas/{{ pauta.doc }}" target="_blank"><i class="fa-solid fa-eye fa-lg" style="color: #525252;"></i></a></td>
+                        <td><a href="http://localhost/ipial-alda-lara/pautas/EliminarPauta/{{ pauta.id_pauta }}"><i class="fa-solid fa-trash fa-lg" style="color: #d61f0a;"></i></a></td>
                     </tr>
-    
-                    <tr>
-                        <td>Técnico de Informática</td>
-                        <td>I10BM</td>
-                        <td><a href="#"><i class="fa-solid fa-eye fa-lg" style="color: #525252;"></i></a></td>
-                        <td><a href="#"><i class="fa-solid fa-trash fa-lg" style="color: #d61f0a;"></i></a></td>
-                    </tr>
-    
-                    <tr>
-                        <td>Técnico de Informática</td>
-                        <td>I10CM</td>
-                        <td><a href="#"><i class="fa-solid fa-eye fa-lg" style="color: #525252;"></i></a></td>
-                        <td><a href="#"><i class="fa-solid fa-trash fa-lg" style="color: #d61f0a;"></i></a></td>
-                    </tr>
-    
-                    <tr>
-                        <td>Técnico de Informática</td>
-                        <td>I12BM</td>
-                        <td><a href="#"><i class="fa-solid fa-eye fa-lg" style="color: #525252;"></i></a></td>
-                        <td><a href="#"><i class="fa-solid fa-trash fa-lg" style="color: #d61f0a;"></i></a></td>
-                    </tr>
-    
-                    <tr>
-                        <td>Técnico de Informática</td>
-                        <td>I13CT</td>
-                        <td><a href="#"><i class="fa-solid fa-eye fa-lg" style="color: #525252;"></i></a></td>
-                        <td><a href="#"><i class="fa-solid fa-trash fa-lg" style="color: #d61f0a;"></i></a></td>
-                    </tr>
-
-                    <tr>
-                        <td>Construção Civil</td>
-                        <td>C12AC</td>
-                        <td><a href="#"><i class="fa-solid fa-eye fa-lg" style="color: #525252;"></i></a></td>
-                        <td><a href="#"><i class="fa-solid fa-trash fa-lg" style="color: #d61f0a;"></i></a></td>
-                    </tr>
-
-                    <tr>
-                        <td>Electricidade</td>
-                        <td>E12BM</td>
-                        <td><a href="#"><i class="fa-solid fa-eye fa-lg" style="color: #525252;"></i></a></td>
-                        <td><a href="#"><i class="fa-solid fa-trash fa-lg" style="color: #d61f0a;"></i></a></td>
-                    </tr>
-
-
-                    <tr>
-                        <td>Electricidade</td>
-                        <td>E11BM</td>
-                        <td><a href="#"><i class="fa-solid fa-eye fa-lg" style="color: #525252;"></i></a></td>
-                        <td><a href="#"><i class="fa-solid fa-trash fa-lg" style="color: #d61f0a;"></i></a></td>
-                    </tr>
-
-                    <tr>
-                        <td>Electricidade</td>
-                        <td>E10BM</td>
-                        <td><a href="#"><i class="fa-solid fa-eye fa-lg" style="color: #525252;"></i></a></td>
-                        <td><a href="#"><i class="fa-solid fa-trash fa-lg" style="color: #d61f0a;"></i></a></td>
-                    </tr>
+                    {% endfor %}
+                    {% else %} 
+                    <h3 style="color: #60798E;">Você não tem publicações. Faça uma!</h3>
+                    {% endif %} 
                 </tbody>
             </table>
-        </div>
+        
 
         <div class="div-btn-publicar">
-            <a href="publicar-pauta.html" class="btn-publicar">Cadastrar Pauta</a>
+            <a href="http://localhost/ipial-alda-lara/pautas/Cadastrar" class="btn-publicar">Cadastrar Pauta</a>
         </div>
     </div>
 

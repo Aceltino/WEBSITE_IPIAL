@@ -5,7 +5,7 @@
         private $formato = array("pdf");
         // private $dataHoraAtual = date('Y-m-d H:i:s');
         
-        public function bilhete($file): bool
+        public function bilhete($file)
         {
 
             $extensao = pathinfo($file['docBI']['name'], PATHINFO_EXTENSION);
@@ -19,7 +19,7 @@
 
                 if(move_uploaded_file($temporario, $pasta.$novoNome))
                 {
-                    return true;
+                    return $novoNome;
                 } else 
                 {
                     return false;
@@ -31,7 +31,7 @@
                 }
         }
 
-        public function certificado($file): bool
+        public function certificado($file)
         {
             $extensao = pathinfo($file['docCert']['name'], PATHINFO_EXTENSION);
 
@@ -44,7 +44,7 @@
 
                 if(move_uploaded_file($temporario, $pasta.$novoNome))
                 {
-                    return true;
+                    return  $novoNome;
                 } else 
                 {
                     return false;
@@ -56,35 +56,29 @@
                 }
         }
 
-        public function files($file): void
+        public function pauta($file)
         {
-            $quantidade = count($file['arquivo']['name']);
-            $contador   = 0;
+            $extensao = pathinfo($file['documento']['name'], PATHINFO_EXTENSION);
 
-        while($contador < $quantidade) 
-        {
-            $extensao   = pathinfo($file['arquivo']['name'][$contador], PATHINFO_EXTENSION);
-            if( in_array($extensao, $this->formato)) 
+            if(in_array($extensao, $this->formato)) 
             {
-            $pasta      = "../../public/arquivosInscricacao/";
-            $temporario = $file['arquivo']['tmp_name'][$contador];
-            $novoNome   = uniqid().".$extensao";
+                $pasta      = "src/public/arquivospautas/";
+                $temporario = $file['documento']['tmp_name'];
+                // $novoNome   = $this->dataHoraAtual.".$extensao";
+                $novoNome   = uniqid().".$extensao";
 
-            if(move_uploaded_file($temporario, $pasta.$novoNome))
-            {
-                $mensagem[$contador] = "Ficheiro carregado com sucesso!";
-            } else 
-            {
-                $mensagem[$contador] = "Não foi possível carregar o ficheiro, tente novamente.";
-            }
+                if(move_uploaded_file($temporario, $pasta.$novoNome))
+                {
+                    return $novoNome;
+                } else 
+                {
+                    return false;
+                }
 
             } else
-            {
-                $mensagem[$contador] = "Formato inválido, só aceitamos arquivo do tipo 'PDF'.";
-            }   
-                
-            $contador++;          
-        }
+                {
+                    return false;
+                }
     }
         
     }

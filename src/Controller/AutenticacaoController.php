@@ -46,7 +46,6 @@ class AutenticacaoController{
             $resultado = Usuarios::dadosUsuario($user);
             
             if($resultado){
-              var_dump($resultado);
               $_SESSION['dados_user'] = [
                 "id"     => $resultado[0]->id_usuario,
                 "nome"   => $resultado[0]->nome_usuario,
@@ -54,7 +53,7 @@ class AutenticacaoController{
                 "codigo" => $resultado[0]->codigo_rec
               ];
               $_SESSION['logado'] = true;
-              header("location:http://localhost/ipial-alda-lara/Administrador");
+              header("location:http://localhost/ipial-alda-lara/Noticias");
               exit();
             } else 
             {            

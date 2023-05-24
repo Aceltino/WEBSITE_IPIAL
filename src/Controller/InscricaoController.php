@@ -5,23 +5,10 @@
  class InscricaoController{
          use Validar;
 
-         private $nome;
-         private $pai;
-         private $mae;
-         private $data;
-         private $sexo;
-         private $bi;
-         private $tel;
-         private $email;
-         private $escola;
-         private $turno;
-         private $processo;
-         private $opcao1;
-         private $opcao2;
-         private $opcao3;
-         private $opcao4;
-         private $docBI;
-         private $docCert;
+         private $nome;private $pai;private $mae;private $data;private $sexo;
+         private $bi;private $tel;private $email;private $escola;private $turno;
+         private $processo;private $opcao1;private $opcao2;private $opcao3;private $opcao4;
+         private $docBI;private $docCert;
    
          public function index(){
 

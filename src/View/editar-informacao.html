@@ -5,27 +5,34 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Editar informação</title>
-    <link rel="stylesheet" href="../public/webfont/fontawesome-free-6.3.0-web/css/all.min.css">
-    <link rel="stylesheet" href="../public/webfont/fontawesome-free-6.3.0-web/css/fontawesome.min.css">
-    <link rel="stylesheet" href="../public/css/publicar-informacao.css">
+    <link rel="stylesheet" href="../../src/public/webfont/fontawesome-free-6.3.0-web/css/all.min.css">
+    <link rel="stylesheet" href="../../src/public/webfont/fontawesome-free-6.3.0-web/css/fontawesome.min.css">
+    <link rel="stylesheet" href="../../src/public/css/publicar-informacao.css">
 </head>
 <body>
     <main>
-        <form action="">
+        {% if resultado %}
+		<h1>{{ resultado }}</h1>
+	{% endif %}
+        <form method="post" action="http://localhost/ipial-alda-lara/noticias/AtualizarNoticia">
             <div class="div-texto">
                 <h3>Edite a informação com atenção, de forma a manter a integridade acarretada pelo instituto</h3>
                 <p class="unico-p">Faça as correcções que achar necessárias.</p>
             </div>
+                
+        
             <div class="div-input">
-                <input type="text" placeholder="Título da publicação" class="input-info">
+                <input type="hidden" name="id" value="{{ id }}">
+                <input type="text" name="titulo" placeholder="Título da publicação" class="input-info" value="{{ titulo }}">
             </div>
             <div class="div-textarea">
-                <textarea name="" id="" cols="30" rows="10" placeholder="Informação a ser publicada"></textarea>
+                <textarea name="conteudo" id="" cols="30" rows="10" placeholder="Informação a ser publicada">{{ conteudo }}</textarea>
             </div>
             <div class="div-link-e-botao">
-                <a href="noticias-admin.html" class="a-retroceder">Voltar</a>
-                <input type="submit" value="Editar">
+                <a href="http://localhost/ipial-alda-lara/Noticias" class="a-retroceder">Voltar</a>
+                <input type="submit" name="btn_editar" value="Editar">
             </div>
+            
         </form>
     </main>
 </body>

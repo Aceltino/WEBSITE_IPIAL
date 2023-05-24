@@ -60,14 +60,9 @@ class Rota_web{
 
     //---------- PARAMETROS --------
 
-    // if(isset($url[1]) && $url[1] != null) 
-    // {
-    //     $parametro = $url[1];
-    // } else {
-    //     $parametro = null;
-    // }
+    $parametro = (isset($url[2]) && $url[2] != null) ? $url[2] : null;
     
-    call_user_func(array(new $controller, $method)); //, array($parametro) 
+    call_user_func(array(new $controller, $method), array($parametro) ); //
 
      }
 
