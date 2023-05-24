@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;500;700&family=Sriracha&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    padding: 20px 40px;
+    width: 100vw;
+    overflow-x: hidden;
+}
+
+.cabecalho{
+    margin-bottom: 20px;
+}
+
+.titulo{
+    color: #06338a;
+    font-size: 1.7rem;
+}
+
+.text-center{
+    text-align: center;
+}
+
+
+.mb-20{
+    margin-bottom:20px ;
+}
+
+.dado-do-inscrito{
+    font-size: 1.3rem;
+    margin-bottom: 5px;
+}
+
+.primeira-secao, .segunda-secao{
+    width: 100%;
+}
+
+.primeira-secao{
+    margin-bottom: 40px;
+}
+
+.segunda-secao{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.btn-voltar{
+    padding: 0.75rem;
+    text-align: center;
+    text-decoration: none;
+    background-color: #06338a;
+    color: #fff;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: all 250ms ease-in-out;
+}
+
+.btn-voltar:active{
+    transform: scale(.100);
+}
+
+.btn-voltar:hover{
+    box-shadow: 0 0 0 2px #f34d00, 0 0 0 2px;
+}
+
+@media screen and (max-width:800px){
+    .titulo{
+        font-size: 1.5rem;
+    }
+
+    .dado-do-inscrito{
+        font-size: 1.2rem;
+    }
+}
+
+@media screen and (max-width:650px){
+    .titulo{
+        font-size: 1.3rem;
+    }
+
+    .dado-do-inscrito{
+        font-size: 1rem;
+    }
+}
