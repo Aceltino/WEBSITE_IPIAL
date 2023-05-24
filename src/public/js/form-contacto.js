@@ -10,7 +10,6 @@ const span = document.querySelectorAll('.span-required')[0];
 /******Criando uma RegEx para o email*******/
 const emailRegEx = /^([a-z0-9]{2,}\.)?([a-z0-9]{2,})@([a-z0-9]{2,})(\.[a-z]{2,})(\.ao|\.gov|\.co)?/;
 
-
 //Criando um evento para que toda vez que o botão do tipo submit for clicado
     form.addEventListener("submit", (event) =>{
         if (!emailValidate()){
@@ -24,7 +23,7 @@ const emailRegEx = /^([a-z0-9]{2,}\.)?([a-z0-9]{2,})@([a-z0-9]{2,})(\.[a-z]{2,})
         if(emailRegEx.test(campo.value)){
             campo.style.border = '2px solid #06338a';
             span.style.display = 'none';
-            alert("E-mail enviado!");
+            alert("Verifique seu email, lhe enviamos uma mensagem concernente a Instituição.");
             return true;
         }
         else{

@@ -26,7 +26,7 @@ const regExphone = /^([9][0-9]{8})$/;
 const regExemail = /^([a-z0-9]{2,}\.)?([a-z0-9]{2,})@([a-z0-9]{2,})(\.[a-z]{2,})(\.ao|\.gov|\.co)?/;
 
 /*-----Criando uma RegEx para o número de processo------*/
-const regExprocesso = /^([0-9]{6})$/;
+const regExprocesso = /^([0-9]{1,6})$/;
 
 //Botões de avançar:
 const btnNext1 = document.getElementById('btnNext1');
@@ -69,9 +69,8 @@ btnNext1.addEventListener("click", (event)=>{
 
     if(campos[3].value === ""){
         alert('O campo da sua data de nascimento precisa ser preenchida');
-        setError(3);
         event.preventDefault();
-        
+        setError(3);
     }
     else{
         removeError(3);
@@ -205,6 +204,16 @@ function nome_maeValidate(){
 
 
 /*----Criando uma função para validação da data de nascimento do candidato---*/
+function nascimentoValidate(){
+    
+    if(regExnascimento.test(campos[3].value)){
+        removeError(3);
+    }
+    
+    else{
+        setError(3);
+    }
+}
 
 /*---Criando uma função para o número de BI do candidato----*/
 function biValidate(){

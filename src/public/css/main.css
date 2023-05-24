@@ -220,7 +220,7 @@ nav .fa-solid{
 
 /*-------Esse estilo é referencial a animação do cursor (para ele piscar)----------*/
 .type-animation{
-    animation: showcursor 950ms infinite normal, typing 4s steps(40) 1s normal both;
+    animation: showcursor 950ms infinite normal, typing 5s steps(0) 1s normal both;
 }
 
 

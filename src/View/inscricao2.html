@@ -51,7 +51,7 @@
             
             <div class="input-group">
                 <label for="data">Data de nascimento</label>
-                <input type="date" id="data" name="data" class="place-center required-inscricao" required oninput="dataValidate()">
+                <input type="text" id="data" name="data" placeholder="dd/mm/aaaa" class="place-center required-inscricao" required oninput="nascimentoValidate()">
                 <span class="span-required-inscricao">Data não permitida para este acto</span>
             </div>
 
@@ -78,7 +78,7 @@
                 </div>
                 <div class="input-group">
                     <label for="tel">Telefone</label>
-                    <input type="tel" id="tel" name="tel" placeholder="912345678" class="place-center required-inscricao" required oninput="telValidate()">
+                    <input type="number" id="tel" name="tel" placeholder="912345678" class="place-center required-inscricao" required oninput="telValidate()">
                     <span class="span-required-inscricao">Números de tefone e começam com 9 possuem 9 digitos</span>
                 </div>
                 <div class="input-group">
@@ -126,7 +126,7 @@
                 <div class="input-group">
                     <label for="processo">Processo Nº</label>
                     <input type="number" id="processo" name="processo" placeholder="Número de processo" class="place-center required-inscricao" required oninput="nprocessoValiate()">
-                    <span class="span-required-inscricao">Um nº de processo deve ter entre 2-6 números</span>
+                    <span class="span-required-inscricao">Um nº de processo deve ter no mínimo 1 número</span>
                 </div>
                 <div class="btns-group">
                     <a href="#" class="btn btn-back">Retroceder</a>

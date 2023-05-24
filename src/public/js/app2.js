@@ -1,7 +1,7 @@
-const backBtns = document.querySelectorAll('.btn-back')
-const nextBtns = document.querySelectorAll(('.btn-next'))
-const progress = document.getElementById('progress')
-const formSteps = document.querySelectorAll('.form-step')
+const backBtns = document.querySelectorAll('.btn-back');
+const nextBtns = document.querySelectorAll('.btn-next');
+const progress = document.getElementById('progress');
+const formSteps = document.querySelectorAll('.form-step');
 const progressSteps = document.querySelectorAll('.progress-step');
 const incrementProgress = 30;
 var incrementProgressTotal;
