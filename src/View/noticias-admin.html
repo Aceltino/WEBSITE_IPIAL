@@ -28,7 +28,7 @@
             </li>
 
             <li class="list">
-                <a href="pauta-admin.html">
+                <a href="http://localhost/ipial-alda-lara/pautas">
                     <span class="icons"><i class="fa-solid fa-upload fa-xl" style="color: #ffffff;"></i></span>
                     <span class="titulo">Pautas</span>
                 </a>
@@ -58,210 +58,24 @@
 
         <div class="publicacoes">
             <div class="lista-de-publicacoes">
-                <article class="publicacao">
-                    <p class="p-titulo">Título: Pauta trimestral</p>        
-                    <p class="p-data">Data: 17/12/2022</p>  
-                    <a href="./informacoes-da-noticia.html" class="a-abrir-publicacao">Abrir</a>
-                    <div class="div-botoes-2">
-                        <a href="editar-informacao.html" class="a-editar-publicacao">Editar</a>
-                        <button class="btn-eliminar-publicacao">Eliminar</button>
-                    </div>
-                </article>
 
+            {% for publicacao in publicacoes %}
                 <article class="publicacao">
-                    <p class="p-titulo">Título: Pauta trimestral</p>        
-                    <p class="p-data">Data: 17/12/2022</p>  
-                    <a href="./informacoes-da-noticia.html" class="a-abrir-publicacao">Abrir</a>
+                    <p class="p-titulo">Título: {{ publicacao.titulo }}</p>        
+                    <p class="p-data">Data: {{ publicacao.data_publicacao }}</p>  
+                    <a href="http://localhost/ipial-alda-lara/noticias/VerNoticia/{{ publicacao.id_informacao }}" class="a-abrir-publicacao">Abrir</a>
                     <div class="div-botoes-2">
-                        <a href="editar-informacao.html" class="a-editar-publicacao">Editar</a>
-                        <button class="btn-eliminar-publicacao">Eliminar</button>
+                        <a href="http://localhost/ipial-alda-lara/noticias/AtualizarNoticia/{{ publicacao.id_informacao }}" class="a-editar-publicacao">Editar</a>
+                        <a href="http://localhost/ipial-alda-lara/noticias/EliminarNoticia/{{ publicacao.id_informacao }}" class="btn-eliminar-publicacao">Eliminar</a>
                     </div>
                 </article>
+            {% endfor %}
 
-                <article class="publicacao">
-                    <p class="p-titulo">Título: Pauta trimestral</p>        
-                    <p class="p-data">Data: 17/12/2022</p>  
-                    <a href="./informacoes-da-noticia.html" class="a-abrir-publicacao">Abrir</a>
-                    <div class="div-botoes-2">
-                        <a href="editar-informacao.html" class="a-editar-publicacao">Editar</a>
-                        <button class="btn-eliminar-publicacao">Eliminar</button>
-                    </div>
-                </article>
-
-                <article class="publicacao">
-                    <p class="p-titulo">Título: Pauta trimestral</p>        
-                    <p class="p-data">Data: 17/12/2022</p>  
-                    <a href="./informacoes-da-noticia.html" class="a-abrir-publicacao">Abrir</a>
-                    <div class="div-botoes-2">
-                        <a href="editar-informacao.html" class="a-editar-publicacao">Editar</a>
-                        <button class="btn-eliminar-publicacao">Eliminar</button>
-                    </div>
-                </article>
-
-                <article class="publicacao">
-                    <p class="p-titulo">Título: Pauta trimestral</p>        
-                    <p class="p-data">Data: 17/12/2022</p>  
-                    <a href="./informacoes-da-noticia.html" class="a-abrir-publicacao">Abrir</a>
-                    <div class="div-botoes-2">
-                        <a href="editar-informacao.html" class="a-editar-publicacao">Editar</a>
-                        <button class="btn-eliminar-publicacao">Eliminar</button>
-                    </div>
-                </article>
-
-                <article class="publicacao">
-                    <p class="p-titulo">Título: Pauta trimestral</p>        
-                    <p class="p-data">Data: 17/12/2022</p>  
-                    <a href="./informacoes-da-noticia.html" class="a-abrir-publicacao">Abrir</a>
-                    <div class="div-botoes-2">
-                        <a href="editar-informacao.html" class="a-editar-publicacao">Editar</a>
-                        <button class="btn-eliminar-publicacao">Eliminar</button>
-                    </div>
-                </article>
-
-                <article class="publicacao">
-                    <p class="p-titulo">Título: Pauta trimestral</p>        
-                    <p class="p-data">Data: 17/12/2022</p>  
-                    <a href="./informacoes-da-noticia.html" class="a-abrir-publicacao">Abrir</a>
-                    <div class="div-botoes-2">
-                        <a href="editar-informacao.html" class="a-editar-publicacao">Editar</a>
-                        <button class="btn-eliminar-publicacao">Eliminar</button>
-                    </div>
-                </article>
-
-                <article class="publicacao">
-                    <p class="p-titulo">Título: Pauta trimestral</p>        
-                    <p class="p-data">Data: 17/12/2022</p>  
-                    <a href="./informacoes-da-noticia.html" class="a-abrir-publicacao">Abrir</a>
-                    <div class="div-botoes-2">
-                        <a href="editar-informacao.html" class="a-editar-publicacao">Editar</a>
-                        <button class="btn-eliminar-publicacao">Eliminar</button>
-                    </div>
-                </article>
-
-                <article class="publicacao">
-                    <p class="p-titulo">Título: Pauta trimestral</p>        
-                    <p class="p-data">Data: 17/12/2022</p>  
-                    <a href="./informacoes-da-noticia.html" class="a-abrir-publicacao">Abrir</a>
-                    <div class="div-botoes-2">
-                        <a href="editar-informacao.html" class="a-editar-publicacao">Editar</a>
-                        <button class="btn-eliminar-publicacao">Eliminar</button>
-                    </div>
-                </article>
-
-                <article class="publicacao">
-                    <p class="p-titulo">Título: Pauta trimestral</p>        
-                    <p class="p-data">Data: 17/12/2022</p>  
-                    <a href="./informacoes-da-noticia.html" class="a-abrir-publicacao">Abrir</a>
-                    <div class="div-botoes-2">
-                        <a href="editar-informacao.html" class="a-editar-publicacao">Editar</a>
-                        <button class="btn-eliminar-publicacao">Eliminar</button>
-                    </div>
-                </article>
-
-                <article class="publicacao">
-                    <p class="p-titulo">Título: Pauta trimestral</p>        
-                    <p class="p-data">Data: 17/12/2022</p>  
-                    <a href="./informacoes-da-noticia.html" class="a-abrir-publicacao">Abrir</a>
-                    <div class="div-botoes-2">
-                        <a href="editar-informacao.html" class="a-editar-publicacao">Editar</a>
-                        <button class="btn-eliminar-publicacao">Eliminar</button>
-                    </div>
-                </article>
-
-                <article class="publicacao">
-                    <p class="p-titulo">Título: Pauta trimestral</p>        
-                    <p class="p-data">Data: 17/12/2022</p>  
-                    <a href="./informacoes-da-noticia.html" class="a-abrir-publicacao">Abrir</a>
-                    <div class="div-botoes-2">
-                        <a href="editar-informacao.html" class="a-editar-publicacao">Editar</a>
-                        <button class="btn-eliminar-publicacao">Eliminar</button>
-                    </div>
-                </article>
-
-                <article class="publicacao">
-                    <p class="p-titulo">Título: Pauta trimestral</p>        
-                    <p class="p-data">Data: 17/12/2022</p>  
-                    <a href="./informacoes-da-noticia.html" class="a-abrir-publicacao">Abrir</a>
-                    <div class="div-botoes-2">
-                        <a href="editar-informacao.html" class="a-editar-publicacao">Editar</a>
-                        <button class="btn-eliminar-publicacao">Eliminar</button>
-                    </div>
-                </article>
-
-                <article class="publicacao">
-                    <p class="p-titulo">Título: Pauta trimestral</p>        
-                    <p class="p-data">Data: 17/12/2022</p>  
-                    <a href="./informacoes-da-noticia.html" class="a-abrir-publicacao">Abrir</a>
-                    <div class="div-botoes-2">
-                        <a href="editar-informacao.html" class="a-editar-publicacao">Editar</a>
-                        <button class="btn-eliminar-publicacao">Eliminar</button>
-                    </div>
-                </article>
-
-                <article class="publicacao">
-                    <p class="p-titulo">Título: Pauta trimestral</p>        
-                    <p class="p-data">Data: 17/12/2022</p>  
-                    <a href="./informacoes-da-noticia.html" class="a-abrir-publicacao">Abrir</a>
-                    <div class="div-botoes-2">
-                        <a href="editar-informacao.html" class="a-editar-publicacao">Editar</a>
-                        <button class="btn-eliminar-publicacao">Eliminar</button>
-                    </div>
-                </article>
-
-                <article class="publicacao">
-                    <p class="p-titulo">Título: Pauta trimestral</p>        
-                    <p class="p-data">Data: 17/12/2022</p>  
-                    <a href="./informacoes-da-noticia.html" class="a-abrir-publicacao">Abrir</a>
-                    <div class="div-botoes-2">
-                        <a href="editar-informacao.html" class="a-editar-publicacao">Editar</a>
-                        <button class="btn-eliminar-publicacao">Eliminar</button>
-                    </div>
-                </article>
-
-                <article class="publicacao">
-                    <p class="p-titulo">Título: Pauta trimestral</p>        
-                    <p class="p-data">Data: 17/12/2022</p>  
-                    <a href="./informacoes-da-noticia.html" class="a-abrir-publicacao">Abrir</a>
-                    <div class="div-botoes-2">
-                        <a href="editar-informacao.html" class="a-editar-publicacao">Editar</a>
-                        <button class="btn-eliminar-publicacao">Eliminar</button>
-                    </div>
-                </article>
-
-                <article class="publicacao">
-                    <p class="p-titulo">Título: Pauta trimestral</p>        
-                    <p class="p-data">Data: 17/12/2022</p>  
-                    <a href="./informacoes-da-noticia.html" class="a-abrir-publicacao">Abrir</a>
-                    <div class="div-botoes-2">
-                        <a href="editar-informacao.html" class="a-editar-publicacao">Editar</a>
-                        <button class="btn-eliminar-publicacao">Eliminar</button>
-                    </div>
-                </article>
-
-                <article class="publicacao">
-                    <p class="p-titulo">Título: Pauta trimestral</p>        
-                    <p class="p-data">Data: 17/12/2022</p>  
-                    <a href="./informacoes-da-noticia.html" class="a-abrir-publicacao">Abrir</a>
-                    <div class="div-botoes-2">
-                        <a href="editar-informacao.html" class="a-editar-publicacao">Editar</a>
-                        <button class="btn-eliminar-publicacao">Eliminar</button>
-                    </div>
-                </article>
-
-                <article class="publicacao">
-                    <p class="p-titulo">Título: Pauta trimestral</p>        
-                    <p class="p-data">Data: 17/12/2022</p>  
-                    <a href="./informacoes-da-noticia.html" class="a-abrir-publicacao">Abrir</a>
-                    <div class="div-botoes-2">
-                        <a href="editar-informacao.html" class="a-editar-publicacao">Editar</a>
-                        <button class="btn-eliminar-publicacao">Eliminar</button>
-                    </div>
-                </article>
             </div>
         </div>
 
         <div class="div-btn-publicar">
-            <a href="publicar-informacao.html" class="btn-publicar">Nova Informação</a>
+            <a href="http://localhost/ipial-alda-lara/noticias/CriarNoticia" class="btn-publicar">Nova Informação</a>
         </div>
     </div>
     <script src="../public/js/index-admin.js"></script>

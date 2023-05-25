@@ -24,14 +24,8 @@ class Usuarios
             $result[] = $row; 
         }
 
-        // var_dump($result);
-
          return $result;
 
-        // if(!$result){
-        //     return false;
-        // } 
-            
     }
 }
 

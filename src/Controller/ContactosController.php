@@ -17,7 +17,7 @@ require_once 'funcoes/email.php';
       $twig = new \Twig\Environment($loader);
       $template = $twig->load('contactos.html');
 
-      if(isset($_POST['btn_Entrar']))
+      if(isset($_POST['btnEnviar']))
       {
          $resultado = $this->ValidarInputsEmail($_POST);
          $parametro['resultado'] = $resultado;

@@ -5,28 +5,37 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Publicar informação</title>
+<<<<<<< HEAD
+    <link rel="stylesheet" href="../src/public/webfont/fontawesome-free-6.3.0-web/css/all.min.css">
+    <link rel="stylesheet" href="../src/public/webfont/fontawesome-free-6.3.0-web/css/fontawesome.min.css">
+    <link rel="stylesheet" href="../src/public/css/publicar-informacao.css">
+=======
     <link rel="stylesheet" href="src/public/webfont/fontawesome-free-6.3.0-web/css/all.min.css">
     <link rel="stylesheet" href="src/public/webfont/fontawesome-free-6.3.0-web/css/fontawesome.min.css">
     <link rel="stylesheet" href="src/public/css/publicar-informacao.css">
+>>>>>>> 8877d1257386faf7c22f5227a90ee3e108b71d24
 </head>
 <body>
     <main>
-        <form action="" id="form-publicar">
+        {% if resultado %}
+		<h1>{{ resultado }}</h1>
+	{% endif %}
+        <form method="post" action="http://localhost/ipial-alda-lara/noticias/criarNoticia" id="form-publicar">
             <div class="div-texto">
                 <h3>Publique uma nova informação</h3>
                 <p class="unico-p">Introduza o título e o conteúdo da informação a ser publicada.</p>
             </div>
             <div class="div-input">
-                <input type="text" placeholder="Título da publicação" class="input-info required-publicar" oninput="tituloValidate()">
+                <input type="text" placeholder="Título da publicação" name="titulo" class="input-info required-publicar" oninput="tituloValidate()">
                 <span class="span-required-publicar">Digite um título como deve ser</span>
             </div>
             <div class="div-textarea">
-                <textarea name="" id="" cols="30" rows="10" placeholder="Informação a ser publicada" class="required-publicar" oninput="textoValidate()"></textarea>
+                <textarea name="conteudo" id="" cols="30" rows="10" name="conteudo" placeholder="Informação a ser publicada" class="required-publicar" oninput="textoValidate()"></textarea>
                 <span class="span-required-publicar">O texto da informação publicada dever ter mais de 40 caracteres</span>
             </div>
             <div class="div-link-e-botao">
-                <a href="noticias-admin.html" class="a-retroceder">Voltar</a>
-                <input type="submit" value="Publicar">
+                <a href="http://localhost/ipial-alda-lara/noticias" class="a-retroceder">Voltar</a>
+                <input type="submit" name="btn-publicar" value="Publicar">
             </div>
         </form>
     </main>
