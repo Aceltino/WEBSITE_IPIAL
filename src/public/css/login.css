@@ -1,0 +1,16 @@
+.div-a{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.a-esqueceu-senha{
+    text-decoration: none;
+    margin-bottom: 20px;
+    color: #f34d00;
+    transition: all 0.2s ease-in-out;
+}
+
+.a-esqueceu-senha:hover{
+    color: #06338a;
+}

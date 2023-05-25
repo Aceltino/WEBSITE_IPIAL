@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;500;700&family=Sriracha&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    padding: 20px 40px;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    background-image: linear-gradient(180deg, #06338a, #f34d00);
+    color: white;
+}
+
+main{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.unica-secao{
+    max-width: 500px;
+    max-height: 350px;
+    width: 500px;
+    height: 350px;
+    padding: 0 10px;
+}
+
+.text-center{
+    text-align: center;
+}
+
+.unico-p{
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.div-input-and-btn{
+    padding: 20px 10px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.input-email, .btn-enviar-codigo{
+    width: 48%;
+    border-radius: 3rem;
+    padding-left: 10px;
+    outline: 0;
+    border: 1px solid;
+}
+
+.btn-enviar-codigo{
+    padding: 0.6rem 1.4rem;
+    background-color: #06338A;
+    color: #fff;
+    border-radius: 3rem;
+    cursor: pointer;
+    border: 0;
+}
+
+.btn-enviar-codigo:hover{
+    background-color: #042464;
+}
+
+@media screen and (max-width:650px){
+    .input-email, .btn-enviar-codigo{
+        width: 100%;
+    }
+
+    .input-email{
+        padding: 9px 10px;
+        margin-bottom: 20px;
+    }
+}
