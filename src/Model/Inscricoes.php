@@ -70,9 +70,10 @@ class Inscricao
             return true;
         }
     }
-    public static function MostrarNoticias()
+    public static function MostrarInscrito($parametro)
     {
-        
+        $id = intval($parametro);
+
         self::$database = Database::getInstance();
         self::$pdo = self::$database->getPdo();
         
@@ -81,15 +82,17 @@ class Inscricao
         INNER JOIN tbl_inscricao_aluno_has_tbl_cursos 
         ON tbl_inscricao_aluno.id_inscrito = tbl_inscricao_aluno_has_tbl_cursos.inscricao_Aluno_id
         INNER JOIN tbl_cursos
-        ON tbl_inscricao_aluno_has_tbl_cursos.Cursos_id = tbl_cursos.id_curso";
+        ON tbl_inscricao_aluno_has_tbl_cursos.Cursos_id = tbl_cursos.id_curso
+        WHERE tbl_inscricao_aluno.id_inscrito = ? ";
         self::$sql = self::$pdo->prepare(self::$sql);
+        self::$sql->bindValue(1 ,$id, PDO::PARAM_INT);
         self::$sql->execute();
     
-        while($row = self::$sql->fetchObject('Informacoes')){
+        while($row = self::$sql->fetchObject('Inscricao')){
             $result[] = $row; 
         }
         if(!$result){
-            return $result = "Nenhum registro no banco.";
+            return $result = "Este registro não existe no banco de dados.";
         } else {
             return $result;
         }
@@ -98,7 +101,6 @@ class Inscricao
 
     public static function MostrarInscritos()
     {
-        $id = intval($parametro);
 
         self::$database = Database::getInstance();
         self::$pdo = self::$database->getPdo();
@@ -108,9 +110,8 @@ class Inscricao
         ON tbl_inscricao_aluno.id_inscrito = tbl_inscricao_aluno_has_tbl_cursos.inscricao_Aluno_id
         INNER JOIN tbl_cursos
         ON tbl_inscricao_aluno_has_tbl_cursos.Cursos_id = tbl_cursos.id_curso
-        WHERE tbl_inscricao_aluno.id_inscrito =";      
+        WHERE tbl_inscricao_aluno.id_inscrito";      
         self::$sql = self::$pdo->prepare(self::$sql);
-        self::$sql->bindValue(1 ,$id, PDO::PARAM_INT);
         self::$sql->execute();
         
         $result = null;
@@ -119,57 +120,30 @@ class Inscricao
         }
 
         if(!$result){
-            return $result = "Este registro não existe no banco de dados";
+            return $result = "Nenhum registro no banco de dados";
         } else {
             return $result;
         }
 
     }
 
-    // public static function AtualizarNoticia($parametro)
-    // {
-    //     var_dump($parametro);
-    //     $id = intval($parametro['id']);
+    public static function EliminarInscritos()
+    {
 
-    //     self::$database = Database::getInstance();
-    //     self::$pdo = self::$database->getPdo();
+        self::$database = Database::getInstance();
+        self::$pdo = self::$database->getPdo();
         
-    //     self::$sql ="UPDATE tbl_informacoes SET tbl_informacoes.conteudo = ?, 
-    //     tbl_informacoes.titulo = ?
-    //     WHERE tbl_informacoes.id_informacao = ?";
-    //     self::$sql = self::$pdo->prepare(self::$sql);
-    //     self::$sql->bindValue(1 ,$parametro['conteudo']);
-    //     self::$sql->bindValue(2 ,$parametro['titulo']);
-    //     self::$sql->bindValue(3 ,$id, PDO::PARAM_INT);
-    //     $result = self::$sql->execute();
+        self::$sql ="DELETE FROM tbl_inscricao_aluno";
+        self::$sql = self::$pdo->prepare(self::$sql);
+        $result = self::$sql->execute();
 
-    //     if($result == 0){
-    //         return false;
-    //     } else {
-    //         return true;
-    //     }
-    // }
+        if($result == 0){
+            return false;
+        } else {
+            return true;
+        }
 
-    // public static function EliminarNoticia($parametro)
-    // {
-    //     var_dump($parametro);
-    //     $id = intval($parametro);
-
-    //     self::$database = Database::getInstance();
-    //     self::$pdo = self::$database->getPdo();
-        
-    //     self::$sql ="DELETE FROM tbl_informacoes WHERE id_informacao = ?";
-    //     self::$sql = self::$pdo->prepare(self::$sql);
-    //     self::$sql->bindValue(1 ,$id, PDO::PARAM_INT);
-    //     $result = self::$sql->execute();
-
-    //     if($result == 0){
-    //         return false;
-    //     } else {
-    //         return true;
-    //     }
-
-    // }
+    }
 }
 
 ?>

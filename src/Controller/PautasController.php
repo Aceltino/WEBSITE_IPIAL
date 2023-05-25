@@ -17,10 +17,6 @@
       $template = $twig->load('pauta-admin.html');
 
       $resultado = array();
-      $array = count($resultado);
-      for ($i = 0; $i < $array; $i++){
-        $resultado[$i]->id_pauta = Criptografia::Criptografar($resultado[$i]->id_pauta);    // Criptografar o ID
-      }
 
       $pautas['pautas'] = $resultado;
 
