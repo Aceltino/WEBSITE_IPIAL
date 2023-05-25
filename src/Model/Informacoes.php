@@ -37,10 +37,11 @@ class Informacoes
         self::$sql ="SELECT * FROM tbl_informacoes";
         self::$sql = self::$pdo->prepare(self::$sql);
         self::$sql->execute();
-    
+      $result = array();
         while($row = self::$sql->fetchObject('Informacoes')){
             $result[] = $row; 
         }
+      
         if(!$result){
             return $result = "Nenhum registro no banco.";
         } else {

@@ -5,10 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home do Administrador</title>
-    <link rel="stylesheet" href="../public/webfont/fontawesome-free-6.3.0-web/css/all.min.css">
-    <link rel="stylesheet" href="../public/webfont/fontawesome-free-6.3.0-web/css/fontawesome.min.css">
-    <link rel="stylesheet" href="../public/css/style3.css">
-    <link rel="stylesheet" href="../public/css/main.css">
+    <link rel="stylesheet" href="src/public/webfont/fontawesome-free-6.3.0-web/css/all.min.css">
+    <link rel="stylesheet" href="src/public/webfont/fontawesome-free-6.3.0-web/css/fontawesome.min.css">
+    <link rel="stylesheet" href="src/public/css/style3.css">
+    <link rel="stylesheet" href="src/public/css/main.css">
 </head>
 <body>
 
@@ -54,20 +54,12 @@
 
         <div class="div-area-admitidos">
             <div class="area-procura">
-                <section class="search-section">
-                    <span>
-                        <input type="search" name="procura" id="procura" placeholder="Digite aqui o nome do candidato" class="input-search">
-                    </span>
-                    <span >
-                        <i class="fa-solid fa-magnifying-glass fa-2xl" style="color: #06338a;"></i>
-                    </span>
-                </section>
-                <section class="button-section">
+              <!--
                     <section class="toggle-button">
                       <button class="option1 active">Habilitar inscrições</button>
                       <button class="option2">Desabilitar inscrições</button>
                     </section>
-
+                -->
                 </section>
             </div>
             <div class="div-table-admitidos">
@@ -76,100 +68,30 @@
                         <tr class="linha-table-cabeçalho">
                             <th>Nome do Candidato</th>
                             <th>Número do BI</th>
-                            <th>Código de Inscrição</th>
+                            <th>Data de Nascimento</th>
                         </tr>
                     </thead> 
 
                     <tbody class="corpo-table-admitidos">
+                        {% if inscritos != null %}
+                        {% for inscrito in inscritos %}
                         <tr>
-                            <td>Otaniel de Carvalho Fernandes</td>
-                            <td>234567890LA4534</td>
-                            <td>$45673t6873wi9853o3</td>
-                            <td><a href="#"><i class="fa-solid fa-eye fa-lg" style="color: #525252;"></i></a></td>
+                            <td>{{ inscrito.nome_completo }}</td>
+                            <td>{{ inscrito.num_BI }}</td>
+                            <td>{{ inscrito.data_nascimento }}</td>
+                            <td><a href="http://localhost/ipial-alda-lara/Inscricoes/VerInscricao/{{ inscrito.id_inscrito }}"><i class="fa-solid fa-eye fa-lg" style="color: #525252;"></i></a></td>
                         </tr>
+                        {% endfor %}
+                        {% else %}
+                            <p>Sem dados cadastrados</p>
+                        {% endif %}
 
-                        <tr>
-                            <td>Aceltino Kiaku Quianvo</td>
-                            <td>234567890LA4534</td>
-                            <td>$45673t6873wi9853o3</td>
-                            <td><a href="#"><i class="fa-solid fa-eye fa-lg" style="color: #525252;"></i></a></td>
-                        </tr>
-
-                        <tr>
-                            <td>Eurico Sequele Dande</td>
-                            <td>234567890LA4534</td>
-                            <td>$45673t6873wi9853o3</td>
-                            <td><a href="#"><i class="fa-solid fa-eye fa-lg" style="color: #525252;"></i></a></td>
-                        </tr>
-
-                        <tr>
-                            <td>Augostinho Famoroso Zage</td>
-                            <td>234567890LA4534</td>
-                            <td>$45673t6873wi9853o3</td>
-                            <td><a href="#"><i class="fa-solid fa-eye fa-lg" style="color: #525252;"></i></a></td>
-                        </tr>
-
-                        <tr>
-                            <td>Leronarno Cassule</td>
-                            <td>234567890LA4534</td>
-                            <td>$45673t6873wi9853o3</td>
-                            <td><a href="#"><i class="fa-solid fa-eye fa-lg" style="color: #525252;"></i></a></td>
-                        </tr>
-
-                        <tr>
-                            <td>Marcelina Rafael</td>
-                            <td>234567890LA4534</td>
-                            <td>$45673t6873wi9853o3</td>
-                            <td><a href="#"><i class="fa-solid fa-eye fa-lg" style="color: #525252;"></i></a></td>
-                        </tr>
-
-                        <tr>
-                            <td>José Rufino</td>
-                            <td>234567890LA4534</td>
-                            <td>$45673t6873wi9853o3</td>
-                            <td><a href="#"><i class="fa-solid fa-eye fa-lg" style="color: #525252;"></i></a></td>
-                        </tr>
-
-                        <tr>
-                            <td>Otaniel de Carvalho Fernandes</td>
-                            <td>234567890LA4534</td>
-                            <td>$45673t6873wi9853o3</td>
-                            <td><a href="#"><i class="fa-solid fa-eye fa-lg" style="color: #525252;"></i></a></td>
-                        </tr>
-
-                        <tr>
-                            <td>Otaniel de Carvalho Fernandes</td>
-                            <td>234567890LA4534</td>
-                            <td>$45673t6873wi9853o3</td>
-                            <td><a href="#"><i class="fa-solid fa-eye fa-lg" style="color: #525252;"></i></a></td>
-                        </tr>
-
-                        <tr>
-                            <td>Otaniel de Carvalho Fernandes</td>
-                            <td>234567890LA4534</td>
-                            <td>$45673t6873wi9853o3</td>
-                            <td><a href="#"><i class="fa-solid fa-eye fa-lg" style="color: #525252;"></i></a></td>
-                        </tr>
-
-                        <tr>
-                            <td>Otaniel de Carvalho Fernandes</td>
-                            <td>234567890LA4534</td>
-                            <td>$45673t6873wi9853o3</td>
-                            <td><a href="#"><i class="fa-solid fa-eye fa-lg" style="color: #525252;"></i></a></td>
-                        </tr>
-
-                        <tr>
-                            <td>Alcina Rafael</td>
-                            <td>234567890LA4534</td>
-                            <td>$45673t6873wi9853o3</td>
-                            <td><a href="#"><i class="fa-solid fa-eye fa-lg" style="color: #525252;"></i></a></td>
-                        </tr>
                     </tbody>
                 </table>
             </div>
 
             <div class="div-btn-publicar">
-                <a href="#" class="btn-publicar">Apagar Inscritos</a>
+                <a href="http://localhost/ipial-alda-lara/Inscricoes/EliminarInscricao" class="btn-publicar">Apagar Inscritos</a>
             </div>
         </div>
 
