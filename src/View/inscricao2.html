@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Página de Inscrição</title>
-    <link rel="stylesheet" href="../src/public/css/style_inscricao.css">
+    <link rel="stylesheet" href="src/public/css/style_inscricao.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="stylesheet" href="src/public/webfont/fontawesome-free-6.3.0-web/css/all.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -110,18 +110,9 @@
                     </select>
                 </div>
                 <div class="input-group">
-                    <label for="escola">Turma</label>
-                    <select class="select-group " name="turma" id="turma">
-                        <optgroup label="Turma">
-                            <option value="A">A</option>
-                            <option value="B">B</option>
-                            <option value="C">C</option>
-                            <option value="D">D</option>
-                            <option value="E">E</option>
-                            <option value="F">F</option>
-                            <option value="G">G</option>
-                        </optgroup>
-                    </select>
+                    <label for="turma">Turma</label>
+                    <input type="text" id="turma" name="turma" placeholder="turma" class="place-center required-inscricao" required oninput="turma()">
+                    <span class="span-required-inscricao">Turma</span>
                 </div>
                 <div class="input-group">
                     <label for="processo">Processo Nº</label>
@@ -139,10 +130,10 @@
                     <label for="opcao1">Opção 1</label>
                     <select class="select-group" name="opcao1" id="opcao1" required>
                         <optgroup label="Opcao1">
-                            <option value="Desenahdor">Desenhador Projetista (DP)</option>
-                            <option value="Electronica">Electrónica e Telecomunicações</option>
-                            <option value="Electricidade">Técnico de Energias e Instalações Eléctricas (TEIE)</option>
-                            <option value="Informatica">Técnico de Informática (TI)</option>
+                            <option value="Desenhador Projetista">Desenhador Projetista</option>
+                            <option value="Electrónica e Telecomunicações">Electrónica e Telecomunicações</option>
+                            <option value="Técnico de Energias e Instalações Eléctricas">Técnico de Energias e Instalações Eléctricas</option>
+                            <option value="Técnico de Informática">Técnico de Informática</option>
                         </optgroup>
                     </select>
                 </div>
@@ -150,10 +141,10 @@
                     <label for="opcao1">Opção 2</label>
                     <select class="select-group" name="opcao2" id="opcao2">
                         <optgroup label="Opcao2">
-                            <option value="Desenahdor">Desenhador Projetista (DP)</option>
-                            <option value="Electronica">Electrónica e Telecomunicações</option>
-                            <option value="Electricidade">Técnico de Energias e Instalações Eléctricas (TEIE)</option>
-                            <option value="Informatica">Técnico de Informática (TI)</option>
+                            <option value="Desenhador Projetista">Desenhador Projetista</option>
+                            <option value="Electrónica e Telecomunicações">Electrónica e Telecomunicações</option>
+                            <option value="Técnico de Energias e Instalações Eléctricas">Técnico de Energias e Instalações Eléctricas</option>
+                            <option value="Técnico de Informática">Técnico de Informática</option>
                         </optgroup>
                     </select>
                 </div>
@@ -161,10 +152,10 @@
                     <label for="opcao3">Opção 3</label>
                     <select class="select-group" name="opcao3" id="opcao3" required>
                         <optgroup label="Opcao3">
-                            <option value="Desenahdor">Desenhador Projetista (DP)</option>
-                            <option value="Electronica">Electrónica e Telecomunicações</option>
-                            <option value="Electricidade">Técnico de Energias e Instalações Eléctricas (TEIE)</option>
-                            <option value="Informatica">Técnico de Informática (TI)</option>
+                            <option value="Desenhador Projetista">Desenhador Projetista</option>
+                            <option value="Electrónica e Telecomunicações">Electrónica e Telecomunicações</option>
+                            <option value="Técnico de Energias e Instalações Eléctricas">Técnico de Energias e Instalações Eléctricas</option>
+                            <option value="Técnico de Informática">Técnico de Informática</option>
                         </optgroup>
                     </select>
                 </div>
@@ -172,10 +163,10 @@
                     <label for="opcao4">Opção 4</label>
                     <select class="select-group" name="opcao4" id="opcao4" required>
                         <optgroup label="Opcao4">
-                            <option value="Desenahdor">Desenhador Projetista (DP)</option>
-                            <option value="Electronica">Electrónica e Telecomunicações</option>
-                            <option value="Electricidade">Técnico de Energias e Instalações Eléctricas (TEIE)</option>
-                            <option value="Informatica">Técnico de Informática (TI)</option>
+                            <option value="Desenhador Projetista">Desenhador Projetista</option>
+                            <option value="Electrónica e Telecomunicações">Electrónica e Telecomunicações</option>
+                            <option value="Técnico de Energias e Instalações Eléctricas">Técnico de Energias e Instalações Eléctricas</option>
+                            <option value="Técnico de Informática">Técnico de Informática</option>
                         </optgroup>
                     </select>
                 </div>
@@ -216,10 +207,10 @@
         </div>
     </dialog>
     
-    <script src="../src/public/js/app2.js"></script>
+    <!-- <script src="../src/public/js/app2.js"></script> -->
     <!--Script do Modal-->
-    <script src="../src/public/js/app3.js"></script>
+    <!-- <script src="../src/public/js/app3.js"></script> -->
     <!--Script do formulário de inscrição-->
-     <script src="../src/public/js/form-inscricao.js"></script>
+     <!-- <script src="../src/public/js/form-inscricao.js"></script> -->
 </body>
 </html>
