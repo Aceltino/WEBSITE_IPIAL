@@ -70,6 +70,21 @@ main{
     background-color: #042464;
 }
 
+.div-link{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.a-voltar{
+    text-decoration: none;
+    color: white;
+    transition: all 0.2s ease-in;
+}
+.a-voltar:hover{
+    text-decoration: underline;
+}
+
 @media screen and (max-width:650px){
     .input-email, .btn-enviar-codigo{
         width: 100%;
