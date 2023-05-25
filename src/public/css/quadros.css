@@ -27,14 +27,13 @@
 }
 
 .card-dg {
-    margin: 30px auto;
 	width: 200px;
 	height: 250px;
 	perspective: 800px;
 }
 
 .card {
-    margin: 30px 0;
+    margin: 30px auto;
 	width: 200px;
 	height: 250px;
 	perspective: 800px;
